@@ -16,3 +16,77 @@ body {
     color: #2D375C;
     font-family: Lato, Helvetica, sans-serif;
 }
+
+.header_mobile{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #000;
+    
+
+    .header_logo-mobile{
+        width: 100%;
+        margin: auto ;
+        img{
+            width: 120px;
+            height: 35px;
+            padding-top: 3px;
+            margin-left: 10px;
+            
+        }
+    }
+    .menu-mobile{
+        cursor: pointer;
+
+        #burger_menu{
+            width: 32px;
+            margin-right: 15px;
+            padding-top: 3px;
+        }
+
+    }
+
+    .nav_mobile{
+        
+        
+        .nav_mobile-list{
+            list-style-type: none;
+
+            .nav_mobile-list{
+                display: none;
+            }
+        }
+    }
+    
+}  
+
+.main{
+    
+    .main_bg{
+        height: 100vh;
+         /* Use vh as a fallback for browsers that do not support Custom Properties */
+         height: calc(var(--vh, 1vh) * 100);
+         margin: 0 auto;
+        background-color:gray;
+
+        
+    }
+    .container{
+        position: relative;
+
+        &_principal{
+            position: absolute;
+            z-index: 1; 
+            left: 20%;
+            bottom: 20%;
+
+            &-title{
+                font-family: 'Quicksand', sans-serif;
+                font-size: 5em;              
+               
+            }
+            
+        }
+    }
+
+    
+}
