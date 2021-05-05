@@ -1,0 +1,18 @@
+/* Police de caractère
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../font/Quicksand-Bold.ttf") format("woff");
+}
+
+body {
+    background-color: #fff;
+    color: #2D375C;
+    font-family: Lato, Helvetica, sans-serif;
+}
