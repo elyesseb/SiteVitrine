@@ -16,3 +16,50 @@ body {
     color: #2D375C;
     font-family: Lato, Helvetica, sans-serif;
 }
+
+.footer {
+    height: 100vh;
+    /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-image: url("../img/hab/Degrades/BLEUFONCE.png");
+    background-size: 100% 100%;
+    &_social {
+        display: flex;
+        padding: 1rem;
+    }
+    &_social--links {
+        height: 3.75rem;
+        width: 3.75rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
+    }
+    &_btn {
+        height: 4.5rem;
+        width: 15.625rem;
+        border-radius: 1.875rem;
+        font-family: Lato;
+        font-size: 1.25rem;
+        background-image: url("../img/hab/Degrades/ROSE.png");
+        background-size: 100% 100%;
+        color: #fff;
+        border: none;
+    }
+    &_title {
+        font-family: Quicksand;
+        color: #4DC0DF;
+    }
+    &_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &_fine {}
+}
