@@ -45,6 +45,10 @@ body {
      margin-top: 5px;
      margin-bottom: 5px;
     }
+
+    .nav{
+        display: none;
+    }
 } 
 
 .main{
@@ -65,17 +69,54 @@ body {
     .container_principal{
        // position: absolute;
         //z-index: 1;
+         &-element{
 
-        &-title{
-            position: absolute;
-            left: 15%;
-            top: 20%;
-            z-index: 1;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 5;
-            font-size: 2em;
-           // background-color: red;
-        }
+
+            &-title{
+                position: absolute;
+                left: 5%;
+                top: 17%;
+                z-index: 1;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 5;
+                font-size: 4.375rem;
+            // background-color: red;
+            } 
+            
+            &-txt{
+                position: absolute;
+                left: 5%;
+                top: 36%;
+                z-index: 1;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 5;
+                font-size: 2em;
+            // background-color: red;
+
+            }
+
+            &-btn{
+                position: absolute;
+                left: 10%;
+                top: 83%;
+                z-index: 1;
+                width: 80%;
+                height: 8%;
+                font-family: 'Quicksand', sans-serif;
+                color: white;
+                font-weight: 5;
+                font-size: 2em;
+            // background-color: red;
+                border-radius: 1.875rem;
+                background:url(/src/img/hab/Degrades/ROSE.png) ;
+                background-size: 100% 100%;
+                border: none;
+            }
+        }      
+    }
+
+    .container_constat{
+        
     }
 
 }
