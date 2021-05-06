@@ -17,7 +17,46 @@ body {
     font-family: Lato, Helvetica, sans-serif;
 }
 
+.title {
+    font-size: 2rem;
+    padding: 0rem 1rem;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    padding: 0rem 1rem;
+}
+
+
+/* Section nos partenaires scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.partners {
+    height: 100vh;
+    /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    width: 100%;
+    &_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &_container--form {
+        height: 10.5rem;
+        width: 13rem;
+        border-radius: 1.875rem;
+        margin: 1rem;
+        background-color: #C8C8C8;
+    }
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .footer {
+    position: absolute;
     height: 100vh;
     /* Use vh as a fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
@@ -50,10 +89,10 @@ body {
         background-size: 100% 100%;
         color: #fff;
         border: none;
-    }
-    &_title {
-        font-family: Quicksand;
-        color: #4DC0DF;
+        -webkit-border-radius: 1.875rem;
+        -moz-border-radius: 1.875rem;
+        -ms-border-radius: 1.875rem;
+        -o-border-radius: 1.875rem;
     }
     &_text {
         display: flex;
@@ -61,5 +100,19 @@ body {
         align-items: center;
         flex-wrap: wrap;
     }
-    &_fine {}
+    &_title {
+        font-family: Quicksand;
+        color: #4DC0DF;
+    }
+    &_copyright {
+        position: absolute;
+        bottom: 0.625rem;
+    }
+    &_copyright-fine {
+        font-size: 0.8rem;
+    }
+    &_copyright-fine a {
+        text-decoration: none;
+        color: #fff;
+    }
 }
