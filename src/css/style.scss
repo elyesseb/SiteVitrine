@@ -127,14 +127,17 @@ body {
             align-items: center;
             padding: 1em;
             margin: 1em;
-            padding-top: 20vh;
+            padding-top: 5vh;
             border-radius: 1rem;
             position: relative;
             text-align: left;
             box-shadow: 0em 0em 1em rgb(223, 222, 222);
 
             &-img{
-
+                width: 8rem;
+                height: 8rem;
+                border-radius: 65px;
+                background-color:rgb(180, 180, 180);
             }
             &-txt{
                 font-family: "Lato";
