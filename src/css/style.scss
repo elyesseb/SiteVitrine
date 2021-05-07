@@ -28,6 +28,62 @@ body {
 }
 
 
+/* Section témoignages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.testimonials {
+    height: 100vh;
+    /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--img {
+            width: 11.25rem;
+            height: 11.25rem;
+            border-radius: 6rem;
+            background-color: #C8C8C8;
+        }
+        &--text {
+            padding: 1rem 4rem;
+        }
+        &--content {
+            display: block;
+            width: 100%;
+            padding: 1rem 4rem;
+            font-weight: bold;
+        }
+        &--name,
+        &--job {
+            margin: 1rem auto auto 4rem;
+            font-family: Quicksand;
+        }
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000!important;
+}
+
+
 /* Section nos partenaires scientifiques
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -89,10 +145,6 @@ body {
         background-size: 100% 100%;
         color: #fff;
         border: none;
-        -webkit-border-radius: 1.875rem;
-        -moz-border-radius: 1.875rem;
-        -ms-border-radius: 1.875rem;
-        -o-border-radius: 1.875rem;
     }
     &_text {
         display: flex;
