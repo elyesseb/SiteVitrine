@@ -68,7 +68,6 @@ body {
     display: flex;
     flex-direction: column;
     &_container {
-        display: flex;
         border-radius: 1.875rem;
         background-color: #FFF;
         height: 50vh;
@@ -76,8 +75,9 @@ body {
         margin: 1rem;
         &--title {
             font-family: Quicksand;
-            font-size: 1.125rem;
-            margin-left: 1em;
+            font-size: 1.3rem;
+            text-align: center;
+            margin-top: 1em;
             margin-bottom: 2.5rem;
         }
         &--text {
@@ -188,12 +188,14 @@ body {
     &_social {
         display: flex;
         padding: 1rem;
+        margin: 2rem;
     }
     &_social--links {
         height: 3.75rem;
         width: 3.75rem;
         padding: 1rem;
         margin-top: 2rem;
+        margin: 1rem;
         filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
     }
     &_btn {
@@ -206,12 +208,14 @@ body {
         background-size: 100% 100%;
         color: #fff;
         border: none;
+        margin: 2rem;
     }
     &_text {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        margin: 2rem;
     }
     &_title {
         font-family: Quicksand;
