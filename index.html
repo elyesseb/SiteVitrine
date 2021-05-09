@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <link rel="stylesheet" href="src/css/normalize.css">
   <link rel="stylesheet" href="src/css/style.scss">
-  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/img/hab/Logo/Picto_H.png">
   <title>H'ability</title>
 </head>
 
@@ -17,28 +17,54 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header class="header">
     <div class="header_mobile">
-      <div class="header_logo-mobile">
-        <img id="#" src="./src/img/hab/Logo/Logo horizontal.png" alt="Logo H'ability">
+      <div class="header_mobile-logo">
+        <img id="#" src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability">
       </div>
-      <div class="header_menu-burger">
-        <img id="##" src="./src/img/hab/bars-solid.svg" alt="">
+      <div id="header_menu-burger">
+        <a href="">
+          <img id="##" src="./src/img/hab/bars-solid.svg" alt=""> 
+        </a>
       </div>
-      <nav class="nav">
-        <ul class="nav_list">
-          <li class="nav_list-element">
-            <a href="">Accueil</a>
+      <nav id="nav_mobile">
+        <ul class="nav_mobile-list">
+          <li class="nav_mobile-list-element">
+            <a class="accordeon" href="">Accueil</a>
           </li>
-          <li class="nav_list-element">
-            <a href="">A propos de nous</a>
+          <li class="nav_mobile-list-element">
+            <a class="accordeon" href="">A propos de nous</a>
           </li>
-          <li class="nav_list-element">
-            <a href="">Actualités</a>
+          <li class="nav_mobile-list-element">
+            <a class="accordeon" href="">Actualités</a>
           </li>
-          <li class="nav_list-element">
-            <a href="">Nous contacter</a>
+          <li class="nav_mobile-list-element">
+            <a class="accordeon" href="">Nous contacter</a>
           </li>
-          <li class="nav_list-element">
-            <a href="">EN</a>
+          <li class="nav_mobile-list-element">
+            <a class="accordeon" href="">EN</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header_desktop">
+      <div class="header_desktop-logo"> 
+        <img src="./src/img/hab/Logo/Logo_horizontal.png" alt="logo Desktop">
+      </div>
+      <nav class="nav_desktop">
+        <ul class="nav_desktop-list">
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">Accueil</a>
+          </li>
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">A propos de nous</a>
+          </li>
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">Actualités</a>
+          </li>
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">Nous contacter</a>
+          </li>
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">EN</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +72,7 @@
   </header>
   <!-- Contenu principal de la page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <main class="main">
+  <main>
     <div class="main_bg">
       <!-- Ajouter l'image principale de la page -->
     </div>
@@ -97,7 +123,7 @@
       <h2 class="section_title">Les pathologies traitées</h2>
       <div class="container_pt-element">
         <p class="container_pt-element-txt">Entrainant des troubles moteur du membre supérieur et troubles cognitifs</p>
-        <ul>
+        <ul >
           <li class="container_pt-element-list"> - AVC</li>
           <li class="container_pt-element-list"> - Traumatisme cranien</li>
           <li class="container_pt-element-list"> - Paralysie cérébrale</li>
@@ -113,17 +139,15 @@
     <section class="container_eq">
       <h2 class="section_title"> Les exercices du quotidien</h2>
       <div class="container_eq-element">
-        <p class="container_eq-element-txt"> Choisissez dans notre bibliotheque de jeux les exercices souhaités en fonction des capacités et objectifs de rééducation...
-          <br>
-          <br>
-          La réalité virtuelle propose un large panel de jeux possible en 3D!
-        </p>
+        <p class="container_eq-element-txt"> Choisissez dans notre bibliotheque de jeux les exercices souhaités en fonction des capacités et objectifs de rééducation...</p>
+          <p class="container_eq-element-txt"> La réalité virtuelle propose un large panel de jeux possible en 3D!</p>
         <ul>
+          <li class="container_eq-element-etiquette" id="etiquette_desktop" >EXPLORATION VISUELLE</li>
           <li class="container_eq-element-etiquette">PREHENSION FINE</li>
           <li class="container_eq-element-etiquette">AMPLITUDE</li>
           <li class="container_eq-element-etiquette">MEMORISATION</li>
           <li class="container_eq-element-etiquette">EQUILIBRE</li>
-          <li class="container_eq-element-etiquette">EXPLORATION VISUELLE</li>
+          <li class="container_eq-element-etiquette" id="etiquette_mobile">EXPLORATION VISUELLE</li>
         </ul>
       </div>
 

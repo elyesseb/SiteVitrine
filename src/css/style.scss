@@ -16,6 +16,10 @@ body {
     color: #2D375C;
     font-family: Lato, Helvetica, sans-serif;
 }
+
+.header_desktop{
+    display: none;
+}
     //header Modile
 
 .header_mobile{
@@ -26,7 +30,7 @@ body {
     border-bottom: 1px solid #000;
     box-shadow: 0px 10% solid #000;
 
-    .header_logo-mobile{
+    .header_mobile-logo{
         width: 100%;
         margin: auto ;
         padding-left: 15px;
@@ -38,7 +42,7 @@ body {
         }
     }
 
-    .header_menu-burger{
+    #header_menu-burger{
      width: 30px;
      height: 30px;
      padding-top: 5px;
@@ -47,24 +51,32 @@ body {
      margin-bottom: 5px;
     }
 
-    .nav{
-        display: none;
+    .nav_mobile{
+        display: block;
+    }
+    .nav_mobile-list, .accordeon{
+        display:none;
+        list-style: none;
+        text-decoration: none;
+
     }
 } 
     // main + sections 
 
-.main{
+main{
     height: 100vh;
     /* Use vh as a fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
     margin: 0 auto;
     width: 100%;
+    
 
-    &_bg{
+    .main_bg{
         width: 100%;
         height: 100%;
-        background-color: rgb(185, 177, 177);
+        background-color:rgb(200 200 200);
         position: relative;
+        display: flex;
 
     }
         //section principale 
@@ -90,7 +102,7 @@ body {
                 left: 5%;
                 top: 36%;
                 z-index: 1;
-                font-family: 'Quicksand', sans-serif;
+                font-family: 'Lano', sans-serif;
                 font-weight: 5;
                 font-size: 2em;
             // background-color: red;
@@ -104,7 +116,7 @@ body {
                 z-index: 1;
                 width: 80%;
                 height: 8%;
-                font-family: 'Quicksand', sans-serif;
+                font-family: 'Lato', sans-serif;
                 color: white;
                 font-weight: 5;
                 font-size: 2em;
@@ -123,6 +135,7 @@ body {
         .section_title{
             font-size: 1.5em;
             margin-left: 1em;
+            margin: 1.5em;
         }
 
         &-card{
@@ -130,7 +143,8 @@ body {
             flex-direction: column;
             align-items: center;
             padding: 1em;
-            margin: 1em;
+            margin: 1em; //1.5
+            margin-bottom: 4.2em;
             padding-top: 5vh;
             border-radius: 1rem;
             position: relative;
@@ -154,10 +168,12 @@ body {
     .container_pt{
         background-color: rgb(238, 238, 238);
         padding-bottom: 0.01rem;
+        padding-top: 1em;
         .section_title{
             font-size: 1.5em;
             margin-left: 1em;
-            padding-top: 1rem;
+           // padding-top: 1rem;
+            margin: 1.5em;
             
         }
         &-element{
@@ -165,14 +181,16 @@ body {
             &-txt{
                 font-size: 1em;
                 margin: 1em;
+                margin-bottom: 2em;
             }
             &-list{
                 font-size: 1em;
                 list-style: none;
+                margin-top: 0.5em;//a retirer si l image prend tte la largeure de la page
                 
             }
             &-img{
-                height: 15rem;
+                height: 32.1rem;
                 background-color:rgb(206, 206, 206);
                 margin: 0.5rem;
             }
@@ -191,18 +209,200 @@ body {
             &-txt{
                 font-size: 1em;
                 margin: 1em;
+                margin-bottom: 1em;
             }
-            
             &-etiquette{
                 list-style: none;
                 border-radius: 0.2em;
                 display: inline-block;
-                color: fuchsia;
+                color: #C9539A ;
                 background-color: white;
-                border: fuchsia solid 0.1em;
+                border: #C9539A solid 0.1em;
                 margin: 1em;
                 padding: 0.3em;
+                
             }
+            #etiquette_desktop{
+                display: none;
+                
+            }
+            
         }
     }
+}
+
+
+@media all and (min-width : 700px){
+
+    body{
+    
+        .header_mobile{
+            display: none;
+        }
+        .header_desktop{
+            display: flex;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background: #fff;
+           // border-bottom: 1px solid #000;
+            box-shadow: 0px 10% solid #000;
+            padding-top: 1.3em;
+           // width: 80rem;
+            //height: 5.875rem;
+            background-color: #e6e6e6;
+            // box-shadow: 0px 10% solid #000;
+            // //font-size: 1.6rem;
+
+            &-logo{
+                margin: 0 2em ;
+                vertical-align: middle;
+
+                img{
+                    width: 11.688rem;
+                    height: 3.438rem;
+                    margin-left: 0.8em;
+                }
+            }
+            .nav_desktop{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                &-list, .pages {
+                   // background-color: red;
+                    color:#2d375c;
+                    list-style-type: none;
+                    text-decoration: none;
+                    display: flex;
+                   // justify-content: space-around;
+                    flex-direction: row;
+                    box-sizing: border-box;
+                    //width: 100%;
+                    //height: 100%;
+                    padding-right: 0.5em;
+                    padding-left: 0.5em;
+                    align-items: center;
+                    font-size: 1.3em;
+                   
+                    
+                }
+            }
+        }
+
+        main{
+
+            .container_principal{
+                &-element{
+                    
+                    &-title{
+                        left: 1.8em;
+                        margin-top: 2.5em;
+                    }
+
+                    &-txt{
+                        left: 4em;
+                        margin-top: 6em;
+                        width: 50%;
+                        
+                    }
+                    &-btn{
+                        height: 4.438rem;
+                        width: 14.875rem;
+                    
+                    }
+                }
+            }
+            .container_constat{
+                
+                .section_title{
+                    width: fit-content;
+                    /* margin: 1em; */
+                    margin-left: 3.7em;
+                    font-size: 2em;
+                    
+                }
+                &-card{
+                    width: 25%;
+                    margin-bottom: 1em;
+                    //float:left;
+                }
+            }
+            .container_pt{
+            
+                .section_title{
+                    width: fit-content;
+                    margin-top: 1.1em;
+                    margin-left: 3.7em;
+                    font-size: 2em;
+                }
+
+                &-element{
+                    margin-bottom: 4.4em;
+
+                    &-txt{
+                        width: 30%;
+                        font-size: 1.25em;
+                        margin-left: 3em;
+                        margin-top: 3em;
+                        
+                    }
+                    &-list{
+                        font-size: 1.25em;
+                        margin-top: 0%;
+                    }
+                    &-img{
+                        
+                        width: 52%;
+                        float: right;
+                        margin-top: -21.2em; 
+                        margin-left: 1em;                   
+                        height: 24.6em;
+                        
+                    }
+                }
+            }
+
+            .container_eq{
+
+                .section_title{
+                    width: fit-content;
+                    /* margin: 1em; */
+                    margin-left: 3.7em;
+                    font-size: 2em;
+                }
+                &-element{
+                    &-txt{
+                        font-size: 1.25em;
+                        margin-left: 3em;
+                    }
+                    #etiquette_mobile{
+                        display: none;
+                    }
+                    &-etiquette{
+                        border-radius: 0.5em;
+                        padding: 1em;
+                        margin: 1em;
+                        padding-left: 2em;
+                        padding-right: 2em;
+                        margin-top: 3em;
+                    }
+                    #etiquette_desktop{
+                        display: block;
+                        list-style: none;
+                        border-radius: 0.5em;
+                        display: inline-block;
+                        color: #C9539A ;
+                        background-color: white;
+                        border: #C9539A solid 0.1em;
+                        margin: 1em;
+                        padding: 1em;
+                        padding-left: 2em;
+                        padding-right: 2em;
+                        
+                    }
+                }
+            }
+        }
+    }    
 }
