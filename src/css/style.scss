@@ -187,49 +187,151 @@ body {
     background-size: 100% 100%;
     &_social {
         display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
         padding: 1rem;
         margin: 2rem;
+        &--links {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-content: center;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 2rem;
+            margin: 1rem;
+            filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
+            &--sqr {
+                height: 3.5rem;
+                width: 3.5rem;
+                padding: 0;
+                margin-top: 0;
+                margin: 0;
+            }
+        }
+        &--btn {
+            display: flex;
+            &--contact {
+                height: 4.5rem;
+                width: 15.625rem;
+                border-radius: 1.875rem;
+                font-family: Lato;
+                font-size: 1.25rem;
+                background-image: url("../img/hab/Degrades/ROSE.png");
+                background-size: 100% 100%;
+                color: #fff;
+                border: none;
+                margin: 2rem;
+            }
+        }
     }
-    &_social--links {
-        height: 3.75rem;
-        width: 3.75rem;
-        padding: 1rem;
-        margin-top: 2rem;
-        margin: 1rem;
-        filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
-    }
-    &_btn {
-        height: 4.5rem;
-        width: 15.625rem;
-        border-radius: 1.875rem;
-        font-family: Lato;
-        font-size: 1.25rem;
-        background-image: url("../img/hab/Degrades/ROSE.png");
-        background-size: 100% 100%;
-        color: #fff;
-        border: none;
-        margin: 2rem;
-    }
-    &_text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 2rem;
-    }
-    &_title {
-        font-family: Quicksand;
-        color: #4DC0DF;
+    &_content {
+        &--text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 2rem;
+        }
+        &--title {
+            font-family: Quicksand;
+            color: #4DC0DF;
+        }
     }
     &_copyright {
         position: absolute;
         bottom: 0.625rem;
+        &--fine {
+            font-size: 0.8rem;
+        }
+        &--fine a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
-    &_copyright-fine {
-        font-size: 0.8rem;
-    }
-    &_copyright-fine a {
-        text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+    .footer {
+        height: 18.75rem;
+        width: 100vw;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
         color: #fff;
+        background-image: url("../img/hab/Degrades/BLEUFONCE.png");
+        background-size: 100% 100%;
+        &_social {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-end;
+            justify-content: space-evenly;
+            width: 50%;
+            padding: 0rem;
+            &--links {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                margin: 0;
+                &--sqr {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    padding: 0 1.5rem;
+                    margin-top: 0;
+                    margin: 0;
+                }
+            }
+            &--btn {
+                display: flex;
+                justify-content: center;
+                &--contact {
+                    height: 4.5rem;
+                    width: 15.625rem;
+                    border-radius: 1.875rem;
+                    font-family: Lato;
+                    font-size: 1.25rem;
+                    background-image: url("../img/hab/Degrades/ROSE.png");
+                    background-size: 100% 100%;
+                    color: #fff;
+                    border: none;
+                    margin: 2rem;
+                }
+            }
+        }
+        &_content {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            &--text {
+                margin: 0;
+                padding: 0 1rem;
+                font-size: 1.25rem;
+                display: flex;
+                align-items: flex-start;
+            }
+            &--title {
+                font-family: Quicksand;
+                color: #4DC0DF;
+                font-size: 1.875rem;
+                text-align: justify;
+            }
+        }
+        &_copyright {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &--fine {
+                font-size: 0.8rem;
+            }
+            &--fine a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
     }
 }
