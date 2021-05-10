@@ -99,20 +99,20 @@ body {
         &--img {
             display: none;
         }
-    }
-    &--content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        &--title {
-            font-family: Quicksand;
-            font-size: 1.25rem;
-            margin-left: 1em;
-        }
-        &--text {
-            font-family: Lato;
-            font-size: 1.25rem;
-            margin-left: 1em;
+        &--content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &--title {
+                font-family: Quicksand;
+                font-size: 1.25rem;
+                margin-left: 1em;
+            }
+            &--text {
+                font-family: Lato;
+                font-size: 1.25rem;
+                margin-left: 1em;
+            }
         }
     }
 }
