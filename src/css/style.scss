@@ -23,9 +23,21 @@ body {
     padding: 0rem 1rem;
 }
 
+.title::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 6.25rem;
+    height: 0.313rem;
+    background: #92CFD0;
+    top: 0.125rem;
+    left: 0;
+}
+
 .subtitle {
     font-size: 1.125rem;
     padding: 0rem 1rem;
+    line-height: 1.5rem;
 }
 
 
@@ -63,30 +75,43 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .benefits {
-    height: 100vh;
-    /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+    height: auto;
     margin: 0 auto;
     width: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 0;
+    &_desktop {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
     &_container {
         border-radius: 1.875rem;
         background-color: #FFF;
-        height: 50vh;
+        height: auto;
         box-shadow: 0 3px 4px 0 #C8C8C8;
         margin: 1rem;
+        &--img {
+            display: none;
+        }
+    }
+    &--content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         &--title {
             font-family: Quicksand;
-            font-size: 1.3rem;
-            text-align: center;
-            margin-top: 1em;
-            margin-bottom: 2.5rem;
+            font-size: 1.25rem;
+            margin-left: 1em;
         }
         &--text {
             font-family: Lato;
-            font-size: 1rem;
+            font-size: 1.25rem;
             margin-left: 1em;
         }
     }
@@ -141,6 +166,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: grab;
+}
+
+.swiper-slide:active {
+    cursor: grabbing;
 }
 
 .swiper-button-next,
@@ -153,11 +183,9 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .partners {
-    height: 100vh;
-    /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
-    margin: 0 auto;
+    height: auto;
     width: 100%;
+    padding-bottom: 3rem;
     &_container {
         display: flex;
         align-items: center;
@@ -193,8 +221,8 @@ body {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        padding: 1rem;
-        margin: 2rem;
+        padding: 1rem 0;
+        margin: 0;
         &--links {
             display: flex;
             justify-content: center;
@@ -235,7 +263,7 @@ body {
             flex-direction: column;
             align-items: center;
             flex-wrap: wrap;
-            margin: 2rem;
+            margin: 0;
         }
         &--title {
             font-family: Quicksand;
@@ -259,28 +287,41 @@ body {
 }
 
 
-/* Desktop footer
+/* Desktop
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
+    /* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .title {
+        padding: 0 7.5rem;
+        font-size: 1.875rem;
+    }
+    .subtitle {
+        padding: 0 3.75rem;
+        font-size: 1.25rem;
+    }
     .footer {
         height: 18.75rem;
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-start;
+        padding-top: 2rem;
         &_social {
             display: flex;
+            justify-content: flex-end;
             width: 50%;
             padding: 0rem;
             &--links {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 margin: 0;
                 padding: 0;
                 margin: 0;
                 &--sqr {
-                    padding: 0 1.5rem;
+                    padding: 0 3.5rem 0 2rem;
                 }
             }
             &--btn {
@@ -294,6 +335,7 @@ body {
             width: 50%;
             justify-content: space-evenly;
             flex-direction: row-reverse;
+            padding-bottom: 5rem;
             &--text {
                 margin: 0;
                 padding: 0 1rem;
@@ -303,6 +345,102 @@ body {
             }
             &--title {
                 font-size: 1.875rem;
+            }
+        }
+    }
+    /* Section nos partenaires scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .partners {
+        height: auto;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        &_container {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 5.5rem;
+        }
+        &_container--form {
+            height: 10.875rem;
+            width: 13.5rem;
+        }
+    }
+    /* Section témoignages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .testimonials {
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &_container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &--img {
+                width: 11.25rem;
+                height: 11.25rem;
+                border-radius: 6rem;
+                margin-left: 9.063rem;
+                background-color: #C8C8C8;
+            }
+            &--text {
+                padding: 1rem 4rem;
+            }
+            &--content {
+                width: 60%;
+                padding: 1rem;
+            }
+        }
+    }
+    /* Section les avantages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .benefits {
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        padding-top: 11.625rem;
+        &_desktop {
+            display: flex;
+            flex-direction: row;
+            margin: 0 2.6rem;
+            height: auto;
+            width: auto;
+        }
+        &_container {
+            display: flex;
+            width: 50%;
+            border-radius: 1.875rem;
+            background-color: #FFF;
+            height: auto;
+            box-shadow: 0 3px 4px 0 #C8C8C8;
+            margin-top: 2.5rem;
+            &--img {
+                display: block;
+                height: auto;
+                width: 35%;
+                border-radius: 1.875rem;
+            }
+            &--content {
+                display: flex;
+                flex-direction: column;
+                &--title {
+                    font-family: Quicksand;
+                    font-size: 1.25rem;
+                    margin-right: 1rem;
+                    margin-bottom: 2.5rem;
+                    margin-left: 1.5rem;
+                }
+                &--text {
+                    font-family: Lato;
+                    font-size: 1.25rem;
+                    margin-right: 1rem;
+                    margin-left: 1.5rem;
+                    line-height: 20px;
+                }
             }
         }
     }
