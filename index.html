@@ -13,15 +13,145 @@
 </head>
 
 <body>
-    <!-- Menu de navigation 
+  <!-- Menu de navigation 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <header>
-        <nav>
-        </nav>
-    </header>
-    <!-- Contenu principal de la page
+  <header class="header">
+    <div class="header_mobile">
+      <div class="header_mobile-logo">
+        <img id="#" src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability">
+      </div>
+      <div id="header_menu-burger">
+        <a>
+          <img id="##" src="./src/img/hab/bars-solid.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <div id="nav_mobile" class="appear">
+      <ul class="nav_mobile-list">
+        <li class="nav_mobile-list-element">
+          <a class="a" href="">Accueil</a>
+        </li>
+        <li class="nav_mobile-list-element">
+          <a class="a" href="">A propos de nous</a>
+        </li>
+        <li class="nav_mobile-list-element">
+          <a class="a" href="">Actualités</a>
+        </li>
+        <li class="nav_mobile-list-element">
+          <a class="a" href="">Nous contacter</a>
+        </li>
+        <li class="nav_mobile-list-element">
+          <a class="a" href="">EN</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header_desktop">
+      <div class="header_desktop-logo">
+        <img src="./src/img/hab/Logo/Logo_horizontal.png" alt="logo Desktop">
+      </div>
+      <nav class="nav_desktop">
+        <ul class="nav_desktop-list">
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">Accueil</a>
+          </li>
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">A propos de nous</a>
+          </li>
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">Actualités</a>
+          </li>
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">Nous contacter</a>
+          </li>
+          <li class="nav_desktop-list-element">
+            <a class="pages" href="">EN</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Contenu principal de la page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <main>
+  <main>
+    <div class="main_bg">
+      <!-- Ajouter l'image principale de la page -->
+    </div>
+    <section class="container_principal">
+      <div class="container_principal-element">
+        <h1 class="container_principal-element-title">H'ability</h1>
+      </div>
+      <div class="container_principal-element">
+        <p class="container_principal-element-txt">La solution ludique de réalité virtuelle immersives spécialement
+          conçue pour la rééducation fonctionnelle du membre supérieur.</p>
+      </div>
+      <div class="container_principal-element">
+        <button class="container_principal-element-btn">Nous contacter</button>
+      </div>
+    </section>
+    <!-- Contenu partie constat
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section class="container_constat">
+      <h2 class="section_title"> Le Constat</h2>
+      <div class="container_constat-card">
+        <div class="container_constat-card-img">
+          <!-- Ajouter image constat -->
+        </div>
+        <p class="container_constat-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis
+          sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. </p>
+      </div>
+      <div class="container_constat-card">
+        <div class="container_constat-card-img">
+          <!-- Ajouter image constat -->
+        </div>
+        <p class="container_constat-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis
+          sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. </p>
+      </div>
+      <div class="container_constat-card">
+        <div class="container_constat-card-img">
+          <!-- Ajouter image constat -->
+        </div>
+        <p class="container_constat-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis
+          sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. </p>
+      </div>
+    </section>
+    <!-- Contenu partie les pathologies traitées 'pt'
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section class="container_pt">
+      <h2 class="section_title">Les pathologies traitées</h2>
+      <div class="container_pt-element">
+        <p class="container_pt-element-txt">Entrainant des troubles moteur du membre supérieur et troubles cognitifs</p>
+        <ul>
+          <li class="container_pt-element-list"> - AVC</li>
+          <li class="container_pt-element-list"> - Traumatisme cranien</li>
+          <li class="container_pt-element-list"> - Paralysie cérébrale</li>
+          <li class="container_pt-element-list"> - Amputation</li>
+        </ul>
+        <div class="container_pt-element-img">
+          <!-- Ajouter image section pathologies traitées -->
+        </div>
+      </div>
+    </section>
+    <!-- Contenu partie les exercices du quotidien 'eq'
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section class="container_eq">
+      <h2 class="section_title"> Les exercices du quotidien</h2>
+      <div class="container_eq-element">
+        <p class="container_eq-element-txt"> Choisissez dans notre bibliotheque de jeux les exercices souhaités en
+          fonction des capacités et objectifs de rééducation...</p>
+        <p class="container_eq-element-txt"> La réalité virtuelle propose un large panel de jeux possible en 3D!</p>
+        <ul class="list_eq">
+          <li class="container_eq-element-etiquette" id="etiquette_desktop">EXPLORATION VISUELLE</li>
+          <li class="container_eq-element-etiquette">PREHENSION FINE</li>
+          <li class="container_eq-element-etiquette">AMPLITUDE</li>
+          <li class="container_eq-element-etiquette">MEMORISATION</li>
+          <li class="container_eq-element-etiquette" id="equilibre">EQUILIBRE</li>
+          <li class="container_eq-element-etiquette" id="etiquette_mobile">EXPLORATION VISUELLE</li>
+        </ul>
+      </div>
+    </section>
         <!-- Section notre solution
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="solution">
