@@ -51,16 +51,24 @@ body {
      margin-bottom: 5px;
     }
 
-    .nav_mobile{
-        display: block;
-    }
-    .nav_mobile-list, .accordeon{
-        display:none;
-        list-style: none;
-        text-decoration: none;
-
-    }
 } 
+
+.appear{
+    display:none;
+}
+.nav_mobile-list{
+    &-element{
+        
+        list-style: none;
+    }  
+}
+.a{
+    text-decoration: none;
+    position: relative;
+}
+// .nav_mobile{
+//     display: block;
+// }
     // main + sections 
 
 main{
@@ -82,7 +90,6 @@ main{
         //section principale 
 
     .container_principal{
- 
          &-element{
 
 
@@ -156,10 +163,12 @@ main{
                 height: 8rem;
                 border-radius: 65px;
                 background-color:rgb(180, 180, 180);
+                margin-left: auto;
+                margin-right: auto;
             }
             &-txt{
                 font-family: "Lato";
-                font-size: 1em;
+                font-size: 1.25em;
             }
         }
     }
@@ -169,6 +178,7 @@ main{
         background-color: rgb(238, 238, 238);
         padding-bottom: 0.01rem;
         padding-top: 1em;
+        
         .section_title{
             font-size: 1.5em;
             margin-left: 1em;
@@ -184,15 +194,17 @@ main{
                 margin-bottom: 2em;
             }
             &-list{
+                
                 font-size: 1em;
                 list-style: none;
-                margin-top: 0.5em;//a retirer si l image prend tte la largeure de la page
+                margin-top: 0.5rem;
                 
             }
             &-img{
-                height: 32.1rem;
-                background-color:rgb(206, 206, 206);
-                margin: 0.5rem;
+                 width: 100%;
+                 height: 33rem;
+                 background-color:rgb(206, 206, 206);
+ 
             }
         }
     }
@@ -211,17 +223,28 @@ main{
                 margin: 1em;
                 margin-bottom: 1em;
             }
-            &-etiquette{
-                list-style: none;
-                border-radius: 0.2em;
-                display: inline-block;
-                color: #C9539A ;
-                background-color: white;
-                border: #C9539A solid 0.1em;
-                margin: 1em;
-                padding: 0.3em;
-                
+            .list_eq{
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .container_eq-element-etiquette{
+                    list-style: none;
+                    font-family: "Quicksand";
+                    border-radius: 0.2em;
+                    display: inline-block;
+                    color: #C9539A ;
+                    background-color: white;
+                    border: #C9539A solid 0.1em;
+                    margin: 1em;
+                    padding: 0.5em;     
+                }
             }
+           
             #etiquette_desktop{
                 display: none;
                 
@@ -232,7 +255,7 @@ main{
 }
 
 
-@media all and (min-width : 700px){
+@media all and (min-width : 1024px){
 
     body{
     
@@ -244,15 +267,10 @@ main{
             width: 100%;
             display: flex;
             justify-content: space-between;
-            background: #fff;
-           // border-bottom: 1px solid #000;
             box-shadow: 0px 10% solid #000;
             padding-top: 1.3em;
-           // width: 80rem;
-            //height: 5.875rem;
             background-color: #e6e6e6;
-            // box-shadow: 0px 10% solid #000;
-            // //font-size: 1.6rem;
+            
 
             &-logo{
                 margin: 0 2em ;
@@ -270,24 +288,22 @@ main{
                     align-items: center;
 
                 &-list, .pages {
-                   // background-color: red;
                     color:#2d375c;
                     list-style-type: none;
                     text-decoration: none;
                     display: flex;
-                   // justify-content: space-around;
                     flex-direction: row;
                     box-sizing: border-box;
-                    //width: 100%;
-                    //height: 100%;
                     padding-right: 0.5em;
                     padding-left: 0.5em;
                     align-items: center;
                     font-size: 1.3em;
-                   
                     
                 }
             }
+        }
+        .nav_mobile-list, .appear{
+            display:none;
         }
 
         main{
@@ -307,9 +323,13 @@ main{
                         
                     }
                     &-btn{
+                        position: absolute;
+                        left: 73%;
+                        top:90%;
                         height: 4.438rem;
                         width: 14.875rem;
-                    
+                        float: right;
+                        cursor: pointer;
                     }
                 }
             }
@@ -323,13 +343,20 @@ main{
                     
                 }
                 &-card{
-                    width: 25%;
-                    margin-bottom: 1em;
-                    //float:left;
+                    width: 20em;
+                    height: 20em;
+                    margin-bottom:7em;
+                    display: inline-block;
+                    margin-left: 2em;
+                    margin-right: 2em;
+                    border-radius: 2em;
                 }
+
             }
             .container_pt{
-            
+                display: inline-block;
+                position: relative;
+                width: 100%;
                 .section_title{
                     width: fit-content;
                     margin-top: 1.1em;
@@ -338,28 +365,31 @@ main{
                 }
 
                 &-element{
-                    margin-bottom: 4.4em;
+                  //  margin-bottom: 7em;
 
                     &-txt{
-                        width: 30%;
+                        width: 40%;
                         font-size: 1.25em;
                         margin-left: 3em;
-                        margin-top: 3em;
+                        margin-top: 2em;
                         
                     }
                     &-list{
                         font-size: 1.25em;
                         margin-top: 0%;
+                        margin-left: 1em;
                     }
                     &-img{
+                    background-color:rgb(206, 206, 206);
+                    left: 48%;
+                    height: 29em;
+                    width: 40em;
+                    display: flex;
+                    margin-left: auto;
+                    margin-top: -20.5em;
                         
-                        width: 52%;
-                        float: right;
-                        margin-top: -21.2em; 
-                        margin-left: 1em;                   
-                        height: 24.6em;
-                        
-                    }
+                    }   
+                    
                 }
             }
 
@@ -367,7 +397,7 @@ main{
 
                 .section_title{
                     width: fit-content;
-                    /* margin: 1em; */
+                     margin-bottom: 2.5em; 
                     margin-left: 3.7em;
                     font-size: 2em;
                 }
@@ -379,16 +409,21 @@ main{
                     #etiquette_mobile{
                         display: none;
                     }
-                    &-etiquette{
-                        border-radius: 0.5em;
-                        padding: 1em;
-                        margin: 1em;
-                        padding-left: 2em;
-                        padding-right: 2em;
-                        margin-top: 3em;
+                    .list_eq{
+
+                        .container_eq-element-etiquette{
+                            border-radius: 0.5em;
+                            padding: 1em;
+                            margin: 1em;
+                            padding-left: 2em;
+                            padding-right: 2em;
+                            margin-top: 3em;
+                            margin-bottom: 3em;
+                        }
                     }
                     #etiquette_desktop{
                         display: block;
+                        font-family: "Quicksand";
                         list-style: none;
                         border-radius: 0.5em;
                         display: inline-block;
@@ -396,6 +431,8 @@ main{
                         background-color: white;
                         border: #C9539A solid 0.1em;
                         margin: 1em;
+                        margin-bottom: 3em;
+                        margin-top: 3em;
                         padding: 1em;
                         padding-left: 2em;
                         padding-right: 2em;

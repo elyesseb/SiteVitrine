@@ -1,14 +1,18 @@
-let navMobile = document.querySelector("#nav_mobile");
 
-let menuBtn = document.querySelector("#btn_menu-burger");
-    console.log(menuBtn);
 
- for (let i = 0; i < menuBtn.lenght; i++) {
 
-     console.log(menuBtn[i]);
+     let navMobile = document.getElementById("nav_mobile");
+     let menuBtn = document.getElementById("header_menu-burger");
 
-     menuBtn[i].addEventListener("click", function(){
-         navMobile[i].classList.toggle("nav_mobile-list-element")
+     menuBtn.addEventListener("click", function(){
+       // console.log(menuBtn);
+        navMobile.classList.toggle("appear");
      })
+     
+    //  menuBtn.addEventListener("click", function(){
+    //      console.log(menuBtn);
+    //     navMobile.classList.toggle("appear");
+       
+    //  })
     
- }
+ 
