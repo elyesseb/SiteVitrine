@@ -1,0 +1,854 @@
+/* Police de caractère
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../font/Quicksand-Bold.ttf") format("woff");
+}
+
+body {
+    background-color: #fff;
+    color: #2D375C;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+.header_desktop {
+    display: none;
+}
+
+
+/* Header mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.header_mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: 1px solid #000;
+    box-shadow: 0px 10% solid #000;
+    .header_mobile-logo {
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        img {
+            width: 120px;
+            height: 35px;
+            padding-top: 5px;
+        }
+    }
+    #header_menu-burger {
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+        padding-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.appear {
+    display: none;
+}
+
+.nav_mobile-list {
+    &-element {
+        list-style: none;
+    }
+}
+
+.a {
+    text-decoration: none;
+    position: relative;
+}
+
+
+/* Main et sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+main {
+    height: 100vh;
+    /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    width: 100%;
+    .main_bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(200 200 200);
+        position: relative;
+        display: flex;
+    }
+    /* Section principale
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .container_principal {
+        &-element {
+            &-title {
+                position: absolute;
+                left: 5%;
+                top: 17%;
+                z-index: 1;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 5;
+                font-size: 4.375rem;
+            }
+            &-txt {
+                position: absolute;
+                left: 5%;
+                top: 36%;
+                z-index: 1;
+                font-family: 'Lano', sans-serif;
+                font-weight: 5;
+                font-size: 2em;
+            }
+            &-btn {
+                position: absolute;
+                left: 10%;
+                top: 83%;
+                z-index: 1;
+                width: 80%;
+                height: 8%;
+                font-family: 'Lato', sans-serif;
+                color: #fff;
+                font-weight: 5;
+                font-size: 2em;
+                border-radius: 1.875rem;
+                background: url(/src/img/hab/Degrades/ROSE.png);
+                background-size: 100% 100%;
+                border: none;
+            }
+        }
+    }
+    /* Section constat
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .container_constat {
+        .section_title {
+            font-size: 1.5em;
+            margin-left: 1em;
+            margin: 1.5em;
+        }
+        &-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+            margin: 1em;
+            margin-bottom: 4.2em;
+            padding-top: 5vh;
+            border-radius: 1rem;
+            position: relative;
+            text-align: left;
+            box-shadow: 0em 0em 1em rgb(223, 222, 222);
+            &-img {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 65px;
+                background-color: rgb(180, 180, 180);
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &-txt {
+                font-family: "Lato";
+                font-size: 1.25em;
+            }
+        }
+    }
+    /* Section pathologies traitées
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .container_pt {
+        background-color: rgb(238, 238, 238);
+        padding-bottom: 0.01rem;
+        padding-top: 1em;
+        .section_title {
+            font-size: 1.5em;
+            margin-left: 1em;
+            margin: 1.5em;
+        }
+        &-element {
+            &-txt {
+                font-size: 1em;
+                margin: 1em;
+                margin-bottom: 2em;
+            }
+            &-list {
+                font-size: 1em;
+                list-style: none;
+                margin-top: 0.5rem;
+            }
+            &-img {
+                width: 100%;
+                height: 33rem;
+                background-color: rgb(206, 206, 206);
+            }
+        }
+    }
+    /* Section exercices du quotidien
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .container_eq {
+        .section_title {
+            font-size: 1.5em;
+            margin-left: 1em;
+            padding-top: 1rem;
+        }
+        &-element {
+            &-txt {
+                font-size: 1em;
+                margin: 1em;
+                margin-bottom: 1em;
+            }
+            .list_eq {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                .container_eq-element-etiquette {
+                    list-style: none;
+                    font-family: "Quicksand";
+                    border-radius: 0.2em;
+                    display: inline-block;
+                    color: #C9539A;
+                    background-color: #fff;
+                    border: #C9539A solid 0.1em;
+                    margin: 1em;
+                    padding: 0.5em;
+                }
+            }
+            #etiquette_desktop {
+                display: none;
+            }
+        }
+    }
+}
+
+.title {
+    font-family: Quicksand;
+    font-size: 2rem;
+    padding: 0rem 1rem;
+}
+
+.title::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 6.25rem;
+    height: 0.313rem;
+    background: #92CFD0;
+    top: 0.125rem;
+    left: 0;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    padding: 0rem 1rem;
+    line-height: 1.5rem;
+}
+
+
+/* Mobile first
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Section notre solution
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.solution {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--img {
+            width: 90vw;
+            height: 35vh;
+            border-radius: 1.875rem;
+            background-color: #C8C8C8;
+        }
+    }
+}
+
+
+/* Section les avantages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.benefits {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    &_desktop {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    &_container {
+        border-radius: 1.875rem;
+        background-color: #FFF;
+        height: auto;
+        box-shadow: 0 3px 4px 0 #C8C8C8;
+        margin: 1rem;
+        &--img {
+            display: none;
+        }
+        &--content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &--title {
+                font-family: Quicksand;
+                font-size: 1.25rem;
+                margin-left: 1em;
+            }
+            &--text {
+                font-family: Lato;
+                font-size: 1.25rem;
+                margin-left: 1em;
+            }
+        }
+    }
+}
+
+
+/* Section témoignages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.testimonials {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--img {
+            width: 11.25rem;
+            height: 11.25rem;
+            border-radius: 6rem;
+            background-color: #C8C8C8;
+        }
+        &--text {
+            padding: 1rem 4rem;
+        }
+        &--content {
+            display: block;
+            width: 100%;
+            padding: 1rem 4rem;
+            font-weight: bold;
+        }
+        &--name,
+        &--job {
+            margin: 1rem auto auto 4rem;
+            font-family: Quicksand;
+        }
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+
+.swiper-slide:active {
+    cursor: grabbing;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000!important;
+}
+
+
+/* Section nos partenaires scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.partners {
+    height: auto;
+    width: 100%;
+    padding-bottom: 3rem;
+    &_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &_container--form {
+        height: 10.5rem;
+        width: 13rem;
+        border-radius: 1.875rem;
+        margin: 1rem;
+        background-color: #C8C8C8;
+    }
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+    position: absolute;
+    height: 100vh;
+    /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-image: url("../img/hab/Degrades/BLEUFONCE.png");
+    background-size: 100% 100%;
+    &_social {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 0;
+        &--links {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-content: center;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 2rem;
+            margin: 1rem;
+            filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
+            &--sqr {
+                height: 3.5rem;
+                width: 3.5rem;
+                padding: 0;
+                margin-top: 0;
+                margin: 0;
+            }
+        }
+        &--btn {
+            display: flex;
+            &--contact {
+                height: 4.5rem;
+                width: 15.625rem;
+                border-radius: 1.875rem;
+                font-family: Lato;
+                font-size: 1.25rem;
+                background-image: url("../img/hab/Degrades/ROSE.png");
+                background-size: 100% 100%;
+                color: #fff;
+                border: none;
+                margin: 2rem;
+            }
+        }
+    }
+    &_content {
+        &--text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        &--title {
+            font-family: Quicksand;
+            color: #4DC0DF;
+        }
+    }
+    &_copyright {
+        position: absolute;
+        bottom: 0.625rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &--fine {
+            font-size: 0.8rem;
+        }
+        &--fine a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+
+/* Desktop
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (min-width: 1024px) {
+    body {
+        .header_mobile {
+            display: none;
+        }
+        .header_desktop {
+            display: flex;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 10% solid #000;
+            padding-top: 1.3em;
+            background-color: #e6e6e6;
+            &-logo {
+                margin: 0 2em;
+                vertical-align: middle;
+                img {
+                    width: 11.688rem;
+                    height: 3.438rem;
+                    margin-left: 0.8em;
+                }
+            }
+            .nav_desktop {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                &-list,
+                .pages {
+                    color: #2d375c;
+                    list-style-type: none;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: row;
+                    box-sizing: border-box;
+                    padding-right: 0.5em;
+                    padding-left: 0.5em;
+                    align-items: center;
+                    font-size: 1.3em;
+                }
+            }
+        }
+        .nav_mobile-list,
+        .appear {
+            display: none;
+        }
+        main {
+            .container_principal {
+                &-element {
+                    &-title {
+                        left: 1.8em;
+                        margin-top: 2.5em;
+                    }
+                    &-txt {
+                        left: 4em;
+                        margin-top: 6em;
+                        width: 50%;
+                    }
+                    &-btn {
+                        position: absolute;
+                        left: 73%;
+                        top: 90%;
+                        height: 4.438rem;
+                        width: 14.875rem;
+                        float: right;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .container_constat {
+                .section_title {
+                    width: fit-content;
+                    margin-left: 3.7em;
+                    font-size: 2em;
+                }
+                &-card {
+                    width: 20em;
+                    height: 20em;
+                    margin-bottom: 7em;
+                    display: inline-block;
+                    margin-left: 2em;
+                    margin-right: 2em;
+                    border-radius: 2em;
+                }
+            }
+            .container_pt {
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                .section_title {
+                    width: fit-content;
+                    margin-top: 1.1em;
+                    margin-left: 3.7em;
+                    font-size: 2em;
+                }
+                &-element {
+                    &-txt {
+                        width: 40%;
+                        font-size: 1.25em;
+                        margin-left: 3em;
+                        margin-top: 2em;
+                    }
+                    &-list {
+                        font-size: 1.25em;
+                        margin-top: 0%;
+                        margin-left: 1em;
+                    }
+                    &-img {
+                        background-color: rgb(206, 206, 206);
+                        left: 48%;
+                        height: 29em;
+                        width: 40em;
+                        display: flex;
+                        margin-left: auto;
+                        margin-top: -20.5em;
+                    }
+                }
+            }
+            .container_eq {
+                .section_title {
+                    width: fit-content;
+                    margin-bottom: 2.5em;
+                    margin-left: 3.7em;
+                    font-size: 2em;
+                }
+                &-element {
+                    &-txt {
+                        font-size: 1.25em;
+                        margin-left: 3em;
+                    }
+                    #etiquette_mobile {
+                        display: none;
+                    }
+                    .list_eq {
+                        .container_eq-element-etiquette {
+                            border-radius: 0.5em;
+                            padding: 1em;
+                            margin: 1em;
+                            padding-left: 2em;
+                            padding-right: 2em;
+                            margin-top: 3em;
+                            margin-bottom: 3em;
+                        }
+                    }
+                    #etiquette_desktop {
+                        display: block;
+                        font-family: "Quicksand";
+                        list-style: none;
+                        border-radius: 0.5em;
+                        display: inline-block;
+                        color: #C9539A;
+                        background-color: white;
+                        border: #C9539A solid 0.1em;
+                        margin: 1em;
+                        margin-bottom: 3em;
+                        margin-top: 3em;
+                        padding: 1em;
+                        padding-left: 2em;
+                        padding-right: 2em;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        /* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .title {
+            padding: 0 7.5rem;
+            font-size: 1.875rem;
+        }
+        .subtitle {
+            padding: 0 3.75rem;
+            font-size: 1.25rem;
+        }
+        .footer {
+            height: 18.75rem;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            padding-top: 2rem;
+            &_social {
+                display: flex;
+                justify-content: flex-end;
+                width: 50%;
+                padding: 0rem;
+                &--links {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 0;
+                    padding: 0;
+                    margin: 0;
+                    &--sqr {
+                        padding: 0 3.5rem 0 2rem;
+                    }
+                }
+                &--btn {
+                    &--contact {
+                        cursor: pointer;
+                    }
+                }
+            }
+            &_content {
+                display: flex;
+                width: 50%;
+                justify-content: space-evenly;
+                flex-direction: row-reverse;
+                padding-bottom: 5rem;
+                &--text {
+                    margin: 0;
+                    padding: 0 1rem;
+                    font-size: 1.25rem;
+                    display: flex;
+                    align-items: flex-start;
+                }
+                &--title {
+                    font-size: 1.875rem;
+                }
+            }
+        }
+        /* Section nos partenaires scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .partners {
+            height: auto;
+            width: 100%;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            &_container {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                margin-top: 5.5rem;
+            }
+            &_container--form {
+                height: 10.875rem;
+                width: 13.5rem;
+            }
+        }
+        /* Section témoignages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .testimonials {
+            height: auto;
+            margin: 0 auto;
+            margin-top: 10rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &_container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                &--img {
+                    width: 11.25rem;
+                    height: 11.25rem;
+                    border-radius: 6rem;
+                    margin-left: 9.063rem;
+                    background-color: #C8C8C8;
+                }
+                &--text {
+                    padding: 1rem 4rem;
+                }
+                &--content {
+                    width: 60%;
+                    padding: 1rem;
+                }
+            }
+        }
+        /* Section les avantages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .benefits {
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            background-color: #fff;
+            padding-top: 11.625rem;
+            &_desktop {
+                display: flex;
+                flex-direction: row;
+                margin: 0 2.6rem;
+                height: auto;
+                width: auto;
+            }
+            &_container {
+                display: flex;
+                width: 50%;
+                border-radius: 1.875rem;
+                background-color: #FFF;
+                height: auto;
+                box-shadow: 0 3px 4px 0 #C8C8C8;
+                margin-top: 2.5rem;
+                &--img {
+                    display: block;
+                    height: auto;
+                    width: 35%;
+                    border-radius: 1.875rem;
+                }
+                &--content {
+                    display: flex;
+                    flex-direction: column;
+                    &--title {
+                        font-family: Quicksand;
+                        font-size: 1.25rem;
+                        margin-right: 1rem;
+                        margin-bottom: 2.5rem;
+                        margin-left: 1.5rem;
+                    }
+                    &--text {
+                        font-family: Lato;
+                        font-size: 1.25rem;
+                        margin-right: 1rem;
+                        margin-left: 1.5rem;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        /* Section notre solution
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .solution {
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            &_container {
+                margin: 4.75rem 0;
+                &--img {
+                    width: 50%;
+                    height: 35vh;
+                    border-radius: 1.875rem;
+                    background-color: #C8C8C8;
+                }
+            }
+            &_container:nth-of-type(1) {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-around;
+            }
+            &_container:nth-of-type(2) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+            &_container:nth-of-type(3) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
