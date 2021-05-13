@@ -1,0 +1,483 @@
+/* Police de caractère
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../font/Quicksand-Bold.ttf") format("woff");
+}
+
+body {
+    background-color: #fff;
+    color: #2D375C;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+.title {
+    font-family: Quicksand;
+    font-size: 2rem;
+    padding: 0rem 1rem;
+    &-right {
+        font-family: Quicksand;
+        font-size: 2rem;
+        padding: 0rem 1rem;
+        text-align: right;
+        &::after {
+            position: relative;
+            content: '';
+            display: block;
+            width: 6.25rem;
+            height: 0.313rem;
+            background: #92CFD0;
+            margin: auto 0 auto auto;
+        }
+    }
+    &-center {
+        font-family: Quicksand;
+        font-size: 2rem;
+        padding: 0rem 1rem;
+        text-align: center;
+        &::after {
+            position: relative;
+            content: '';
+            display: block;
+            width: 6.25rem;
+            height: 0.313rem;
+            background: #92CFD0;
+            margin: 0 auto auto auto;
+        }
+    }
+}
+
+.title::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 6.25rem;
+    height: 0.313rem;
+    background: #92CFD0;
+    top: 0.125rem;
+    left: 0;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    padding: 0rem 1rem;
+    line-height: 1.5rem;
+}
+
+
+/* Mobile first
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.header_mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E6E6E6;
+    .header_mobile-logo {
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        img {
+            width: 120px;
+            height: 35px;
+            padding-top: 5px;
+        }
+    }
+    #header_menu-burger {
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+        padding-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.header_desktop {
+    display: none;
+}
+
+.appear {
+    display: none;
+}
+
+.nav_mobile-list {
+    &-element {
+        list-style: none;
+        line-height: 1.5rem;
+    }
+}
+
+.a {
+    text-decoration: none;
+    position: relative;
+    color: #2D375C;
+    text-transform: uppercase;
+}
+
+
+/* Section notre histoire
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.history {
+    margin-top: unset;
+    margin-bottom: 5rem;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--img {
+            height: 11.875rem;
+            width: 90%;
+            margin-top: 1.25rem;
+            border-radius: 0.5rem;
+            background-color: #C8C8C8;
+        }
+    }
+}
+
+
+/* Section notre ambition
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.ambition {
+    width: 100%;
+    height: auto;
+    background-color: #F4F4F4;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--content {
+            width: 90%;
+            height: 20.625rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 3px 4px 0 #C8C8C8;
+            margin: 1.25rem;
+            &--img {
+                width: 100%;
+                height: 50%;
+                background-color: #C8C8C8;
+                border-radius: 0.5rem;
+                z-index: 1;
+            }
+            &--text {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/* Section notre equipe
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.team {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    &_container {
+        padding-top: 2rem;
+        &--content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 4rem 0;
+            &--img {
+                width: 14.375rem;
+                height: 14.375rem;
+                border-radius: 50%;
+                background-color: #C8C8C8;
+                margin-bottom: 4.375rem;
+            }
+            &--text {
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+/* Section nos valeurs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.value {
+    &_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &--img {
+            margin: 2rem;
+            width: 8.75rem;
+            width: 8.75rem;
+            filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(237deg) brightness(109%) contrast(100%);
+            background: url(/src/img/hab/Ellipse.png);
+            background-size: 100% 100%;
+        }
+        &--text {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    height: 100vh;
+    /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-image: url("../img/hab/Degrades/BLEUFONCE.png");
+    background-size: 100% 100%;
+    &_social {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 0;
+        &--links {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-content: center;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 2rem;
+            margin: 1rem;
+            filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
+            &--sqr {
+                height: 3.5rem;
+                width: 3.5rem;
+                padding: 0;
+                margin-top: 0;
+                margin: 0;
+            }
+        }
+        &--btn {
+            display: flex;
+            &--contact {
+                height: 4.5rem;
+                width: 15.625rem;
+                border-radius: 1.875rem;
+                font-family: Lato;
+                font-size: 1.25rem;
+                background-image: url("../img/hab/Degrades/ROSE.png");
+                background-size: 100% 100%;
+                color: #fff;
+                border: none;
+                margin: 2rem;
+            }
+        }
+    }
+    &_content {
+        &--text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        &--title {
+            font-family: Quicksand;
+            color: #4DC0DF;
+        }
+    }
+    &_copyright {
+        position: absolute;
+        bottom: 0.625rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &--fine {
+            font-size: 0.8rem;
+        }
+        &--fine a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .header_mobile {
+        display: none;
+    }
+    .header_desktop {
+        display: flex;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 10% solid #000;
+        padding-top: 1.3em;
+        background-color: #e6e6e6;
+        &-logo {
+            margin: 0 2em;
+            vertical-align: middle;
+            img {
+                width: 11.688rem;
+                height: 3.438rem;
+                margin-left: 0.8em;
+            }
+        }
+        .nav_desktop {
+            display: flex;
+            &-list,
+            .pages {
+                color: #2d375c;
+                list-style-type: none;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                box-sizing: border-box;
+                padding: 0 30px 0 0px;
+                font-size: 1.563rem;
+            }
+        }
+    }
+    /* Les titres
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .title {
+        padding: 0 7.5rem;
+        font-size: 1.875rem;
+        &-right {
+            padding: 0 7.5rem;
+        }
+    }
+    .subtitle {
+        padding: 0 3.75rem;
+        font-size: 1.25rem;
+    }
+    /* Section notre histoire
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .history {
+        margin-top: 7rem;
+        &_container {
+            flex-direction: row-reverse;
+            margin-top: 3.625rem;
+            &--img {
+                margin-left: 1.25rem;
+                margin-top: 0;
+            }
+        }
+    }
+    /* Section notre ambition
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .ambition {
+        width: 100%;
+        height: auto;
+        background-color: #F4F4F4;
+        &_container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &--content {
+                width: 90%;
+                height: 20.625rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 3px 4px 0 #C8C8C8;
+                margin: 1.25rem;
+                &--img {
+                    width: 100%;
+                    height: 50%;
+                    background-color: #C8C8C8;
+                    border-radius: 0.5rem;
+                    z-index: 1;
+                }
+                &--text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    /* Section notre equipe
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .team {
+        padding-top: 8rem;
+        &_container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 2rem;
+            &--content {
+                width: 50%;
+                margin: 4rem 0;
+                &--img {
+                    width: 14.375rem;
+                    height: 14.375rem;
+                    border-radius: 50%;
+                    background-color: #C8C8C8;
+                }
+                &--text {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    /* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .footer {
+        height: 18.75rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-top: 2rem;
+        &_social {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            padding: 0rem;
+            &--links {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0;
+                padding: 0;
+                margin: 0;
+                &--sqr {
+                    padding: 0 3.5rem 0 2rem;
+                }
+            }
+            &--btn {
+                &--contact {
+                    cursor: pointer;
+                }
+            }
+        }
+        &_content {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            padding-bottom: 5rem;
+            &--text {
+                margin: 0;
+                padding: 0 1rem;
+                font-size: 1.25rem;
+                display: flex;
+                align-items: flex-start;
+            }
+            &--title {
+                font-size: 1.875rem;
+            }
+        }
+    }
+}
