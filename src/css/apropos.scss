@@ -15,6 +15,8 @@ body {
     background-color: #fff;
     color: #2D375C;
     font-family: Lato, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
 }
 
 .title {
@@ -26,6 +28,7 @@ body {
         font-size: 2rem;
         padding: 0rem 1rem;
         text-align: right;
+        top: 0.5rem;
         &::after {
             position: relative;
             content: '';
@@ -33,7 +36,7 @@ body {
             width: 6.25rem;
             height: 0.313rem;
             background: #92CFD0;
-            margin: auto 0 auto auto;
+            margin: 0.2rem 0 auto auto;
         }
     }
     &-center {
@@ -49,6 +52,7 @@ body {
             height: 0.313rem;
             background: #92CFD0;
             margin: 0 auto auto auto;
+            top: 0.5rem;
         }
     }
 }
@@ -60,7 +64,7 @@ body {
     width: 6.25rem;
     height: 0.313rem;
     background: #92CFD0;
-    top: 0.125rem;
+    top: 0.2rem;
     left: 0;
 }
 
@@ -130,12 +134,16 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .history {
-    margin-top: unset;
+    padding-top: 2rem;
     margin-bottom: 5rem;
     &_container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        &--text {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
         &--img {
             height: 11.875rem;
             width: 90%;
@@ -213,21 +221,60 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .value {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: #F4F4F4;
     &_container {
+        padding: 1.875rem 1rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         &--img {
             margin: 2rem;
             width: 8.75rem;
             width: 8.75rem;
-            filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(237deg) brightness(109%) contrast(100%);
-            background: url(/src/img/hab/Ellipse.png);
-            background-size: 100% 100%;
+            border-radius: 50%;
+            &--background {
+                position: absolute;
+                z-index: 1;
+            }
+            &--details {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate( 0deg) brightness(100%) contrast(100%);
+                width: 6.25rem;
+                width: 6.25rem;
+                position: relative;
+                margin: 1.250rem;
+                z-index: 3;
+            }
         }
         &--text {
             display: flex;
             flex-direction: column;
+            width: 100%;
+        }
+    }
+    &_container:nth-child(odd) {
+        flex-direction: column;
+    }
+}
+
+
+/* Section nos prix et distinctions
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.awards {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &--img {
+            margin: 2.5rem;
+            width: 14.125rem;
+            height: 10.813rem;
+            border-radius: 0.5rem;
+            background-color: #C8C8C8;
         }
     }
 }
@@ -376,6 +423,10 @@ body {
                 margin-left: 1.25rem;
                 margin-top: 0;
             }
+            &--text {
+                padding-left: 4rem;
+                padding-right: 1.25rem;
+            }
         }
     }
     /* Section notre ambition
@@ -428,6 +479,46 @@ body {
                 &--text {
                     width: 50%;
                 }
+            }
+        }
+    }
+    /* Section nos valeurs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .value {
+        &_container {
+            padding: 0 9.125rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &--img {
+                margin: 2rem;
+                width: 8.75rem;
+                width: 8.75rem;
+                background: url(/src/img/hab/Ellipse.png);
+                background-size: 100% 100%;
+                &--details {
+                    width: 6.25rem;
+                    width: 6.25rem;
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate( 0deg) brightness(100%) contrast(100%);
+                }
+            }
+            &--text {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &_container:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    }
+    /* Section nos prix et distinctions
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .awards {
+        padding-top: 3.5rem;
+        padding-bottom: 6.75rem;
+        &_container {
+            &--img {
+                margin: 5rem;
             }
         }
     }
