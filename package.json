@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.32.12",
-    "swiper": "^6.5.9"
+    "swiper": "^6.6.1"
   }
 }
