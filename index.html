@@ -29,19 +29,22 @@
         <div id="nav_mobile" class="appear">
             <ul class="nav_mobile-list">
                 <li class="nav_mobile-list-element">
-                    <a class="a" href="">Accueil</a>
+                    <a class="a" href="" data-i18n="header.home">Accueil</a>
                 </li>
                 <li class="nav_mobile-list-element">
-                    <a class="a" href="apropos.html">A propos de nous</a>
+                    <a class="a" href="" data-i18n="header.about">A propos de nous</a>
                 </li>
                 <li class="nav_mobile-list-element">
-                    <a class="a" href="">Actualités</a>
+                    <a class="a" href="" data-i18n="header.news">Actualités</a>
                 </li>
                 <li class="nav_mobile-list-element">
-                    <a class="a" href="">Nous contacter</a>
+                    <a class="a" href="" data-i18n="header.contact">Nous contacter</a>
                 </li>
                 <li class="nav_mobile-list-element">
-                    <a class="a" href="">EN</a>
+                    <select class="mobile_lang">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
                 </li>
             </ul>
         </div>
@@ -52,20 +55,21 @@
             <nav class="nav_desktop">
                 <ul class="nav_desktop-list">
                     <li class="nav_desktop-list-element">
-                        <a class="pages" href="">Accueil</a>
+                        <a class="pages" href="" data-i18n="header.home">Accueil</a>
                     </li>
                     <li class="nav_desktop-list-element">
-                        <a class="pages" href="">A propos de nous</a>
+                        <a class="pages" href="apropos.html" data-i18n="header.about">A propos de nous</a>
                     </li>
                     <li class="nav_desktop-list-element">
-                        <a class="pages" href="">Actualités</a>
+                        <a class="pages" href="" data-i18n="header.news">Actualités</a>
                     </li>
                     <li class="nav_desktop-list-element">
-                        <a class="pages" href="">Nous contacter</a>
+                        <a class="pages" href="" data-i18n="header.contact">Nous contacter</a>
                     </li>
-                    <li class="nav_desktop-list-element">
-                        <a class="pages" href="">EN</a>
-                    </li>
+                    <select class="desktop_lang">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
                 </ul>
             </nav>
         </div>
@@ -81,46 +85,46 @@
                 <h1 class="container_principal-element-title">H'ability</h1>
             </div>
             <div class="container_principal-element">
-                <p class="container_principal-element-txt">La solution ludique de réalité virtuelle immersives spécialement conçue pour la rééducation fonctionnelle du membre supérieur.</p>
+                <p class="container_principal-element-txt" data-i18n="index.home.text">La solution ludique de réalité virtuelle immersives spécialement conçue pour la rééducation fonctionnelle du membre supérieur.</p>
             </div>
             <div class="container_principal-element">
-                <button class="container_principal-element-btn">Nous contacter</button>
+                <button class="container_principal-element-btn" data-i18n="index.home.button">Nous contacter</button>
             </div>
         </section>
         <!-- Contenu partie constat
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="container_constat">
-            <h2 class="title"> Le Constat</h2>
+            <h2 class="title" data-i18n="index.finding.title"> Le constat</h2>
             <div class="container_constat-card">
                 <div class="container_constat-card-img">
                     <!-- Ajouter image constat -->
                 </div>
-                <p class="container_constat-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p class="container_constat-card-txt" data-i18n="index.finding.text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
             </div>
             <div class="container_constat-card">
                 <div class="container_constat-card-img">
                     <!-- Ajouter image constat -->
                 </div>
-                <p class="container_constat-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p class="container_constat-card-txt" data-i18n="index.finding.text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
             </div>
             <div class="container_constat-card">
                 <div class="container_constat-card-img">
                     <!-- Ajouter image constat -->
                 </div>
-                <p class="container_constat-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p class="container_constat-card-txt" data-i18n="index.finding.text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
             </div>
         </section>
         <!-- Contenu partie les pathologies traitées 'pt'
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="container_pt">
-            <h2 class="title">Les pathologies traitées</h2>
+            <h2 class="title" data-i18n="index.pathologies.title">Les pathologies traitées</h2>
             <div class="container_pt-element">
-                <p class="section_title">Entrainant des troubles moteur du membre supérieur et troubles cognitifs</p>
+                <p class="section_title" data-i18n="index.pathologies.subtitle">Entrainant des troubles moteur du membre supérieur et troubles cognitifs</p>
                 <ul>
-                    <li class="container_pt-element-list"> - AVC</li>
-                    <li class="container_pt-element-list"> - Traumatisme cranien</li>
-                    <li class="container_pt-element-list"> - Paralysie cérébrale</li>
-                    <li class="container_pt-element-list"> - Amputation</li>
+                    <li class="container_pt-element-list" data-i18n="index.pathologies.list.text1"> - AVC</li>
+                    <li class="container_pt-element-list" data-i18n="index.pathologies.list.text2"> - Traumatisme cranien</li>
+                    <li class="container_pt-element-list" data-i18n="index.pathologies.list.text3"> - Paralysie cérébrale</li>
+                    <li class="container_pt-element-list" data-i18n="index.pathologies.list.text4"> - Amputation</li>
                 </ul>
                 <div class="container_pt-element-img">
                     <!-- Ajouter image section pathologies traitées -->
@@ -130,63 +134,63 @@
         <!-- Contenu partie les exercices du quotidien 'eq'
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="container_eq">
-            <h2 class="title"> Les exercices du quotidien</h2>
+            <h2 class="title" data-i18n="index.exercises.title">Les exercices du quotidien</h2>
             <div class="container_eq-element">
-                <p class="subtitle"> Choisissez dans notre bibliotheque de jeux les exercices souhaités en fonction des capacités et objectifs de rééducation...</p>
-                <p class="subtitle"> La réalité virtuelle propose un large panel de jeux possible en 3D!</p>
+                <p class="subtitle" data-i18n="index.exercises.subtitle1"> Choisissez dans notre bibliotheque de jeux les exercices souhaités en fonction des capacités et objectifs de rééducation...</p>
+                <p class="subtitle" data-i18n="index.exercises.subtitle2"> La réalité virtuelle propose un large panel de jeux possible en 3D!</p>
                 <ul class="list_eq">
-                    <li class="container_eq-element-etiquette" id="etiquette_desktop">EXPLORATION VISUELLE</li>
-                    <li class="container_eq-element-etiquette">PREHENSION FINE</li>
-                    <li class="container_eq-element-etiquette">AMPLITUDE</li>
-                    <li class="container_eq-element-etiquette">MEMORISATION</li>
-                    <li class="container_eq-element-etiquette" id="equilibre">EQUILIBRE</li>
-                    <li class="container_eq-element-etiquette" id="etiquette_mobile">EXPLORATION VISUELLE</li>
+                    <li class="container_eq-element-etiquette" id="etiquette_desktop" data-i18n="index.exercises.list.text1">EXPLORATION VISUELLE</li>
+                    <li class="container_eq-element-etiquette" data-i18n="index.exercises.list.text2">PREHENSION FINE</li>
+                    <li class="container_eq-element-etiquette" data-i18n="index.exercises.list.text3">AMPLITUDE</li>
+                    <li class="container_eq-element-etiquette" data-i18n="index.exercises.list.text4">MEMORISATION</li>
+                    <li class="container_eq-element-etiquette" id="equilibre" data-i18n="index.exercises.list.text5">EQUILIBRE</li>
+                    <li class="container_eq-element-etiquette" id="etiquette_mobile" data-i18n="index.exercises.list.text1">EXPLORATION VISUELLE</li>
                 </ul>
             </div>
         </section>
         <!-- Section notre solution
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="solution">
-            <h2 class="title">Notre solution</h2>
+            <h2 class="title" data-i18n="index.solution.title">Notre solution</h2>
             <article class="solution_container">
-                <h3 class="solution_container--title">Pourquoi la VR</h3>
+                <h3 class="solution_container--title" data-i18n="index.solution.text1">Pourquoi la VR</h3>
                 <div class="solution_container--img"></div>
             </article>
             <article class="solution_container">
-                <h3 class="solution_container--title">La plateforme</h3>
+                <h3 class="solution_container--title" data-i18n="index.solution.text2">La plateforme</h3>
                 <div class="solution_container--img"></div>
             </article>
             <article class="solution_container">
-                <h3 class="solution_container--title">Les deux</h3>
+                <h3 class="solution_container--title" data-i18n="index.solution.text3">Les deux</h3>
                 <div class="solution_container--img"></div>
             </article>
         </section>
         <!-- Section les avantages
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="benefits">
-            <h2 class="title">Les avantages</h2>
-            <p class="subtitle">Bénéficiez des bienfaits de la réalité virtuelle</p>
+            <h2 class="title" data-i18n="index.benefits.title">Les avantages</h2>
+            <p class="subtitle" data-i18n="index.benefits.subtitle">Bénéficiez des bienfaits de la réalité virtuelle</p>
             <div class="benefits_desktop">
                 <div class="benefits_container">
                     <img class="benefits_container--img" src="src/img/hab/Presentation/AvantagesPatient.jpg" alt="avantages_patient">
                     <article class="benefits_container--content">
-                        <h3 class="benefits_container--content--title">Pour les professionels de santé</h3>
-                        <h4 class="benefits_container--content--text">- Outil innovant et compact</h4>
-                        <h4 class="benefits_container--content--text">- Diversification des séances de rééducation</h4>
-                        <h4 class="benefits_container--content--text">- Personnalisation des soins</h4>
-                        <h4 class="benefits_container--content--text">- Suivi médical à distance</h4>
-                        <h4 class="benefits_container--content--text">- Démultiplication de la prise en charge</h4>
+                        <h3 class="benefits_container--content--title" data-i18n="index.benefits.article1.title">Pour les professionels de santé</h3>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text1">- Outil innovant et compact</h4>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text2">- Diversification des séances de rééducation</h4>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text3">- Personnalisation des soins</h4>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text4">- Suivi médical à distance</h4>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text5">- Démultiplication de la prise en charge</h4>
                     </article>
                 </div>
                 <div class="benefits_container">
                     <img class="benefits_container--img" src="src/img/hab/Presentation/AvantagesPro.jpg" alt="avantages_professionnel">
                     <article class="benefits_container--content">
-                        <h3 class="benefits_container--content--title">Pour les patients</h3>
-                        <h4 class="benefits_container--content--text">- Outil accessible et portable</h4>
-                        <h4 class="benefits_container--content--text">- Continuité des soins à domicile</h4>
-                        <h4 class="benefits_container--content--text">- Gain & maintien de la motivation</h4>
-                        <h4 class="benefits_container--content--text">- Suivi de sa progression</h4>
-                        <h4 class="benefits_container--content--text">- Partage des données avec son thérapeute</h4>
+                        <h3 class="benefits_container--content--title" data-i18n="index.benefits.article2.title">Pour les patients</h3>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text1">- Outil accessible et portable</h4>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text2">- Continuité des soins à domicile</h4>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text3">- Gain & maintien de la motivation</h4>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text4">- Suivi de sa progression</h4>
+                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text5">- Partage des données avec son thérapeute</h4>
                     </article>
                 </div>
             </div>
@@ -194,17 +198,17 @@
         <!-- Section témoignages
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="testimonials">
-            <h2 class="title">Témoignages</h2>
+            <h2 class="title" data-i18n="index.testimonials.title">Témoignages</h2>
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="testimonials_container">
                             <div class="testimonials_container--img"></div>
                             <article class="testimonials_container--content">
-                                <h3 class="testimonials_container--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
+                                <h3 class="testimonials_container--text" data-i18n="index.testimonials.article1.text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
                                     perferendis odit porro id beatae ducimus consequatur. Ab nam maiores ullam dignissimos!</h3>
-                                <h4 class="testimonials_container--name"><strong>Marine RIDI</strong></h4>
-                                <h4 class="testimonials_container--job"><strong>Medecin MPR</strong></h4>
+                                <h4 class="testimonials_container--name" data-i18n="index.testimonials.article1.name"><strong>Marine RIDI</strong></h4>
+                                <h4 class="testimonials_container--job" data-i18n="index.testimonials.article1.job"><strong>Medecin MPR</strong></h4>
                             </article>
                         </div>
                     </div>
@@ -212,10 +216,10 @@
                         <div class="testimonials_container">
                             <div class="testimonials_container--img"></div>
                             <article class="testimonials_container--content">
-                                <h3 class="testimonials_container--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
+                                <h3 class="testimonials_container--text" data-i18n="index.testimonials.article2.text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
                                     perferendis odit porro id beatae ducimus consequatur. Ab nam maiores ullam dignissimos!</h3>
-                                <h4 class="testimonials_container--name"><strong>Marine RIDI</strong></h4>
-                                <h4 class="testimonials_container--job"><strong>Medecin MPR</strong></h4>
+                                <h4 class="testimonials_container--name" data-i18n="index.testimonials.article2.name"><strong>Marine RIDI</strong></h4>
+                                <h4 class="testimonials_container--job" data-i18n="index.testimonials.article2.job"><strong>Medecin MPR</strong></h4>
                             </article>
                         </div>
                     </div>
@@ -223,10 +227,10 @@
                         <div class="testimonials_container">
                             <div class="testimonials_container--img"></div>
                             <article class="testimonials_container--content">
-                                <h3 class="testimonials_container--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
+                                <h3 class="testimonials_container--text" data-i18n="index.testimonials.article3.text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
                                     perferendis odit porro id beatae ducimus consequatur. Ab nam maiores ullam dignissimos!</h3>
-                                <h4 class="testimonials_container--name"><strong>Marine RIDI</strong></h4>
-                                <h4 class="testimonials_container--job"><strong>Medecin MPR</strong></h4>
+                                <h4 class="testimonials_container--name" data-i18n="index.testimonials.article3.name"><strong>Marine RIDI</strong></h4>
+                                <h4 class="testimonials_container--job" data-i18n="index.testimonials.article3.job"><strong>Medecin MPR</strong></h4>
                             </article>
                         </div>
                     </div>
@@ -234,10 +238,10 @@
                         <div class="testimonials_container">
                             <div class="testimonials_container--img"></div>
                             <article class="testimonials_container--content">
-                                <h3 class="testimonials_container--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
+                                <h3 class="testimonials_container--text" data-i18n="index.testimonials.article4.text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
                                     perferendis odit porro id beatae ducimus consequatur. Ab nam maiores ullam dignissimos!</h3>
-                                <h4 class="testimonials_container--name"><strong>Marine RIDI</strong></h4>
-                                <h4 class="testimonials_container--job"><strong>Medecin MPR</strong></h4>
+                                <h4 class="testimonials_container--name" data-i18n="index.testimonials.article4.name"><strong>Marine RIDI</strong></h4>
+                                <h4 class="testimonials_container--job" data-i18n="index.testimonials.article4.job"><strong>Medecin MPR</strong></h4>
                             </article>
                         </div>
                     </div>
@@ -249,8 +253,8 @@
         <!-- Section nos partenaires scientifiques
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="partners">
-            <h2 class="title">Nos partenaires scientifiques</h2>
-            <p class="subtitle">Développé avec des professionels de santé, pour des professionels de santé</p>
+            <h2 class="title" data-i18n="index.partners.title">Nos partenaires scientifiques</h2>
+            <p class="subtitle" data-i18n="index.partners.subtitle">Développé avec des professionels de santé, pour des professionels de santé</p>
             <div class="partners_container">
                 <div class="partners_container--form"></div>
                 <div class="partners_container--form"></div>
@@ -268,7 +272,7 @@
                     <a class="footer_social--links--sqr" href="https://www.linkedin.com/company/28884580/" target="_blank"><img src="src/img/hab/linkedin-brands.svg" alt="linkedin_link"></a>
                 </div>
                 <div class="footer_social--btn">
-                    <button class="footer_social--btn--contact">Nous contacter</button>
+                    <button class="footer_social--btn--contact" data-i18n="footer.button">Nous contacter</button>
                 </div>
             </div>
             <div class="footer_content">
@@ -287,6 +291,8 @@
         </div>
     </footer>
     <script src="src/js/main.js"></script>
+    <script src="src/js/navigation.js"></script>
+    <script src="src/js/translate.js"></script>
     <script src="src/js/carousel.js"></script>
 </body>
 

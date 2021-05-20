@@ -28,7 +28,6 @@ body {
         font-size: 2rem;
         padding: 0rem 1rem;
         text-align: right;
-        top: 0.5rem;
         &::after {
             position: relative;
             content: '';
@@ -37,6 +36,8 @@ body {
             height: 0.313rem;
             background: #92CFD0;
             margin: 0.2rem 0 auto auto;
+            border-radius: 30px;
+            top: 0.5rem;
         }
     }
     &-center {
@@ -52,7 +53,8 @@ body {
             height: 0.313rem;
             background: #92CFD0;
             margin: 0 auto auto auto;
-            top: 0.5rem;
+            top: 1rem;
+            border-radius: 30px;
         }
     }
 }
@@ -64,8 +66,9 @@ body {
     width: 6.25rem;
     height: 0.313rem;
     background: #92CFD0;
-    top: 0.2rem;
+    top: 0.5rem;
     left: 0;
+    border-radius: 30px;
 }
 
 .subtitle {
@@ -146,7 +149,7 @@ body {
         }
         &--img {
             height: 11.875rem;
-            width: 90%;
+            max-width: 90%;
             margin-top: 1.25rem;
             border-radius: 0.5rem;
             background-color: #C8C8C8;
@@ -415,7 +418,6 @@ body {
     /* Section notre histoire
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .history {
-        margin-top: 7rem;
         &_container {
             flex-direction: row-reverse;
             margin-top: 3.625rem;
@@ -424,6 +426,7 @@ body {
                 margin-top: 0;
             }
             &--text {
+                display: flex;
                 padding-left: 4rem;
                 padding-right: 1.25rem;
             }

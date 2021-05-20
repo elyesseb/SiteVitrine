@@ -1,0 +1,147 @@
+{
+    "header": {
+        "home": "Acceuil",
+        "about": "A propos de nous",
+        "news": "Actualités",
+        "contact": "Nous contacter"
+    },
+    "index": {
+        "home": {
+            "text": "The playful immersive virtual reality solution specially designed for functional rehabilitation of the upper limb.",
+            "button": "Nous contacter"
+        },
+        "finding": {
+            "title": "Finding",
+            "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "text3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+        },
+        "pathologies": {
+            "title": "The pathologies treated",
+            "subtitle": "Leading to motor disorders of the upper limb and cognitive",
+            "list": {
+                "text1": "VCA",
+                "text2": "Traumatic brain injury",
+                "text3": "Cerebral palsy",
+                "text4": "Amputation"
+            }
+        },
+        "exercises": {
+            "title": "The daily exercises",
+            "subtitle1": "Choose from our library of games the exercises you want according to your abilities and rehabilitation goals...",
+            "subtitle2": "Virtual reality offers a wide range of possible games in 3D!",
+            "list": {
+                "text1": "VISUAL EXPLORATION",
+                "text2": "FINE GRIP",
+                "text3": "AMPLITUDE",
+                "text4": "MEMORIZATION",
+                "text5": "BALANCE"
+            }
+        },
+        "solution": {
+            "title": "Our solution",
+            "text1": "Why VR",
+            "text2": "The platform",
+            "text3": "Both"
+        },
+        "scientific": {
+            "title": "Scientific proof",
+            "subtitle": "Based on the numerous clinical studies done on immersive virtual reality and rehabilitation",
+            "article1": {
+                "text1": "VR rehabilitation is a promising tool to actively engage patients in the rehabilitation programme and can lead to better motor recovery.",
+                "source": "Translated from article"
+            },
+            "article2": {
+                "text1": "Unilateral and bilateral mirror therapy exercise of the limbs in an immersive virtual environment can enhance cortical reorganisation and lead to improved motor function.",
+                "source": "Translated from article"
+            }
+        },
+        "benefits": {
+            "title": "The benefits",
+            "subtitle": "Enjoy the benefits of virtual reality",
+            "article1": {
+                "title": "For health professionals",
+                "text1": "Innovative and compact tool",
+                "text2": "Diversification of rehabilitation sessions",
+                "text3": "Personalization of care",
+                "text4": "Remote medical monitoring",
+                "text5": "Increase in the number of people receiving care"
+            },
+            "article2": {
+                "title": "For patients",
+                "text1": "Accessible and portable tool",
+                "text2": "Continuity of care at home",
+                "text3": "Gain & maintain motivation",
+                "text4": "Tracking of one's progress",
+                "text5": "Share data with your therapist"
+            }
+        },
+        "testimonials": {
+            "title": "Testimonials",
+            "article1": {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
+                "name": "Marine RIDI",
+                "job": "PRM doctor"
+            },
+            "article2": {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
+                "name": "Marine RIDI",
+                "job": "PRM doctor"
+            },
+            "article3": {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
+                "name": "Marine RIDI",
+                "job": "PRM doctor"
+            },
+            "article4": {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
+                "name": "Marine RIDI",
+                "job": "PRM doctor"
+            }
+        },
+        "partners": {
+            "title": "Our scientific partners",
+            "subtitle": "Developed with health professionals, for health professionals"
+        }
+    },
+    "about": {
+        "history": {
+            "title": "Notre histoire",
+            "text1": "Le projet est né en juin 2018, à la suite du challenge 24h Innov’Handicap organisé par l’EPF Troyes où nous avons rencontré Anne-Catherine GUENIER, présidente de l’Association Hémiparésie, et son fils Léandre, 15 ans, passionné de jeux vidéo et atteint d’hémiparésie depuis la naissance.",
+            "text2": "C’est durant cet évènement que nous avons été sensibilisées à l’AVC infantile et à l’hémiparésie et que nous avons créé le projet H’ability."
+        },
+        "ambition": {
+            "title": "Notre ambition"
+        },
+        "team": {
+            "title": "Notre équipe",
+            "text1": "De nature curieuse et enthousiaste, je me donne à 100% tant dans mes projets professionnels que personnels. L’idée de développer un produit qui permettra d’améliorer le quotidien de nombreux enfants me motive davantage !",
+            "text2": "Passionnée par les technologies de demain et leur impact potentiel sur la vie des utilisateurs. Pouvoir permettre à Léandre et aux enfants atteints d'hémiparésie d'effectuer leur rééducation et de retrouver de la mobilité tout en s'amusant me motive beaucoup !"
+        },
+        "values": {
+            "title": "Nos valeurs",
+            "article1": {
+                "title": "Équité",
+                "text": "Parce que nous souhaitons que chacun ait les mêmes chances face aux situations du quotidien."
+            },
+            "article2": {
+                "title": "Humilité",
+                "text": "Parce que nous pensons que c’est ensemble, surtout en apprenant des autres, que nous pourrons progresser."
+            },
+            "article3": {
+                "title": "Dépassement de soi",
+                "text": "Parce que nous croyons que repousser ses limites permet de booster son quotidien et sa confiance en soi."
+            },
+            "article4": {
+                "title": "Fiabilité",
+                "text": "Parce que nous croyons qu’une solution et une équipe fiables sont essentielles pour nouer et pérenniser une relation de confiance."
+            }
+        },
+        "awards": {
+            "title": "Nos prix et distinctions"
+        }
+    },
+    "footer": {
+        "button": "Nous contacter"
+    }
+}
