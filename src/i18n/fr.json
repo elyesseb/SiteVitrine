@@ -7,101 +7,101 @@
     },
     "index": {
         "home": {
-            "text": "The playful immersive virtual reality solution specially designed for functional rehabilitation of the upper limb.",
+            "text": "La solution ludique de réalité virtuelle immersive spécialement conçue pour la rééducation fonctionnelle du membre supérieur.",
             "button": "Nous contacter"
         },
         "finding": {
-            "title": "Finding",
+            "title": "Le constat",
             "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
             "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
             "text3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
         },
         "pathologies": {
-            "title": "The pathologies treated",
-            "subtitle": "Leading to motor disorders of the upper limb and cognitive",
+            "title": "Les pathologies traitées",
+            "subtitle": "Entrainant des troubles moteurs du membre supérieur et troubles cognitifs",
             "list": {
-                "text1": "VCA",
-                "text2": "Traumatic brain injury",
-                "text3": "Cerebral palsy",
+                "text1": "AVC",
+                "text2": "Traumastisme cranien",
+                "text3": "Paralysie cérébrale",
                 "text4": "Amputation"
             }
         },
         "exercises": {
-            "title": "The daily exercises",
-            "subtitle1": "Choose from our library of games the exercises you want according to your abilities and rehabilitation goals...",
-            "subtitle2": "Virtual reality offers a wide range of possible games in 3D!",
+            "title": "Les exercices du quotidien",
+            "subtitle1": "Choisissez dans notre bibliotheque de jeux les exercices souhaités en fonctions des cpapacités et objetcifs de rééducation...",
+            "subtitle2": "La réalité virtuelle propose un large panel de jeux possibles en 3D !",
             "list": {
-                "text1": "VISUAL EXPLORATION",
-                "text2": "FINE GRIP",
+                "text1": "EXPLORATION VISUELLE",
+                "text2": "PREHENSION FINE",
                 "text3": "AMPLITUDE",
-                "text4": "MEMORIZATION",
-                "text5": "BALANCE"
+                "text4": "MEMORISATION",
+                "text5": "EQUILIBRE"
             }
         },
         "solution": {
-            "title": "Our solution",
-            "text1": "Why VR",
-            "text2": "The platform",
-            "text3": "Both"
+            "title": "Notre solution",
+            "text1": "Pourquoi la VR",
+            "text2": "La plateforme",
+            "text3": "Pour les deux"
         },
         "scientific": {
-            "title": "Scientific proof",
-            "subtitle": "Based on the numerous clinical studies done on immersive virtual reality and rehabilitation",
+            "title": "Preuves scientifiques",
+            "subtitle": "Basée sur les nombreuses études cliniques faites sur la réalité virtuelle immersive et la rééducation",
             "article1": {
-                "text1": "VR rehabilitation is a promising tool to actively engage patients in the rehabilitation programme and can lead to better motor recovery.",
-                "source": "Translated from article"
+                "text1": "« La réadaptation en VR est un outil prometteur pour engager activement les patients dans le programme de réadaptation et peut conduire à une meilleure récupération motrice. »",
+                "source": "Traduit de l'article"
             },
             "article2": {
-                "text1": "Unilateral and bilateral mirror therapy exercise of the limbs in an immersive virtual environment can enhance cortical reorganisation and lead to improved motor function.",
-                "source": "Translated from article"
+                "text1": "« L'exercice unilatéral et bilatéral en  thérapie miroir des membres dans un  environnement virtuel immersif peut renforcer  la réorganisation corticale et conduire à une  mélioration de la fonction motrice. »",
+                "source": "Traduit de l'article"
             }
         },
         "benefits": {
-            "title": "The benefits",
-            "subtitle": "Enjoy the benefits of virtual reality",
+            "title": "Les avantages",
+            "subtitle": "Bénéficiez des bienfaits de la réalité virtuelle",
             "article1": {
-                "title": "For health professionals",
-                "text1": "Innovative and compact tool",
-                "text2": "Diversification of rehabilitation sessions",
-                "text3": "Personalization of care",
-                "text4": "Remote medical monitoring",
-                "text5": "Increase in the number of people receiving care"
+                "title": "Pour les professionels de santé",
+                "text1": "Outil innovant et compact",
+                "text2": "Diversification des séances de rééducation",
+                "text3": "Personnalisation des soins",
+                "text4": "Suivi médical à distance",
+                "text5": "Démultiplication de la prise en charge"
             },
             "article2": {
-                "title": "For patients",
-                "text1": "Accessible and portable tool",
-                "text2": "Continuity of care at home",
-                "text3": "Gain & maintain motivation",
-                "text4": "Tracking of one's progress",
-                "text5": "Share data with your therapist"
+                "title": "Pour les patients",
+                "text1": "Outil accessible et portable",
+                "text2": "Continuité des soins à domicile",
+                "text3": "Gain & maintien de la motivation",
+                "text4": "Suivi de sa progression",
+                "text5": "Partage des données avec son thérapeute"
             }
         },
         "testimonials": {
-            "title": "Testimonials",
+            "title": "Témoignages",
             "article1": {
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
                 "name": "Marine RIDI",
-                "job": "PRM doctor"
+                "job": "Medecin MPR"
             },
             "article2": {
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
                 "name": "Marine RIDI",
-                "job": "PRM doctor"
+                "job": "Medecin MPR"
             },
             "article3": {
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
                 "name": "Marine RIDI",
-                "job": "PRM doctor"
+                "job": "Medecin MPR"
             },
             "article4": {
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
                 "name": "Marine RIDI",
-                "job": "PRM doctor"
+                "job": "Medecin MPR"
             }
         },
         "partners": {
-            "title": "Our scientific partners",
-            "subtitle": "Developed with health professionals, for health professionals"
+            "title": "Nos partenaires scientifiques",
+            "subtitle": "Développé avec des professionels de santé, pour des professionels de santé"
         }
     },
     "about": {
