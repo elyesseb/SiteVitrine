@@ -41,6 +41,12 @@ body {
     line-height: 1.5rem;
 }
 
+select {
+    cursor: pointer;
+    border: 0.1em solid rgb(77, 77, 77);
+    border-radius: 0.2em;
+}
+
 
 /* Mobile first
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -301,6 +307,13 @@ body {
         &--content {
             display: flex;
             flex-direction: column;
+            &--title {
+                list-style-type: none;
+                font-family: Quicksand;
+                font-size: 1.25rem;
+                margin-bottom: 2rem;
+                margin-left: -0.5rem;
+            }
             &--text {
                 margin-top: 0.5rem;
             }

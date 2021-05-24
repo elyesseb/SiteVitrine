@@ -77,6 +77,12 @@ body {
     line-height: 1.5rem;
 }
 
+select {
+    cursor: pointer;
+    border: 0.1em solid rgb(77, 77, 77);
+    border-radius: 0.2em;
+}
+
 
 /* Mobile first
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -243,10 +249,9 @@ body {
             }
             &--details {
                 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate( 0deg) brightness(100%) contrast(100%);
-                width: 6.25rem;
-                width: 6.25rem;
+                width: 5.25rem;
                 position: relative;
-                margin: 1.250rem;
+                margin: 1.8rem;
                 z-index: 3;
             }
         }
@@ -254,6 +259,13 @@ body {
             display: flex;
             flex-direction: column;
             width: 100%;
+            &--p {
+                margin-top: 5px;
+                text-align: justify;
+            }
+            &--title {
+                margin: 0;
+            }
         }
     }
     &_container:nth-child(odd) {
@@ -277,7 +289,6 @@ body {
             width: 14.125rem;
             height: 10.813rem;
             border-radius: 0.5rem;
-            background-color: #C8C8C8;
         }
     }
 }
@@ -503,18 +514,30 @@ body {
                 background: url(/src/img/hab/Ellipse.png);
                 background-size: 100% 100%;
                 &--details {
-                    width: 6.25rem;
-                    width: 6.25rem;
+                    width: 5.25rem;
                     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate( 0deg) brightness(100%) contrast(100%);
                 }
             }
             &--text {
                 display: flex;
                 flex-direction: column;
+                &--p {
+                    margin-top: 5px;
+                    text-align: justify;
+                }
+                &--title {
+                    margin: 0;
+                }
             }
         }
         &_container:nth-child(odd) {
             flex-direction: row-reverse;
+        }
+        &_title--right {
+            margin: 0 0 0 auto;
+        }
+        &_text--right {
+            margin: 0 0 0 auto;
         }
     }
     /* Section nos prix et distinctions
