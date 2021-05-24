@@ -22,17 +22,17 @@
             </div>
             <div id="header_menu-burger">
                 <a>
-                    <img id="##" src="./src/img/hab/bars-solid.svg" alt="">
+                    <img id="##" src="./src/img/hab/bars-solid.svg" alt="Menu navigation">
                 </a>
             </div>
         </div>
         <div id="nav_mobile" class="appear">
             <ul class="nav_mobile-list">
                 <li class="nav_mobile-list-element">
-                    <a class="a" href="" data-i18n="header.home">Accueil</a>
+                    <a class="a" href="index.html" data-i18n="header.home">Accueil</a>
                 </li>
                 <li class="nav_mobile-list-element">
-                    <a class="a" href="" data-i18n="header.about">A propos de nous</a>
+                    <a class="a" href="apropos.html" data-i18n="header.about">A propos de nous</a>
                 </li>
                 <li class="nav_mobile-list-element">
                     <a class="a" href="" data-i18n="header.news">Actualités</a>
@@ -50,12 +50,14 @@
         </div>
         <div class="header_desktop">
             <div class="header_desktop-logo">
-                <img src="./src/img/hab/Logo/Logo_horizontal.png" alt="logo Desktop">
+                <a href="index.html">
+                    <img src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability">
+                </a>
             </div>
             <nav class="nav_desktop">
                 <ul class="nav_desktop-list">
                     <li class="nav_desktop-list-element">
-                        <a class="pages" href="" data-i18n="header.home">Accueil</a>
+                        <a class="pages" href="index.html" data-i18n="header.home">Accueil</a>
                     </li>
                     <li class="nav_desktop-list-element">
                         <a class="pages" href="apropos.html" data-i18n="header.about">A propos de nous</a>
@@ -91,47 +93,49 @@
                 <button class="container_principal-element-btn" data-i18n="index.home.button">Nous contacter</button>
             </div>
         </section>
-        <!-- Contenu partie constat
+        <!-- Section le constat
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <section class="container_constat">
+        <section class="finding">
             <h2 class="title" data-i18n="index.finding.title">Le constat</h2>
-            <div class="container_constat-card">
-                <div class="container_constat-card-img">
-                    <!-- Ajouter image constat -->
+            <section class="finding_desktop">
+                <div class="finding_container">
+                    <div class="finding_container--img">
+                        <!-- Ajouter image constat -->
+                    </div>
+                    <p class="finding_container--txt" data-i18n="index.finding.text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
                 </div>
-                <p class="container_constat-card-txt" data-i18n="index.finding.text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-            </div>
-            <div class="container_constat-card">
-                <div class="container_constat-card-img">
-                    <!-- Ajouter image constat -->
+                <div class="finding_container">
+                    <div class="finding_container--img">
+                        <!-- Ajouter image constat -->
+                    </div>
+                    <p class="finding_container--txt" data-i18n="index.finding.text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
                 </div>
-                <p class="container_constat-card-txt" data-i18n="index.finding.text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-            </div>
-            <div class="container_constat-card">
-                <div class="container_constat-card-img">
-                    <!-- Ajouter image constat -->
+                <div class="finding_container">
+                    <div class="finding_container--img">
+                        <!-- Ajouter image constat -->
+                    </div>
+                    <p class="finding_container--txt" data-i18n="index.finding.text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
                 </div>
-                <p class="container_constat-card-txt" data-i18n="index.finding.text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-            </div>
+            </section>
         </section>
-        <!-- Contenu partie les pathologies traitées 'pt'
+        <!-- Section les pathologies traitées
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <section class="container_pt">
-            <h2 class="title" data-i18n="index.pathologies.title">Les pathologies traitées</h2>
-            <div class="container_pt-element">
-                <p class="section_title" data-i18n="index.pathologies.subtitle">Entrainant des troubles moteur du membre supérieur et troubles cognitifs</p>
+        <section class="pathologies">
+            <div class="pathologies_container">
+                <h2 class="title" data-i18n="index.pathologies.title">Les pathologies traitées</h2>
+                <p class="subtitle" data-i18n="index.pathologies.subtitle">Entrainant des troubles moteur du membre supérieur et troubles cognitifs</p>
                 <ul>
-                    <li class="container_pt-element-list" data-i18n="index.pathologies.list.text1"> - AVC</li>
-                    <li class="container_pt-element-list" data-i18n="index.pathologies.list.text2"> - Traumatisme cranien</li>
-                    <li class="container_pt-element-list" data-i18n="index.pathologies.list.text3"> - Paralysie cérébrale</li>
-                    <li class="container_pt-element-list" data-i18n="index.pathologies.list.text4"> - Amputation</li>
+                    <li class="pathologies_container--list" data-i18n="index.pathologies.list.text1">AVC</li>
+                    <li class="pathologies_container--list" data-i18n="index.pathologies.list.text2">Traumatisme cranien</li>
+                    <li class="pathologies_container--list" data-i18n="index.pathologies.list.text3">Paralysie cérébrale</li>
+                    <li class="pathologies_container--list" data-i18n="index.pathologies.list.text4">Amputation</li>
                 </ul>
-                <div class="container_pt-element-img">
-                    <!-- Ajouter image section pathologies traitées -->
-                </div>
+            </div>
+            <div class="pathologies_container--img">
+                <!-- Ajouter image section pathologies traitées -->
             </div>
         </section>
-        <!-- Contenu partie les exercices du quotidien 'eq'
+        <!-- Section les exercices du quotidien 'eq'
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <section class="container_eq">
             <h2 class="title" data-i18n="index.exercises.title">Les exercices du quotidien</h2>
@@ -173,25 +177,25 @@
             <div class="benefits_desktop">
                 <div class="benefits_container">
                     <img class="benefits_container--img" src="src/img/hab/Presentation/AvantagesPatient.jpg" alt="avantages_patient">
-                    <article class="benefits_container--content">
+                    <ul class="benefits_container--content">
                         <h3 class="benefits_container--content--title" data-i18n="index.benefits.article1.title">Pour les professionels de santé</h3>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text1">- Outil innovant et compact</h4>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text2">- Diversification des séances de rééducation</h4>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text3">- Personnalisation des soins</h4>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text4">- Suivi médical à distance</h4>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article1.text5">- Démultiplication de la prise en charge</h4>
-                    </article>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text1">Outil innovant et compact</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text2">Diversification des séances de rééducation</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text3">Personnalisation des soins</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text4">Suivi médical à distance</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text5">Démultiplication de la prise en charge</li>
+                    </ul>
                 </div>
                 <div class="benefits_container">
                     <img class="benefits_container--img" src="src/img/hab/Presentation/AvantagesPro.jpg" alt="avantages_professionnel">
-                    <article class="benefits_container--content">
+                    <ul class="benefits_container--content">
                         <h3 class="benefits_container--content--title" data-i18n="index.benefits.article2.title">Pour les patients</h3>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text1">- Outil accessible et portable</h4>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text2">- Continuité des soins à domicile</h4>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text3">- Gain & maintien de la motivation</h4>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text4">- Suivi de sa progression</h4>
-                        <h4 class="benefits_container--content--text" data-i18n="index.benefits.article2.text5">- Partage des données avec son thérapeute</h4>
-                    </article>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text1">Outil accessible et portable</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text2">Continuité des soins à domicile</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text3">Gain & maintien de la motivation</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text4">Suivi de sa progression</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text5">Partage des données avec son thérapeute</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -248,6 +252,7 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!-- Section nos partenaires scientifiques
@@ -268,8 +273,8 @@
         <div class="footer">
             <div class="footer_social">
                 <div class="footer_social--links">
-                    <a class="footer_social--links--sqr" href="https://twitter.com/_hability" target="_blank"><img src="src/img/hab/twitter-square-brands.svg" alt="twitter_link"></a>
-                    <a class="footer_social--links--sqr" href="https://www.linkedin.com/company/28884580/" target="_blank"><img src="src/img/hab/linkedin-brands.svg" alt="linkedin_link"></a>
+                    <a class="footer_social--links--twitter" href="https://twitter.com/_hability" target="_blank"><img src="src/img/hab/twitter-square-brands.svg" alt="twitter_link"></a>
+                    <a class="footer_social--links--linkedin" href="https://www.linkedin.com/company/28884580/" target="_blank"><img src="src/img/hab/linkedin-brands.svg" alt="linkedin_link"></a>
                 </div>
                 <div class="footer_social--btn">
                     <button class="footer_social--btn--contact" data-i18n="footer.button">Nous contacter</button>

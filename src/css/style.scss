@@ -19,7 +19,7 @@ body {
 
 .title {
     font-family: Quicksand;
-    font-size: 2rem;
+    font-size: 1.875rem;
     padding: 0rem 1rem;
 }
 
@@ -30,7 +30,7 @@ body {
     width: 6.25rem;
     height: 0.313rem;
     background: #92CFD0;
-    top: 0.125rem;
+    top: 0.5rem;
     left: 0;
     border-radius: 30px;
 }
@@ -151,30 +151,40 @@ body {
 /* Section constat
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.container_constat {
-    &-card {
+.finding {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4.375rem;
+    &_desktop {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1em;
-        margin: 1em;
-        margin-bottom: 4.2em;
-        padding-top: 5vh;
-        border-radius: 1rem;
-        position: relative;
-        text-align: left;
-        box-shadow: 0em 0em 1em rgb(223, 222, 222);
-        &-img {
-            width: 8rem;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+        background-color: #FFF;
+        box-shadow: 0 3px 4px 0 #C8C8C8;
+        margin: 2rem;
+        &--img {
+            width: 7.5rem;
             height: 8rem;
-            border-radius: 65px;
-            background-color: rgb(180, 180, 180);
-            margin-left: auto;
-            margin-right: auto;
+            background-color: #EEE;
+            border-radius: 50%;
+            margin-top: 2.125rem;
+            margin-bottom: 1.5rem;
         }
-        &-txt {
-            font-family: "Lato";
-            font-size: 1.25em;
+        &--txt {
+            padding: 0 1.625rem 0 1.625rem;
+            color: #242C53;
+            font-size: 1.25rem;
+            text-align: justify;
         }
     }
 }
@@ -183,33 +193,22 @@ body {
 /* Section pathologies traitées
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.container_pt {
-    background-color: rgb(238, 238, 238);
-    padding-bottom: 0.01rem;
-    padding-top: 1em;
-    .section_title {
-        font-size: 1.5em;
-        margin-left: 1em;
-        margin: 1.5em;
-    }
-    &-element {
-        ul {
-            margin-bottom: 2em;
+.pathologies {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 21rem;
+        &--list {
+            margin-left: 2.3rem;
         }
-        &-txt {
-            font-size: 1em;
-            margin: 1em;
-            margin-bottom: 2em;
-        }
-        &-list {
-            font-size: 1em;
-            list-style: none;
-            margin-top: 0.5rem;
-        }
-        &-img {
+        &--img {
             width: 100%;
-            height: 26.063rem;
-            background-color: rgb(206, 206, 206);
+            height: 21rem;
+            background-color: #C8C8C8;
         }
     }
 }
@@ -302,7 +301,9 @@ body {
         &--content {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            &--text {
+                margin-top: 0.5rem;
+            }
         }
     }
 }
@@ -318,6 +319,7 @@ body {
     background-color: #F4F4F4;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
     &_container {
         display: flex;
         flex-direction: column;
@@ -334,12 +336,11 @@ body {
         &--content {
             display: block;
             width: 100%;
-            padding: 1rem 4rem;
-            font-weight: bold;
+            padding: 1rem 0rem 4rem 0rem;
         }
         &--name,
         &--job {
-            margin: 1rem auto auto 4rem;
+            margin: 0rem auto auto 4rem;
             font-family: Quicksand;
         }
     }
@@ -364,6 +365,10 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
     color: #000!important;
+}
+
+.swiper-pagination {
+    z-index: 9;
 }
 
 
@@ -421,12 +426,15 @@ body {
             margin-top: 2rem;
             margin: 1rem;
             filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
-            &--sqr {
+            &--twitter {
                 height: 3.5rem;
                 width: 3.5rem;
-                padding: 0;
-                margin-top: 0;
-                margin: 0;
+                margin-right: 0;
+            }
+            &--linkedin {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: 0;
             }
         }
         &--btn {
@@ -546,54 +554,61 @@ body {
     }
     /* Section constat
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .container_constat {
-        .section_title {
-            width: fit-content;
-            margin-left: 3.7em;
-            font-size: 2em;
+    .finding {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4.375rem;
+        &_desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
         }
-        &-card {
-            width: 20em;
-            height: 20em;
-            margin-bottom: 7em;
-            display: inline-block;
-            margin-left: 2em;
-            margin-right: 2em;
-            border-radius: 2em;
+        &_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 23.25rem;
+            height: auto;
+            border-radius: 30px;
+            background-color: #FFF;
+            box-shadow: 0 3px 4px 0 #C8C8C8;
+            margin: 2rem;
+            &--img {
+                width: 7.5rem;
+                height: 8rem;
+                background-color: #EEE;
+                border-radius: 50%;
+                margin-top: 2.125rem;
+                margin-bottom: 1.5rem;
+            }
+            &--txt {
+                padding: 0 1.625rem 0 1.625rem;
+                color: #242C53;
+                font-size: 1.25rem;
+                text-align: justify;
+            }
         }
     }
     /* Section pathologies traitées
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .container_pt {
-        display: inline-block;
-        position: relative;
-        width: 100%;
-        .section_title {
-            width: fit-content;
-            margin-top: 1.1em;
-            margin-left: 3.7em;
-            font-size: 2em;
-        }
-        &-element {
-            &-txt {
-                width: 40%;
-                font-size: 1.25em;
-                margin-left: 3em;
-                margin-top: 2em;
+    .pathologies {
+        display: flex;
+        flex-direction: row;
+        background-color: #F4F4F4;
+        &_container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 26rem;
+            &--list {
+                margin-left: 2.3rem;
             }
-            &-list {
-                font-size: 1.25em;
-                margin-top: 0%;
-                margin-left: 1em;
-            }
-            &-img {
-                background-color: rgb(206, 206, 206);
-                left: 48%;
-                height: 29em;
-                width: 40em;
-                display: flex;
-                margin-left: auto;
-                margin-top: -20.5em;
+            &--img {
+                width: 100%;
+                height: 26rem;
+                background-color: #C8C8C8;
             }
         }
     }
@@ -672,8 +687,15 @@ body {
                 margin: 0;
                 padding: 0;
                 margin: 0;
-                &--sqr {
-                    padding: 0 3.5rem 0 2rem;
+                &--twitter {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 2rem;
+                }
+                &--linkedin {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 5rem;
                 }
             }
             &--btn {
@@ -743,7 +765,7 @@ body {
             }
             &--content {
                 width: 60%;
-                padding: 1rem;
+                padding: 1rem 0rem 4rem 0rem;
             }
         }
     }

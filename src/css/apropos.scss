@@ -311,12 +311,15 @@ body {
             margin-top: 2rem;
             margin: 1rem;
             filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
-            &--sqr {
+            &--twitter {
                 height: 3.5rem;
                 width: 3.5rem;
-                padding: 0;
-                margin-top: 0;
-                margin: 0;
+                margin-right: 0;
+            }
+            &--linkedin {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: 0;
             }
         }
         &--btn {
@@ -546,8 +549,15 @@ body {
                 margin: 0;
                 padding: 0;
                 margin: 0;
-                &--sqr {
-                    padding: 0 3.5rem 0 2rem;
+                &--twitter {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 2rem;
+                }
+                &--linkedin {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 5rem;
                 }
             }
             &--btn {
