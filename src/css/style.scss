@@ -17,6 +17,11 @@ body {
     font-family: Lato, Helvetica, sans-serif;
 }
 
+h3,
+h2 {
+    font-weight: unset;
+}
+
 .title {
     font-family: Quicksand;
     font-size: 1.875rem;
@@ -256,12 +261,11 @@ select {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .solution {
-    height: auto;
-    margin: 0 auto;
-    width: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
     &_container {
         display: flex;
         flex-direction: column;
@@ -271,6 +275,38 @@ select {
             height: 35vh;
             border-radius: 1.875rem;
             background-color: #C8C8C8;
+        }
+    }
+}
+
+
+/* Section preuves scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scientific {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    background-color: #F4F4F4;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        &--text {
+            height: auto;
+            width: 90%;
+            &--article {
+                text-align: justify;
+                font-size: 18px;
+            }
+            &--source {
+                font-size: 15px;
+            }
+        }
+        &--img {
+            width: 12.5rem;
+            height: auto;
+            padding: 1rem;
         }
     }
 }
@@ -707,6 +743,32 @@ select {
             align-items: center;
         }
     }
+    /* Section preuves scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .scientific {
+        padding: 3rem 5rem 5rem 5rem;
+        background-color: #F4F4F4;
+        &_container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            &--text {
+                height: auto;
+                width: 25rem;
+                &--article {
+                    font-size: 24px;
+                }
+                &--source {
+                    font-size: 15px;
+                }
+            }
+            &--img {
+                width: 12.5rem;
+                height: auto;
+            }
+        }
+    }
     /* Section les avantages
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .benefits {
@@ -714,7 +776,7 @@ select {
         margin: 0 auto;
         width: 100%;
         background-color: #fff;
-        padding-top: 11.625rem;
+        padding-top: 3.75rem;
         &_desktop {
             display: flex;
             flex-direction: row;
