@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/css/apropos.scss">
+    <link rel="stylesheet" href="src/css/contact.scss">
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/hab/Logo/Picto_H.png">
     <script src="src/js/navigation.js" defer></script>
     <script src="src/js/translate.js" defer></script>
@@ -83,8 +83,28 @@
     <!-- Contenu principal de la page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <main>
-        <section class="form">
-
+        <section class="main_bg">
+            <div class="formulaire">
+                <div class="formulaire_container">
+                    <form action="mail.php" method="POST">
+                        <label for="fname">Votre nom</label>
+                        <input type="text" name="name" class="contactInput">
+                        <label for="sujet">E-mail</label>
+                        <input type="text" name="email" class="contactInput">
+                        <label for="emailAddress">Votre profession</label>
+                        <select class="formulaire_container--job" name="job" id="" class="form-control">
+                            <option selected disabled></option>
+                            <option value="Lorem">Lorem</option>
+                            <option value="Ipsum">Ipsum</option>
+                        </select>
+                        <br><br>
+                        <label for="subject">Message</label>
+                        <textarea name="message" class="contactInput"></textarea>
+                        <input type="submit" value="Envoyer">
+                        <input type="reset" value="Effacer">
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Pied de page
