@@ -1,0 +1,329 @@
+/* Police de caractère
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@font-face {
+    font-family: "Lato";
+    src: url("../font/Lato-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../font/Quicksand-Bold.ttf") format("woff");
+}
+
+body {
+    background-color: #fff;
+    color: #2D375C;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+h3,
+h2 {
+    font-weight: unset;
+}
+
+.title {
+    font-family: Quicksand;
+    font-size: 1.875rem;
+    padding: 0rem 1rem;
+}
+
+.title::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 6.25rem;
+    height: 0.313rem;
+    background: #92CFD0;
+    top: 0.5rem;
+    left: 0;
+    border-radius: 30px;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    padding: 0rem 1rem;
+    line-height: 1.5rem;
+}
+
+select {
+    cursor: pointer;
+    border: 0.1em solid rgb(77, 77, 77);
+    border-radius: 0.2em;
+}
+
+
+/* Mobile first
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+#nav_mobile {
+    background-color: #E6E6E6;
+    padding: 3rem 0rem 1rem 0rem;
+}
+
+.header_mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E6E6E6;
+    z-index: 100;
+    position: fixed;
+    padding: 0.5rem 0rem;
+    .header_mobile-logo {
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        img {
+            width: 120px;
+            height: 35px;
+            padding-top: 5px;
+        }
+    }
+    #header_menu-burger {
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+        padding-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.appear {
+    display: none;
+}
+
+.header_desktop {
+    display: none;
+}
+
+.nav_mobile-list {
+    &-element {
+        list-style: none;
+        line-height: 2rem;
+    }
+}
+
+.a {
+    text-decoration: none;
+    position: relative;
+    color: #2D375C;
+    text-transform: uppercase;
+}
+
+
+/* My code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+    position: absolute;
+    height: 100vh;
+    /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-image: url("../img/hab/Degrades/BLEUFONCE.png");
+    background-size: 100% 100%;
+    &_social {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 0;
+        &--links {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-content: center;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 2rem;
+            margin: 1rem;
+            filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
+            &--twitter {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: 0;
+            }
+            &--linkedin {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: 0;
+            }
+        }
+        &--btn {
+            display: flex;
+            &--contact {
+                height: 4.5rem;
+                width: 15.625rem;
+                border-radius: 1.875rem;
+                font-family: Lato;
+                font-size: 1.25rem;
+                background-image: url("../img/hab/Degrades/ROSE.png");
+                background-size: 100% 100%;
+                color: #fff;
+                border: none;
+                margin: 2rem;
+            }
+        }
+    }
+    &_content {
+        &--text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        &--title {
+            font-family: Quicksand;
+            color: #4DC0DF;
+        }
+    }
+    &_copyright {
+        position: absolute;
+        bottom: 0.625rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &--fine {
+            font-size: 0.8rem;
+        }
+        &--fine a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+
+/* Desktop
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (min-width: 1024px) {
+    /* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .header_mobile {
+        display: none;
+    }
+    .header_desktop {
+        display: flex;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 10% solid #000;
+        padding-top: 1.3em;
+        background-color: #e6e6e6;
+        &-logo {
+            margin: 0 2em;
+            vertical-align: middle;
+            img {
+                width: 11.688rem;
+                height: 3.438rem;
+                margin-left: 0.8em;
+            }
+        }
+        .nav_desktop {
+            display: flex;
+            &-list,
+            .pages {
+                color: #2d375c;
+                list-style-type: none;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                box-sizing: border-box;
+                padding: 0 30px 0 0px;
+                font-size: 1.563rem;
+            }
+        }
+    }
+    .nav_mobile-list,
+    .appear {
+        display: none;
+    }
+    /* My code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    /* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .title {
+        padding: 0 7.5rem;
+        font-size: 1.875rem;
+    }
+    .subtitle {
+        padding: 0 3.75rem;
+        font-size: 1.25rem;
+    }
+    .footer {
+        height: 18.75rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-top: 2rem;
+        &_social {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            padding: 0rem;
+            &--links {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0;
+                padding: 0;
+                margin: 0;
+                &--twitter {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 2rem;
+                }
+                &--linkedin {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 5rem;
+                }
+            }
+            &--btn {
+                &--contact {
+                    cursor: pointer;
+                }
+            }
+        }
+        &_content {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            padding-bottom: 5rem;
+            &--text {
+                margin: 0;
+                padding: 0 1rem;
+                font-size: 1.25rem;
+                display: flex;
+                align-items: flex-start;
+            }
+            &--title {
+                font-size: 1.875rem;
+            }
+        }
+    }
+}

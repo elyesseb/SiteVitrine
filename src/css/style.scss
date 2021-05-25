@@ -17,6 +17,7 @@ body {
     font-family: Lato, Helvetica, sans-serif;
 }
 
+h1,
 h3,
 h2 {
     font-weight: unset;
@@ -60,11 +61,24 @@ select {
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+#nav_mobile {
+    background-color: #E6E6E6;
+    padding: 3rem 0rem 1rem 0rem;
+}
+
 .header_mobile {
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #E6E6E6;
+    z-index: 100;
+    position: fixed;
     .header_mobile-logo {
         width: 100%;
         margin: auto;
@@ -96,7 +110,7 @@ select {
 .nav_mobile-list {
     &-element {
         list-style: none;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 }
 
@@ -119,7 +133,6 @@ select {
     width: 100%;
     background-color: rgb(200 200 200);
     position: relative;
-    display: flex;
 }
 
 .container_principal {
@@ -127,24 +140,23 @@ select {
         &-title {
             position: absolute;
             left: 5%;
-            top: 17%;
+            top: 15%;
             z-index: 1;
             font-family: 'Quicksand', sans-serif;
-            font-weight: 5;
             font-size: 4.375rem;
         }
         &-txt {
             position: absolute;
             left: 5%;
-            top: 36%;
+            top: 35%;
             z-index: 1;
-            font-weight: 5;
-            font-size: 2em;
+            font-size: 2rem;
+            margin-right: 1rem;
         }
         &-btn {
             position: absolute;
-            left: 10%;
-            top: 83%;
+            left: 5%;
+            top: 85%;
             z-index: 1;
             width: 14.875rem;
             height: 4.375rem;
@@ -583,16 +595,16 @@ select {
         &-element {
             &-title {
                 left: 1.8em;
-                margin-top: 2.5em;
+                margin-top: 2em;
             }
             &-txt {
                 left: 4em;
-                margin-top: 6em;
+                margin-top: 4em;
                 width: 50%;
             }
             &-btn {
                 position: absolute;
-                left: 73%;
+                left: 75%;
                 top: 80%;
                 height: 4.438rem;
                 width: 14.875rem;
@@ -789,14 +801,24 @@ select {
             width: 50%;
             border-radius: 1.875rem;
             background-color: #FFF;
-            height: auto;
+            height: 23.25rem;
             box-shadow: 0 3px 4px 0 #C8C8C8;
             margin-top: 2.5rem;
-            &--img {
+            &--pro {
                 display: block;
                 height: auto;
-                width: 35%;
+                min-width: 35%;
                 border-radius: 1.875rem;
+                background-image: url("../img/hab/Presentation/AvantagesPro2.jpg");
+                background-size: cover;
+            }
+            &--patient {
+                display: block;
+                height: auto;
+                min-width: 35%;
+                border-radius: 1.875rem;
+                background-image: url("../img/hab/Presentation/AvantagesPatient2.jpg");
+                background-size: cover;
             }
             &--content {
                 display: flex;
