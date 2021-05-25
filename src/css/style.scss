@@ -154,7 +154,7 @@ select {
 }
 
 
-/* Section constat
+/* Section le constat
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .finding {
@@ -196,7 +196,7 @@ select {
 }
 
 
-/* Section pathologies traitées
+/* Section les pathologies traitées
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .pathologies {
@@ -220,7 +220,7 @@ select {
 }
 
 
-/* Section exercices du quotidien
+/* Section les exercices du quotidien
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container_eq {
@@ -565,7 +565,7 @@ select {
             }
         }
     }
-    /* Section constat
+    /* Section le constat
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .finding {
         display: flex;
@@ -604,7 +604,7 @@ select {
             }
         }
     }
-    /* Section pathologies traitées
+    /* Section les pathologies traitées
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .pathologies {
         display: flex;
@@ -625,7 +625,7 @@ select {
             }
         }
     }
-    /* Section exercices du quotidien
+    /* Section les exercices du quotidien
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .container_eq {
         .section_title {
@@ -669,6 +669,138 @@ select {
                 padding-left: 2em;
                 padding-right: 2em;
             }
+        }
+    }
+    /* Section notre solution
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .solution {
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        &_container {
+            margin: 4.75rem 0;
+            &--img {
+                width: 50%;
+                height: 35vh;
+                border-radius: 1.875rem;
+                background-color: #C8C8C8;
+            }
+        }
+        &_container:nth-of-type(1) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+        }
+        &_container:nth-of-type(2) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        &_container:nth-of-type(3) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    /* Section les avantages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .benefits {
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        padding-top: 11.625rem;
+        &_desktop {
+            display: flex;
+            flex-direction: row;
+            margin: 0 2.6rem;
+            height: auto;
+            width: auto;
+        }
+        &_container {
+            display: flex;
+            width: 50%;
+            border-radius: 1.875rem;
+            background-color: #FFF;
+            height: auto;
+            box-shadow: 0 3px 4px 0 #C8C8C8;
+            margin-top: 2.5rem;
+            &--img {
+                display: block;
+                height: auto;
+                width: 35%;
+                border-radius: 1.875rem;
+            }
+            &--content {
+                display: flex;
+                flex-direction: column;
+                &--title {
+                    font-family: Quicksand;
+                    font-size: 1.25rem;
+                    margin-right: 1rem;
+                    margin-bottom: 2.5rem;
+                    margin-left: 1.5rem;
+                }
+                &--text {
+                    font-family: Lato;
+                    font-size: 1.25rem;
+                    margin-right: 1rem;
+                    margin-left: 1.5rem;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    /* Section témoignages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .testimonials {
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &_container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &--img {
+                width: 11.25rem;
+                height: 11.25rem;
+                border-radius: 6rem;
+                margin-left: 9.063rem;
+                background-color: #C8C8C8;
+            }
+            &--text {
+                padding: 1rem 4rem;
+            }
+            &--content {
+                width: 60%;
+                padding: 1rem 0rem 4rem 0rem;
+            }
+        }
+    }
+    /* Section nos partenaires scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .partners {
+        height: auto;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        &_container {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 5.5rem;
+        }
+        &_container--form {
+            height: 10.875rem;
+            width: 13.5rem;
         }
     }
     /* Footer
@@ -733,138 +865,6 @@ select {
             &--title {
                 font-size: 1.875rem;
             }
-        }
-    }
-    /* Section nos partenaires scientifiques
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .partners {
-        height: auto;
-        width: 100%;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        &_container {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            margin-top: 5.5rem;
-        }
-        &_container--form {
-            height: 10.875rem;
-            width: 13.5rem;
-        }
-    }
-    /* Section témoignages
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .testimonials {
-        height: auto;
-        margin: 0 auto;
-        margin-top: 10rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        &_container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            &--img {
-                width: 11.25rem;
-                height: 11.25rem;
-                border-radius: 6rem;
-                margin-left: 9.063rem;
-                background-color: #C8C8C8;
-            }
-            &--text {
-                padding: 1rem 4rem;
-            }
-            &--content {
-                width: 60%;
-                padding: 1rem 0rem 4rem 0rem;
-            }
-        }
-    }
-    /* Section les avantages
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .benefits {
-        height: auto;
-        margin: 0 auto;
-        width: 100%;
-        background-color: #fff;
-        padding-top: 11.625rem;
-        &_desktop {
-            display: flex;
-            flex-direction: row;
-            margin: 0 2.6rem;
-            height: auto;
-            width: auto;
-        }
-        &_container {
-            display: flex;
-            width: 50%;
-            border-radius: 1.875rem;
-            background-color: #FFF;
-            height: auto;
-            box-shadow: 0 3px 4px 0 #C8C8C8;
-            margin-top: 2.5rem;
-            &--img {
-                display: block;
-                height: auto;
-                width: 35%;
-                border-radius: 1.875rem;
-            }
-            &--content {
-                display: flex;
-                flex-direction: column;
-                &--title {
-                    font-family: Quicksand;
-                    font-size: 1.25rem;
-                    margin-right: 1rem;
-                    margin-bottom: 2.5rem;
-                    margin-left: 1.5rem;
-                }
-                &--text {
-                    font-family: Lato;
-                    font-size: 1.25rem;
-                    margin-right: 1rem;
-                    margin-left: 1.5rem;
-                    line-height: 20px;
-                }
-            }
-        }
-    }
-    /* Section notre solution
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .solution {
-        height: auto;
-        margin: 0 auto;
-        width: 100%;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        &_container {
-            margin: 4.75rem 0;
-            &--img {
-                width: 50%;
-                height: 35vh;
-                border-radius: 1.875rem;
-                background-color: #C8C8C8;
-            }
-        }
-        &_container:nth-of-type(1) {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: space-around;
-        }
-        &_container:nth-of-type(2) {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-        }
-        &_container:nth-of-type(3) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
     }
 }
