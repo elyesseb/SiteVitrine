@@ -85,6 +85,9 @@
     <main>
         <section class="main_bg">
             <div class="formulaire">
+                <div class="formulaire_text">
+                    <h3>Si vous êtes concernés ou sensibilisés à l'hémiplégie, que vous souhaitez une démonstration de notre solution ou simplement échanger, n'hésitez pas à nous envoyer un message !</h3>
+                </div>
                 <div class="formulaire_container">
                     <form action="mail.php" method="POST">
                         <label for="fname">Votre nom</label>
@@ -100,8 +103,10 @@
                         <br><br>
                         <label for="subject">Message</label>
                         <textarea name="message" class="contactInput"></textarea>
-                        <input type="submit" value="Envoyer">
-                        <input type="reset" value="Effacer">
+                        <div class="formulaire_container--btn">
+                            <input type="submit" value="Envoyer">
+                            <input type="reset" value="Effacer">
+                        </div>
                     </form>
                 </div>
             </div>
