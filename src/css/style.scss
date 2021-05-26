@@ -810,6 +810,7 @@ select {
                 border-radius: 1.875rem;
                 background-image: url("../img/hab/Presentation/AvantagesPro2.jpg");
                 background-size: cover;
+                background-position: bottom;
             }
             &--patient {
                 display: block;
@@ -818,6 +819,7 @@ select {
                 border-radius: 1.875rem;
                 background-image: url("../img/hab/Presentation/AvantagesPatient2.jpg");
                 background-size: cover;
+                background-position: bottom;
             }
             &--content {
                 display: flex;
