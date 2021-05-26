@@ -17,21 +17,68 @@ body {
     font-family: Lato, Helvetica, sans-serif;
 }
 
-.header_desktop {
-    display: none;
+h1,
+h3,
+h2 {
+    font-weight: unset;
+}
+
+.title {
+    font-family: Quicksand;
+    font-size: 1.875rem;
+    padding: 0rem 1rem;
+}
+
+.title::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 6.25rem;
+    height: 0.313rem;
+    background: #92CFD0;
+    top: 0.5rem;
+    left: 0;
+    border-radius: 30px;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    padding: 0rem 1rem;
+    line-height: 1.5rem;
+}
+
+select {
+    cursor: pointer;
+    border: 0.1em solid rgb(77, 77, 77);
+    border-radius: 0.2em;
 }
 
 
-/* Header mobile
+/* Mobile first
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+#nav_mobile {
+    background-color: #E6E6E6;
+    padding: 3rem 0rem 1rem 0rem;
+}
 
 .header_mobile {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: #fff;
-    border-bottom: 1px solid #000;
-    box-shadow: 0px 10% solid #000;
+    background-color: #E6E6E6;
+    z-index: 100;
+    position: fixed;
     .header_mobile-logo {
         width: 100%;
         margin: auto;
@@ -56,216 +103,181 @@ body {
     display: none;
 }
 
+.header_desktop {
+    display: none;
+}
+
 .nav_mobile-list {
     &-element {
         list-style: none;
+        line-height: 2rem;
     }
 }
 
 .a {
     text-decoration: none;
     position: relative;
+    color: #2D375C;
+    text-transform: uppercase;
 }
 
 
-/* Main et sections
+/* Section principale
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-main {
+.main_bg {
     height: 100vh;
     /* Use vh as a fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
     margin: 0 auto;
     width: 100%;
-    .main_bg {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(200 200 200);
-        position: relative;
-        display: flex;
-    }
-    /* Section principale
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .container_principal {
-        &-element {
-            &-title {
-                position: absolute;
-                left: 5%;
-                top: 17%;
-                z-index: 1;
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 5;
-                font-size: 4.375rem;
-            }
-            &-txt {
-                position: absolute;
-                left: 5%;
-                top: 36%;
-                z-index: 1;
-                font-family: 'Lano', sans-serif;
-                font-weight: 5;
-                font-size: 2em;
-            }
-            &-btn {
-                position: absolute;
-                left: 10%;
-                top: 83%;
-                z-index: 1;
-                width: 80%;
-                height: 8%;
-                font-family: 'Lato', sans-serif;
-                color: #fff;
-                font-weight: 5;
-                font-size: 2em;
-                border-radius: 1.875rem;
-                background: url(/src/img/hab/Degrades/ROSE.png);
-                background-size: 100% 100%;
-                border: none;
-            }
-        }
-    }
-    /* Section constat
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .container_constat {
-        .section_title {
-            font-size: 1.5em;
-            margin-left: 1em;
-            margin: 1.5em;
-        }
-        &-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1em;
-            margin: 1em;
-            margin-bottom: 4.2em;
-            padding-top: 5vh;
-            border-radius: 1rem;
-            position: relative;
-            text-align: left;
-            box-shadow: 0em 0em 1em rgb(223, 222, 222);
-            &-img {
-                width: 8rem;
-                height: 8rem;
-                border-radius: 65px;
-                background-color: rgb(180, 180, 180);
-                margin-left: auto;
-                margin-right: auto;
-            }
-            &-txt {
-                font-family: "Lato";
-                font-size: 1.25em;
-            }
-        }
-    }
-    /* Section pathologies traitées
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .container_pt {
-        background-color: rgb(238, 238, 238);
-        padding-bottom: 0.01rem;
-        padding-top: 1em;
-        .section_title {
-            font-size: 1.5em;
-            margin-left: 1em;
-            margin: 1.5em;
-        }
-        &-element {
-            &-txt {
-                font-size: 1em;
-                margin: 1em;
-                margin-bottom: 2em;
-            }
-            &-list {
-                font-size: 1em;
-                list-style: none;
-                margin-top: 0.5rem;
-            }
-            &-img {
-                width: 100%;
-                height: 33rem;
-                background-color: rgb(206, 206, 206);
-            }
-        }
-    }
-    /* Section exercices du quotidien
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .container_eq {
-        .section_title {
-            font-size: 1.5em;
-            margin-left: 1em;
-            padding-top: 1rem;
-        }
-        &-element {
-            &-txt {
-                font-size: 1em;
-                margin: 1em;
-                margin-bottom: 1em;
-            }
-            .list_eq {
-                padding: 0;
-                display: flex;
-                flex-direction: row;
-                align-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: center;
-                .container_eq-element-etiquette {
-                    list-style: none;
-                    font-family: "Quicksand";
-                    border-radius: 0.2em;
-                    display: inline-block;
-                    color: #C9539A;
-                    background-color: #fff;
-                    border: #C9539A solid 0.1em;
-                    margin: 1em;
-                    padding: 0.5em;
-                }
-            }
-            #etiquette_desktop {
-                display: none;
-            }
-        }
-    }
-}
-
-.title {
-    font-family: Quicksand;
-    font-size: 2rem;
-    padding: 0rem 1rem;
-}
-
-.title::after {
+    background-color: rgb(200 200 200);
     position: relative;
-    content: '';
-    display: block;
-    width: 6.25rem;
-    height: 0.313rem;
-    background: #92CFD0;
-    top: 0.125rem;
-    left: 0;
 }
 
-.subtitle {
-    font-size: 1.125rem;
-    padding: 0rem 1rem;
-    line-height: 1.5rem;
+.container_principal {
+    &-element {
+        &-title {
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            z-index: 1;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 4.375rem;
+        }
+        &-txt {
+            position: absolute;
+            left: 5%;
+            top: 35%;
+            z-index: 1;
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+        &-btn {
+            position: absolute;
+            left: 5%;
+            top: 85%;
+            z-index: 1;
+            width: 14.875rem;
+            height: 4.375rem;
+            color: #fff;
+            font-size: 1.875rem;
+            border-radius: 1.875rem;
+            background: url(/src/img/hab/Degrades/ROSE.png);
+            background-size: 100% 100%;
+            border: none;
+        }
+    }
 }
 
 
-/* Mobile first
+/* Section le constat
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.finding {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4.375rem;
+    &_desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+        background-color: #FFF;
+        box-shadow: 0 3px 4px 0 #C8C8C8;
+        margin: 2rem;
+        &--img {
+            width: 7.5rem;
+            height: 8rem;
+            background-color: #EEE;
+            border-radius: 50%;
+            margin-top: 2.125rem;
+            margin-bottom: 1.5rem;
+        }
+        &--txt {
+            padding: 0 1.625rem 0 1.625rem;
+            color: #242C53;
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+    }
+}
+
+
+/* Section les pathologies traitées
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.pathologies {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 21rem;
+        &--list {
+            margin-left: 2.3rem;
+        }
+        &--img {
+            width: 100%;
+            height: 21rem;
+            background-color: #C8C8C8;
+        }
+    }
+}
+
+
+/* Section les exercices du quotidien
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container_eq {
+    &-element {
+        .list_eq {
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            .container_eq-element-etiquette {
+                list-style: none;
+                font-family: "Quicksand";
+                border-radius: 0.2em;
+                display: inline-block;
+                color: #C9539A;
+                background-color: #fff;
+                border: #C9539A solid 0.1em;
+                margin: 1em;
+                padding: 0.5em;
+            }
+        }
+        #etiquette_desktop {
+            display: none;
+        }
+    }
+}
 
 
 /* Section notre solution
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .solution {
-    height: auto;
-    margin: 0 auto;
-    width: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
     &_container {
         display: flex;
         flex-direction: column;
@@ -275,6 +287,38 @@ main {
             height: 35vh;
             border-radius: 1.875rem;
             background-color: #C8C8C8;
+        }
+    }
+}
+
+
+/* Section preuves scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scientific {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    background-color: #F4F4F4;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        &--text {
+            height: auto;
+            width: 90%;
+            &--article {
+                text-align: justify;
+                font-size: 18px;
+            }
+            &--source {
+                font-size: 15px;
+            }
+        }
+        &--img {
+            width: 12.5rem;
+            height: auto;
+            padding: 1rem;
         }
     }
 }
@@ -311,16 +355,15 @@ main {
         &--content {
             display: flex;
             flex-direction: column;
-            width: 100%;
             &--title {
+                list-style-type: none;
                 font-family: Quicksand;
                 font-size: 1.25rem;
-                margin-left: 1em;
+                margin-bottom: 2rem;
+                margin-left: -0.5rem;
             }
             &--text {
-                font-family: Lato;
-                font-size: 1.25rem;
-                margin-left: 1em;
+                margin-top: 0.5rem;
             }
         }
     }
@@ -337,6 +380,7 @@ main {
     background-color: #F4F4F4;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
     &_container {
         display: flex;
         flex-direction: column;
@@ -353,12 +397,11 @@ main {
         &--content {
             display: block;
             width: 100%;
-            padding: 1rem 4rem;
-            font-weight: bold;
+            padding: 1rem 0rem 4rem 0rem;
         }
         &--name,
         &--job {
-            margin: 1rem auto auto 4rem;
+            margin: 0rem auto auto 4rem;
             font-family: Quicksand;
         }
     }
@@ -383,6 +426,10 @@ main {
 .swiper-button-next,
 .swiper-button-prev {
     color: #000!important;
+}
+
+.swiper-pagination {
+    z-index: 9;
 }
 
 
@@ -440,12 +487,15 @@ main {
             margin-top: 2rem;
             margin: 1rem;
             filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
-            &--sqr {
+            &--twitter {
                 height: 3.5rem;
                 width: 3.5rem;
-                padding: 0;
-                margin-top: 0;
-                margin: 0;
+                margin-right: 0;
+            }
+            &--linkedin {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: 0;
             }
         }
         &--btn {
@@ -498,356 +548,406 @@ main {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (min-width: 1024px) {
-    body {
-        .header_mobile {
-            display: none;
-        }
-        .header_desktop {
-            display: flex;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            box-shadow: 0px 10% solid #000;
-            padding-top: 1.3em;
-            background-color: #e6e6e6;
-            &-logo {
-                margin: 0 2em;
-                vertical-align: middle;
-                img {
-                    width: 11.688rem;
-                    height: 3.438rem;
-                    margin-left: 0.8em;
-                }
+    /* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .header_mobile {
+        display: none;
+    }
+    .header_desktop {
+        display: flex;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 10% solid #000;
+        padding-top: 1.3em;
+        background-color: #e6e6e6;
+        &-logo {
+            margin: 0 2em;
+            vertical-align: middle;
+            img {
+                width: 11.688rem;
+                height: 3.438rem;
+                margin-left: 0.8em;
             }
-            .nav_desktop {
-                width: 100%;
+        }
+        .nav_desktop {
+            display: flex;
+            &-list,
+            .pages {
+                color: #2d375c;
+                list-style-type: none;
+                text-decoration: none;
                 display: flex;
-                align-items: center;
-                &-list,
-                .pages {
-                    color: #2d375c;
-                    list-style-type: none;
-                    text-decoration: none;
-                    display: flex;
-                    flex-direction: row;
-                    box-sizing: border-box;
-                    padding-right: 0.5em;
-                    padding-left: 0.5em;
-                    align-items: center;
-                    font-size: 1.3em;
-                }
+                flex-direction: row;
+                box-sizing: border-box;
+                padding: 0 30px 0 0px;
+                font-size: 1.563rem;
             }
         }
-        .nav_mobile-list,
-        .appear {
-            display: none;
+    }
+    .nav_mobile-list,
+    .appear {
+        display: none;
+    }
+    /* Section principale
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .container_principal {
+        &-element {
+            &-title {
+                left: 1.8em;
+                margin-top: 2em;
+            }
+            &-txt {
+                left: 4em;
+                margin-top: 4em;
+                width: 50%;
+            }
+            &-btn {
+                position: absolute;
+                left: 75%;
+                top: 80%;
+                height: 4.438rem;
+                width: 14.875rem;
+                float: right;
+                cursor: pointer;
+            }
         }
-        main {
-            .container_principal {
-                &-element {
-                    &-title {
-                        left: 1.8em;
-                        margin-top: 2.5em;
-                    }
-                    &-txt {
-                        left: 4em;
-                        margin-top: 6em;
-                        width: 50%;
-                    }
-                    &-btn {
-                        position: absolute;
-                        left: 73%;
-                        top: 90%;
-                        height: 4.438rem;
-                        width: 14.875rem;
-                        float: right;
-                        cursor: pointer;
-                    }
-                }
+    }
+    /* Section le constat
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .finding {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4.375rem;
+        &_desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+        }
+        &_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 23.25rem;
+            height: auto;
+            border-radius: 30px;
+            background-color: #FFF;
+            box-shadow: 0 3px 4px 0 #C8C8C8;
+            margin: 2rem;
+            &--img {
+                width: 7.5rem;
+                height: 8rem;
+                background-color: #EEE;
+                border-radius: 50%;
+                margin-top: 2.125rem;
+                margin-bottom: 1.5rem;
             }
-            .container_constat {
-                .section_title {
-                    width: fit-content;
-                    margin-left: 3.7em;
-                    font-size: 2em;
-                }
-                &-card {
-                    width: 20em;
-                    height: 20em;
-                    margin-bottom: 7em;
-                    display: inline-block;
-                    margin-left: 2em;
-                    margin-right: 2em;
-                    border-radius: 2em;
-                }
+            &--txt {
+                padding: 0 1.625rem 0 1.625rem;
+                color: #242C53;
+                font-size: 1.25rem;
+                text-align: justify;
             }
-            .container_pt {
-                display: inline-block;
-                position: relative;
+        }
+    }
+    /* Section les pathologies traitées
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .pathologies {
+        display: flex;
+        flex-direction: row;
+        background-color: #F4F4F4;
+        &_container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 26rem;
+            &--list {
+                margin-left: 2.3rem;
+            }
+            &--img {
                 width: 100%;
-                .section_title {
-                    width: fit-content;
-                    margin-top: 1.1em;
-                    margin-left: 3.7em;
-                    font-size: 2em;
-                }
-                &-element {
-                    &-txt {
-                        width: 40%;
-                        font-size: 1.25em;
-                        margin-left: 3em;
-                        margin-top: 2em;
-                    }
-                    &-list {
-                        font-size: 1.25em;
-                        margin-top: 0%;
-                        margin-left: 1em;
-                    }
-                    &-img {
-                        background-color: rgb(206, 206, 206);
-                        left: 48%;
-                        height: 29em;
-                        width: 40em;
-                        display: flex;
-                        margin-left: auto;
-                        margin-top: -20.5em;
-                    }
+                height: 26rem;
+                background-color: #C8C8C8;
+            }
+        }
+    }
+    /* Section les exercices du quotidien
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .container_eq {
+        .section_title {
+            width: fit-content;
+            margin-bottom: 2.5em;
+            margin-left: 3.7em;
+            font-size: 2em;
+        }
+        &-element {
+            &-txt {
+                font-size: 1.25em;
+                margin-left: 3em;
+            }
+            #etiquette_mobile {
+                display: none;
+            }
+            .list_eq {
+                .container_eq-element-etiquette {
+                    border-radius: 0.5em;
+                    padding: 1em;
+                    margin: 1em;
+                    padding-left: 2em;
+                    padding-right: 2em;
+                    margin-top: 3em;
+                    margin-bottom: 3em;
                 }
             }
-            .container_eq {
-                .section_title {
-                    width: fit-content;
-                    margin-bottom: 2.5em;
-                    margin-left: 3.7em;
-                    font-size: 2em;
+            #etiquette_desktop {
+                display: block;
+                font-family: "Quicksand";
+                list-style: none;
+                border-radius: 0.5em;
+                display: inline-block;
+                color: #C9539A;
+                background-color: white;
+                border: #C9539A solid 0.1em;
+                margin: 1em;
+                margin-bottom: 3em;
+                margin-top: 3em;
+                padding: 1em;
+                padding-left: 2em;
+                padding-right: 2em;
+            }
+        }
+    }
+    /* Section notre solution
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .solution {
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        &_container {
+            margin: 4.75rem 0;
+            &--img {
+                width: 50%;
+                height: 35vh;
+                border-radius: 1.875rem;
+                background-color: #C8C8C8;
+            }
+        }
+        &_container:nth-of-type(1) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+        }
+        &_container:nth-of-type(2) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        &_container:nth-of-type(3) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    /* Section preuves scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .scientific {
+        padding: 3rem 5rem 5rem 5rem;
+        background-color: #F4F4F4;
+        &_container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            &--text {
+                height: auto;
+                width: 25rem;
+                &--article {
+                    font-size: 24px;
                 }
-                &-element {
-                    &-txt {
-                        font-size: 1.25em;
-                        margin-left: 3em;
-                    }
-                    #etiquette_mobile {
-                        display: none;
-                    }
-                    .list_eq {
-                        .container_eq-element-etiquette {
-                            border-radius: 0.5em;
-                            padding: 1em;
-                            margin: 1em;
-                            padding-left: 2em;
-                            padding-right: 2em;
-                            margin-top: 3em;
-                            margin-bottom: 3em;
-                        }
-                    }
-                    #etiquette_desktop {
-                        display: block;
-                        font-family: "Quicksand";
-                        list-style: none;
-                        border-radius: 0.5em;
-                        display: inline-block;
-                        color: #C9539A;
-                        background-color: white;
-                        border: #C9539A solid 0.1em;
-                        margin: 1em;
-                        margin-bottom: 3em;
-                        margin-top: 3em;
-                        padding: 1em;
-                        padding-left: 2em;
-                        padding-right: 2em;
-                    }
+                &--source {
+                    font-size: 15px;
+                }
+            }
+            &--img {
+                width: 12.5rem;
+                height: auto;
+            }
+        }
+    }
+    /* Section les avantages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .benefits {
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        padding-top: 3.75rem;
+        &_desktop {
+            display: flex;
+            flex-direction: row;
+            margin: 0 2.6rem;
+            height: auto;
+            width: auto;
+        }
+        &_container {
+            display: flex;
+            width: 50%;
+            border-radius: 1.875rem;
+            background-color: #FFF;
+            height: 23.25rem;
+            box-shadow: 0 3px 4px 0 #C8C8C8;
+            margin-top: 2.5rem;
+            &--pro {
+                display: block;
+                height: auto;
+                min-width: 35%;
+                border-radius: 1.875rem;
+                background-image: url("../img/hab/Presentation/AvantagesPro2.jpg");
+                background-size: cover;
+            }
+            &--patient {
+                display: block;
+                height: auto;
+                min-width: 35%;
+                border-radius: 1.875rem;
+                background-image: url("../img/hab/Presentation/AvantagesPatient2.jpg");
+                background-size: cover;
+            }
+            &--content {
+                display: flex;
+                flex-direction: column;
+                &--title {
+                    font-family: Quicksand;
+                    font-size: 1.25rem;
+                    margin-right: 1rem;
+                    margin-bottom: 2.5rem;
+                    margin-left: 1.5rem;
+                }
+                &--text {
+                    font-family: Lato;
+                    font-size: 1.25rem;
+                    margin-right: 1rem;
+                    margin-left: 1.5rem;
+                    line-height: 20px;
                 }
             }
         }
     }
-    @media screen and (min-width: 1024px) {
-        /* Footer
+    /* Section témoignages
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-        .title {
-            padding: 0 7.5rem;
-            font-size: 1.875rem;
-        }
-        .subtitle {
-            padding: 0 3.75rem;
-            font-size: 1.25rem;
-        }
-        .footer {
-            height: 18.75rem;
-            width: 100%;
-            height: auto;
+    .testimonials {
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &_container {
             display: flex;
-            flex-direction: row-reverse;
-            align-items: flex-start;
-            padding-top: 2rem;
-            &_social {
+            flex-direction: row;
+            justify-content: center;
+            &--img {
+                width: 11.25rem;
+                height: 11.25rem;
+                border-radius: 6rem;
+                margin-left: 9.063rem;
+                background-color: #C8C8C8;
+            }
+            &--text {
+                padding: 1rem 4rem;
+            }
+            &--content {
+                width: 60%;
+                padding: 1rem 0rem 4rem 0rem;
+            }
+        }
+    }
+    /* Section nos partenaires scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .partners {
+        height: auto;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        &_container {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 5.5rem;
+        }
+        &_container--form {
+            height: 10.875rem;
+            width: 13.5rem;
+        }
+    }
+    /* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .title {
+        padding: 0 7.5rem;
+        font-size: 1.875rem;
+    }
+    .subtitle {
+        padding: 0 3.75rem;
+        font-size: 1.25rem;
+    }
+    .footer {
+        height: 18.75rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-top: 2rem;
+        &_social {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            padding: 0rem;
+            &--links {
                 display: flex;
                 justify-content: flex-end;
-                width: 50%;
-                padding: 0rem;
-                &--links {
-                    display: flex;
-                    justify-content: flex-end;
-                    margin: 0;
-                    padding: 0;
-                    margin: 0;
-                    &--sqr {
-                        padding: 0 3.5rem 0 2rem;
-                    }
+                margin: 0;
+                padding: 0;
+                margin: 0;
+                &--twitter {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 2rem;
                 }
-                &--btn {
-                    &--contact {
-                        cursor: pointer;
-                    }
+                &--linkedin {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 5rem;
                 }
             }
-            &_content {
-                display: flex;
-                width: 50%;
-                justify-content: space-evenly;
-                flex-direction: row-reverse;
-                padding-bottom: 5rem;
-                &--text {
-                    margin: 0;
-                    padding: 0 1rem;
-                    font-size: 1.25rem;
-                    display: flex;
-                    align-items: flex-start;
-                }
-                &--title {
-                    font-size: 1.875rem;
+            &--btn {
+                &--contact {
+                    cursor: pointer;
                 }
             }
         }
-        /* Section nos partenaires scientifiques
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-        .partners {
-            height: auto;
-            width: 100%;
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            &_container {
-                display: flex;
-                justify-content: space-around;
-                flex-direction: row;
-                margin-top: 5.5rem;
-            }
-            &_container--form {
-                height: 10.875rem;
-                width: 13.5rem;
-            }
-        }
-        /* Section témoignages
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-        .testimonials {
-            height: auto;
-            margin: 0 auto;
-            margin-top: 10rem;
-            width: 100%;
+        &_content {
             display: flex;
-            flex-direction: column;
-            &_container {
+            width: 50%;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            padding-bottom: 5rem;
+            &--text {
+                margin: 0;
+                padding: 0 1rem;
+                font-size: 1.25rem;
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
-                &--img {
-                    width: 11.25rem;
-                    height: 11.25rem;
-                    border-radius: 6rem;
-                    margin-left: 9.063rem;
-                    background-color: #C8C8C8;
-                }
-                &--text {
-                    padding: 1rem 4rem;
-                }
-                &--content {
-                    width: 60%;
-                    padding: 1rem;
-                }
+                align-items: flex-start;
             }
-        }
-        /* Section les avantages
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-        .benefits {
-            height: auto;
-            margin: 0 auto;
-            width: 100%;
-            background-color: #fff;
-            padding-top: 11.625rem;
-            &_desktop {
-                display: flex;
-                flex-direction: row;
-                margin: 0 2.6rem;
-                height: auto;
-                width: auto;
-            }
-            &_container {
-                display: flex;
-                width: 50%;
-                border-radius: 1.875rem;
-                background-color: #FFF;
-                height: auto;
-                box-shadow: 0 3px 4px 0 #C8C8C8;
-                margin-top: 2.5rem;
-                &--img {
-                    display: block;
-                    height: auto;
-                    width: 35%;
-                    border-radius: 1.875rem;
-                }
-                &--content {
-                    display: flex;
-                    flex-direction: column;
-                    &--title {
-                        font-family: Quicksand;
-                        font-size: 1.25rem;
-                        margin-right: 1rem;
-                        margin-bottom: 2.5rem;
-                        margin-left: 1.5rem;
-                    }
-                    &--text {
-                        font-family: Lato;
-                        font-size: 1.25rem;
-                        margin-right: 1rem;
-                        margin-left: 1.5rem;
-                        line-height: 20px;
-                    }
-                }
-            }
-        }
-        /* Section notre solution
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-        .solution {
-            height: auto;
-            margin: 0 auto;
-            width: 100%;
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            &_container {
-                margin: 4.75rem 0;
-                &--img {
-                    width: 50%;
-                    height: 35vh;
-                    border-radius: 1.875rem;
-                    background-color: #C8C8C8;
-                }
-            }
-            &_container:nth-of-type(1) {
-                display: flex;
-                flex-direction: row-reverse;
-                align-items: center;
-                justify-content: space-around;
-            }
-            &_container:nth-of-type(2) {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-around;
-            }
-            &_container:nth-of-type(3) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            &--title {
+                font-size: 1.875rem;
             }
         }
     }
