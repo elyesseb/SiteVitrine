@@ -154,6 +154,7 @@ select:focus {
             background-position: right;
             -ms-word-break: normal;
             word-break: normal;
+            padding-left: 1em;
         }
     }
 }
@@ -187,8 +188,7 @@ label {
     width: 100%;
 }
 
-input[type=submit],
-input[type=reset] {
+button {
     background-color: #EEE;
     color: #4AC0E0;
     padding: 11.25px 43.75px;
@@ -201,12 +201,11 @@ input[type=reset] {
     align-items: center;
 }
 
-input[type=reset] {
+.delete {
     display: none;
 }
 
-input[type=submit]:hover,
-input[type=reset]:hover {
+button:hover {
     background-color: #4AC0E0;
     color: #fff;
 }
@@ -399,6 +398,7 @@ input[type=reset]:hover {
                 background-position: right;
                 -ms-word-break: normal;
                 word-break: normal;
+                padding-left: 1em;
             }
             &--btn {
                 display: flex;
@@ -406,8 +406,7 @@ input[type=reset]:hover {
             }
         }
     }
-    input[type=submit],
-    input[type=reset] {
+    button {
         background-color: #EEE;
         color: #4AC0E0;
         padding: 11.25px 43.75px;
@@ -415,7 +414,7 @@ input[type=reset]:hover {
         border-radius: 15px;
         cursor: pointer;
     }
-    input[type=reset] {
+    .delete {
         display: block;
     }
     /* Footer

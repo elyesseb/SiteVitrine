@@ -141,6 +141,18 @@
             "title": "Nos prix et distinctions"
         }
     },
+    "contact": {
+        "text": "Si vous êtes concernés ou sensibilisés à l'hémiplégie, que vous souhaitez une démonstration de notre solution ou simplement échanger, n'hésitez pas à nous envoyer un message !",
+        "form": {
+            "name": "Votre nom",
+            "job": "Votre profession",
+            "select": "Sélectionnez votre profession",
+            "button": {
+                "send": "Envoyer",
+                "clear": "Effacer"
+            }
+        }
+    },
     "footer": {
         "button": "Nous contacter"
     }

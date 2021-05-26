@@ -141,6 +141,18 @@
             "title": "Our awards and distinctions"
         }
     },
+    "contact": {
+        "text": "If you are concerned or aware of hemiplegia, if you would like a demonstration of our solution or simply want to exchange ideas, do not hesitate to send us a message!",
+        "form": {
+            "name": "Your name",
+            "job": "Your profession",
+            "select": "Select your profession",
+            "button": {
+                "send": "Send",
+                "clear": "Clear"
+            }
+        }
+    },
     "footer": {
         "button": "Contact us"
     }
