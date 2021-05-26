@@ -87,12 +87,12 @@
                 </div>
                 <div class="formulaire_container">
                     <form action="mail.php" method="POST">
-                        <label for="fname" data-i18n="contact.form.name">Votre nom</label>
-                        <input type="text" name="name" class="contactInput">
-                        <label for="sujet">E-mail</label>
-                        <input type="text" name="email" class="contactInput">
-                        <label for="emailAddress" data-i18n="contact.form.job">Votre profession</label>
-                        <select class="formulaire_container--job" name="job" class="form-control">
+                        <label for="name" data-i18n="contact.form.name">Votre nom</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email">
+                        <label for="job" data-i18n="contact.form.job">Votre profession</label>
+                        <select class="formulaire_container--job" name="job" id="job">
                             <option selected disabled data-i18n="contact.form.select">Indiquer la profession</option>
                             <option value="Kinésithérapeute">Kinésithérapeute</option>
                             <option value="Médecin">Médecin</option>
@@ -107,8 +107,8 @@
                             <option value="Autres">Autres</option>
                         </select>
                         <br><br>
-                        <label for="subject">Message</label>
-                        <textarea name="message" class="contactInput"></textarea>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
                         <div class="formulaire_container--btn">
                             <button class="btn_form" data-i18n="contact.form.button.send">Envoyer</button>
                             <button class="btn_form delete" data-i18n="contact.form.button.clear">Effacer</button>

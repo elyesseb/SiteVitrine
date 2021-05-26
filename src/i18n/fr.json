@@ -141,6 +141,32 @@
             "title": "Nos prix et distinctions"
         }
     },
+    "news": {
+        "text": "Ils parlent de nous !",
+        "title": "Nos dernières actualités ",
+        "article1": {
+            "title": "Titre",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "Voir plus"
+        },
+        "article2": {
+            "title": "Titre",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "Voir plus"
+        },
+
+        "article3": {
+            "title": "Titre",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "Voir plus"
+        },
+        "article4": {
+            "title": "Titre",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "Voir plus"
+        },
+        "title2": "Suivez-nous pour ne rien manquer"
+    },
     "contact": {
         "text": "Si vous êtes concernés ou sensibilisés à l'hémiplégie, que vous souhaitez une démonstration de notre solution ou simplement échanger, n'hésitez pas à nous envoyer un message !",
         "form": {

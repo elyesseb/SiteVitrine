@@ -141,6 +141,31 @@
             "title": "Our awards and distinctions"
         }
     },
+    "news": {
+        "text": "They talk about us!",
+        "title": "Our latest news",
+        "article1": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "See more"
+        },
+        "article2": {
+            "title": "Title",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "See more"
+        },
+
+        "article3": {
+            "title": "Title",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "See more"
+        },
+        "article4": {
+            "title": "Title",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "See more"
+        },
+        "title2": "Follow us so you don't miss anything"
+    },
     "contact": {
         "text": "If you are concerned or aware of hemiplegia, if you would like a demonstration of our solution or simply want to exchange ideas, do not hesitate to send us a message!",
         "form": {
