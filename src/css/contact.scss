@@ -112,6 +112,11 @@ select:focus {
     display: none;
 }
 
+.btn_lang {
+    border: none;
+    background-color: transparent;
+}
+
 
 /* Formulaire
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -196,7 +201,7 @@ label {
     width: 100%;
 }
 
-button {
+.btn_form {
     background-color: #EEE;
     color: #4AC0E0;
     padding: 11.25px 43.75px;
@@ -213,7 +218,7 @@ button {
     display: none;
 }
 
-button:hover {
+.btn_form:hover {
     background-color: #4AC0E0;
     color: #fff;
 }
@@ -414,7 +419,7 @@ button:hover {
             }
         }
     }
-    button {
+    .btn_form {
         background-color: #EEE;
         color: #4AC0E0;
         padding: 11.25px 43.75px;

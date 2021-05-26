@@ -146,7 +146,7 @@
         "form": {
             "name": "Votre nom",
             "job": "Votre profession",
-            "select": "Sélectionnez votre profession",
+            "select": "Indiquer la profession",
             "button": {
                 "send": "Envoyer",
                 "clear": "Effacer"
