@@ -17,9 +17,13 @@ body {
     font-family: Lato, Helvetica, sans-serif;
 }
 
+* {
+    font-weight: unset;
+}
+
 .title {
     font-family: Quicksand;
-    font-size: 2rem;
+    font-size: 1.875rem;
     padding: 0rem 1rem;
 }
 
@@ -30,8 +34,9 @@ body {
     width: 6.25rem;
     height: 0.313rem;
     background: #92CFD0;
-    top: 0.125rem;
+    top: 0.5rem;
     left: 0;
+    border-radius: 30px;
 }
 
 .subtitle {
@@ -40,6 +45,13 @@ body {
     line-height: 1.5rem;
 }
 
+select {
+    cursor: pointer;
+    border: 0.1em solid rgb(77, 77, 77);
+    border-radius: 0.2em;
+}
+
+
 /* Mobile first
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -47,11 +59,25 @@ body {
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+
+#nav_mobile {
+    background-color: #E6E6E6;
+    padding: 3rem 0rem 1rem 0rem;
+}
+
 .header_mobile {
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #E6E6E6;
+    z-index: 100;
+    position: fixed;
     .header_mobile-logo {
         width: 100%;
         margin: auto;
@@ -72,18 +98,18 @@ body {
     }
 }
 
-.header_desktop {
+.appear {
     display: none;
 }
 
-.appear {
+.header_desktop {
     display: none;
 }
 
 .nav_mobile-list {
     &-element {
         list-style: none;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 }
 
@@ -97,45 +123,43 @@ body {
 
 /* Section Actualites
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container_actualites{
-    .cards{
+
+.container_actualites {
+    .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
-    .actualites_txt{
+    .actualites_txt {
         text-align: center;
         font-family: Quicksand;
-        font-size:1.875rem;
+        font-size: 1.875rem;
         padding: 0rem 1rem;
     }
-    .actualites{
-
-        &_cards{
-             height: 32.563rem;
-             border-radius: 0.5rem;
-             background-color:rgb(238 238 238);
-             display: flex;
-             flex-direction: column;
-             margin: 1em;
-             box-shadow: rgba(0,0,0,0.5);
-
-             &-title{
+    .actualites {
+        &_cards {
+            height: 32.563rem;
+            border-radius: 0.5rem;
+            background-color: rgb(238 238 238);
+            display: flex;
+            flex-direction: column;
+            margin: 1em;
+            box-shadow: rgba(0, 0, 0, 0.5);
+            &-title {
                 font-size: 1.875rem;
                 font-family: 'Lato';
                 text-align: center;
             }
-            &-img{
+            &-img {
                 height: 10.125rem;
-                background:rgb(200 200 200);
+                background: rgb(200 200 200);
             }
-            &-texte{
+            &-texte {
                 padding: 1em;
                 font-size: 1.25rem;
                 font-family: 'Lato';
             }
-            &-btn{
+            &-btn {
                 height: 3.188rem;
                 width: 14.875rem;
                 justify-content: center;
@@ -145,32 +169,31 @@ body {
                 margin: auto;
                 margin-bottom: 1em;
                 background: rgb(238 238 238);
-                border:rgb(96 193 223) solid 2px;
+                border: rgb(96 193 223) solid 2px;
                 border-radius: 0.938rem;
-                    .actualites_lien{
+                .actualites_lien {
                     text-decoration: none;
-                    font-family:Quicksand;
+                    font-family: Quicksand;
                     font-size: 1.563rem;
-                    color: rgb(96 193 223) ;
+                    color: rgb(96 193 223);
                 }
             }
         }
-
     }
 }
 
 
 /* Section Twitter
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.twitter_cards{
+
+.twitter_cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 3rem 0;
     align-items: flex-start;
-
-    &-api{
-        width: 19rem; 
+    &-api {
+        width: 19rem;
     }
 }
 
@@ -203,12 +226,15 @@ body {
             margin-top: 2rem;
             margin: 1rem;
             filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
-            &--sqr {
+            &--twitter {
                 height: 3.5rem;
                 width: 3.5rem;
-                padding: 0;
-                margin-top: 0;
-                margin: 0;
+                margin-right: 0;
+            }
+            &--linkedin {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: 0;
             }
         }
         &--btn {
@@ -257,7 +283,6 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-
     /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .header_mobile {
@@ -295,57 +320,54 @@ body {
             }
         }
     }
+    .nav_mobile-list,
+    .appear {
+        display: none;
+    }
     /* Section Actualités
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container_actualites{
-    
-    .actualites_txt{
-        margin-bottom: 6.813rem;
-        margin-top: 4.313rem;
-    }
-    .actualites_cards{
-        width: 29.188rem; 
-        height: 32.563rem;
-        display: inline-flex;
-        box-shadow: 0 0.3em 4px 0 rgb(0,0,0,0.5);
-        margin-bottom: 5.938rem; 
-        margin-left: 5.375rem;
-        margin-right: 5.375rem;
-
-            
-            &-btn{
-                .actualites_lien{
+    .container_actualites {
+        .actualites_txt {
+            margin-bottom: 6.813rem;
+            margin-top: 0;
+        }
+        .actualites_cards {
+            width: 29.188rem;
+            height: 32.563rem;
+            display: inline-flex;
+            box-shadow: 0 0.3em 4px 0 rgb(0, 0, 0, 0.5);
+            margin-bottom: 5.938rem;
+            margin-left: 5.375rem;
+            margin-right: 5.375rem;
+            &-btn {
+                .actualites_lien {
                     text-decoration: none;
-                    font-family:Quicksand;
+                    font-family: Quicksand;
                     font-size: 1.563rem;
-                    color: rgb(96 193 223) ;
+                    color: rgb(96 193 223);
                 }
             }
-            &-btn:hover{
+            &-btn:hover {
                 background: url(/src/img/hab/Degrades/BLEU.png);
                 background-size: 100% 100%;
                 border: none;
-                .actualites_lien{
-                     color: white;
+                .actualites_lien {
+                    color: white;
                 }
             }
-    }
-
-}
-
-    /* Section Twitter
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.container_twitter{
-    .twitter_cards{
-
-        &-api{
-            border-radius: 0.938rem;
-            margin-left: 4.875rem;
-            margin-right: 4.875rem;
         }
     }
-}
+    /* Section Twitter
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .container_twitter {
+        .twitter_cards {
+            &-api {
+                border-radius: 0.938rem;
+                margin-left: 4.875rem;
+                margin-right: 4.875rem;
+            }
+        }
+    }
     /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .title {
@@ -375,8 +397,15 @@ body {
                 margin: 0;
                 padding: 0;
                 margin: 0;
-                &--sqr {
-                    padding: 0 3.5rem 0 2rem;
+                &--twitter {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 2rem;
+                }
+                &--linkedin {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 5rem;
                 }
             }
             &--btn {
