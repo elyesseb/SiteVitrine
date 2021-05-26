@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/apropos.scss">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/hab/Logo/Picto_H.png">
+    <script src="src/js/navigation.js" defer></script>
+    <script src="src/js/translate.js" defer></script>
+    <title>H'ability</title>
+</head>
+
+<body>
+    <!-- Menu de navigation 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <header class="header">
+        <div class="header_mobile">
+            <div class="header_mobile-logo">
+                <a href="index.html"><img id="#" src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability"></a>
+            </div>
+            <div id="header_menu-burger">
+                <a>
+                    <img id="##" src="./src/img/hab/bars-solid.svg" alt="Menu navigation">
+                </a>
+            </div>
+        </div>
+        <div id="nav_mobile" class="appear">
+            <ul class="nav_mobile-list">
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="index.html" data-i18n="header.home">Accueil</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="apropos.html" data-i18n="header.about">A propos de nous</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="" data-i18n="header.news">Actualités</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="contact.html" data-i18n="header.contact">Nous contacter</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <select class="mobile_lang">
+                        <option value="fr">FR</option>
+                        <option value="en">EN</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="header_desktop">
+            <div class="header_desktop-logo">
+                <a href="index.html">
+                    <img src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability">
+                </a>
+            </div>
+            <nav class="nav_desktop">
+                <ul class="nav_desktop-list">
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="index.html" data-i18n="header.home">Accueil</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="apropos.html" data-i18n="header.about">A propos de nous</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="" data-i18n="header.news">Actualités</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="contact.html" data-i18n="header.contact">Nous contacter</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <select class="desktop_lang">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenu principal de la page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <main>
+        <!-- Section notre histoire
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="history">
+            <h2 class="title" data-i18n="about.history.title">Notre histoire</h2>
+            <div class="history_container">
+                <div>
+                    <p class="history_container--text" data-i18n="about.history.text1">Le projet est né en juin 2018, à la suite du challenge 24h Innov’Handicap organisé par l’EPF Troyes où nous avons rencontré Anne-Catherine GUENIER, présidente de l’Association Hémiparésie, et son fils Léandre, 15 ans, passionné de
+                        jeux vidéo et atteint d’hémiparésie depuis la naissance.</p>
+                    <p class="history_container--text" data-i18n="about.history.text2">C’est durant cet évènement que nous avons été sensibilisées à l’AVC infantile et à l’hémiparésie et que nous avons créé le projet H’ability.</p>
+                </div>
+                <video class="history_container--img" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <!-- Section notre ambition
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="ambition">
+            <h2 class="title-right" data-i18n="about.ambition.title">Notre ambition</h2>
+            <div class="ambition_container">
+                <div class="ambition_container--content">
+                    <div class="ambition_container--content--img"></div>
+                    <div class="ambition_container--content--text">
+                        <p>Vision</p>
+                    </div>
+                </div>
+                <div class="ambition_container--content">
+                    <div class="ambition_container--content--img"></div>
+                    <div class="ambition_container--content--text">
+                        <p>Mission</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section notre equipe
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="team">
+            <h2 class="title-center" data-i18n="about.team.title">Notre équipe</h2>
+            <div class="team_container">
+                <div class="team_container--content">
+                    <img class="team_container--content--img" src="./src/img/hab/BH.PNG" alt="Bérengère HENRION">
+                    <div class="team_container--content--text">
+                        <h2>Bérengère HENRION</h2>
+                        <p data-i18n="about.team.text1">De nature curieuse et enthousiaste, je me donne à 100% tant dans mes projets professionnels que personnels. L’idée de développer un produit qui permettra d’améliorer le quotidien de nombreux enfants me motive davantage !</p>
+                    </div>
+                </div>
+                <div class="team_container--content">
+                    <img class="team_container--content--img" src="./src/img/hab/MOMCK.PNG" alt="Marie-Odile McKEENEY">
+                    <div class="team_container--content--text">
+                        <h2>Marie-Odile McKEENEY</h2>
+                        <p data-i18n="about.team.text2">Passionnée par les technologies de demain et leur impact potentiel sur la vie des utilisateurs. Pouvoir permettre à Léandre et aux enfants atteints d'hémiparésie d'effectuer leur rééducation et de retrouver de la mobilité tout
+                            en s'amusant me motive beaucoup !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section valeurs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="value">
+            <h2 class="title" data-i18n="about.values.title">Nos valeurs</h2>
+            <article class="value_container">
+                <div class="value_container--img">
+                    <img class="value_container--img--background" src="./src/img/hab/Ellipse.png" alt="Image de fond bleu">
+                    <img class="value_container--img--details" src="./src/img/hab/Valeur/icone_équité1.png" alt="Icon équité">
+                </div>
+                <div class="value_container--text">
+                    <h3 class="value_container--text--title" data-i18n="about.values.article1.title">Équité</h3>
+                    <p class="value_container--text--p" data-i18n="about.values.article1.text">Parce que nous souhaitons que chacun ait les mêmes chances face aux situations du quotidien.</p>
+                </div>
+            </article>
+            <article class="value_container">
+                <div class="value_container--img">
+                    <img class="value_container--img--background" src="./src/img/hab/Ellipse.png" alt="Image de fond bleu">
+                    <img class="value_container--img--details" src="./src/img/hab/Valeur/icone_humilité2.png" alt="Icon humilité">
+                </div>
+                <div class="value_container--text">
+                    <h3 class="value_container--text--title value_title--right" data-i18n="about.values.article2.title">Humilité</h3>
+                    <p class="value_container--text--p value_text--right" data-i18n="about.values.article2.text">Parce que nous pensons que c’est ensemble, surtout en apprenant des autres, que nous pourrons progresser.</p>
+                </div>
+            </article>
+            <article class="value_container">
+                <div class="value_container--img">
+                    <img class="value_container--img--background" src="./src/img/hab/Ellipse.png" alt="Image de fond bleu">
+                    <img class="value_container--img--details" src="./src/img/hab/Valeur/iconed2s.png" alt="Icon dépassement de soi">
+                </div>
+                <div class="value_container--text">
+                    <h3 class="value_container--text--title" data-i18n="about.values.article3.title">Dépassement de soi</h3>
+                    <p class="value_container--text--p" data-i18n="about.values.article3.text">Parce que nous croyons que repousser ses limites permet de booster son quotidien et sa confiance en soi.</p>
+                </div>
+            </article>
+            <article class="value_container">
+                <div class="value_container--img">
+                    <img class="value_container--img--background" src="./src/img/hab/Ellipse.png" alt="Image de fond bleu">
+                    <img class="value_container--img--details" src="./src/img/hab/Valeur/iconefiabilité2.png" alt="Icon fiabilité">
+                </div>
+                <div class="value_container--text">
+                    <h3 class="value_container--text--title value_title--right" data-i18n="about.values.article4.title">Fiabilité</h3>
+                    <p class="value_container--text--p value_text--right" data-i18n="about.values.article4.text">Parce que nous croyons qu’une solution et une équipe fiables sont essentielles pour nouer et pérenniser une relation de confiance.</p>
+                </div>
+            </article>
+        </section>
+        <!-- Section nos prix et distinctions
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="awards">
+            <h2 class="title-right" data-i18n="about.awards.title">Nos prix et distinctions</h2>
+            <div class="awards_container">
+                <img class="awards_container--img" src="src/img/hab/Prix/LogoFondationSopraSteria(sansfond).png" alt="Logo fondation Sopra Steria">
+                <img class="awards_container--img" src="src/img/hab/Prix/logoOrange.png" alt="Logo Orange">
+                <img class="awards_container--img" src="src/img/hab/Prix/Logo_Fondation_Deloitte_Sans-fond.png" alt="Logo Fondation Deloitte">
+                <img class="awards_container--img" src="src/img/hab/Prix/Logo_Paris_&_Co_HUA(sans-fond).png" alt="Logo Paris & Co HUA">
+                <img class="awards_container--img" src="src/img/hab/Prix/logoLiveForGood.png" alt="Logo Live For Good">
+                <img class="awards_container--img" src="src/img/hab/Prix/Logo_Grand_Est.jpg" alt="Logo Grand Est">
+            </div>
+        </section>
+    </main>
+    <!-- Pied de page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer>
+        <div class="footer">
+            <div class="footer_social">
+                <div class="footer_social--links">
+                    <a class="footer_social--links--twitter" href="https://twitter.com/_hability" target="_blank"><img src="src/img/hab/twitter-square-brands.svg" alt="twitter_link"></a>
+                    <a class="footer_social--links--linkedin" href="https://www.linkedin.com/company/28884580/" target="_blank"><img src="src/img/hab/linkedin-brands.svg" alt="linkedin_link"></a>
+                </div>
+                <div class="footer_social--btn">
+                    <button class="footer_social--btn--contact" data-i18n="footer.button">Nous contacter</button>
+                </div>
+            </div>
+            <div class="footer_content">
+                <article class="footer_content--text">
+                    <h3 class="footer_content--title">Adresse</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </article>
+                <article class="footer_content--text">
+                    <h3 class="footer_content--title">Contact</h3>
+                    <p>contact@hability.fr</p>
+                </article>
+            </div>
+            <div class="footer_copyright">
+                <p class="footer_copyright--fine">© Copyright <a href="http://www.marie-odile-mckeeney.com/" target="_blank">Marie-Odile McKeeney</a> - 2021</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

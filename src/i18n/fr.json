@@ -1,0 +1,147 @@
+{
+    "header": {
+        "home": "Acceuil",
+        "about": "A propos de nous",
+        "news": "Actualités",
+        "contact": "Nous contacter"
+    },
+    "index": {
+        "home": {
+            "text": "La solution ludique de réalité virtuelle immersive spécialement conçue pour la rééducation fonctionnelle du membre supérieur.",
+            "button": "Nous contacter"
+        },
+        "finding": {
+            "title": "Le constat",
+            "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "text3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+        },
+        "pathologies": {
+            "title": "Les pathologies traitées",
+            "subtitle": "Entrainant des troubles moteurs du membre supérieur et troubles cognitifs",
+            "list": {
+                "text1": "AVC",
+                "text2": "Traumastisme cranien",
+                "text3": "Paralysie cérébrale",
+                "text4": "Amputation"
+            }
+        },
+        "exercises": {
+            "title": "Les exercices du quotidien",
+            "subtitle1": "Choisissez dans notre bibliotheque de jeux les exercices souhaités en fonctions des cpapacités et objetcifs de rééducation...",
+            "subtitle2": "La réalité virtuelle propose un large panel de jeux possibles en 3D !",
+            "list": {
+                "text1": "EXPLORATION VISUELLE",
+                "text2": "PREHENSION FINE",
+                "text3": "AMPLITUDE",
+                "text4": "MEMORISATION",
+                "text5": "EQUILIBRE"
+            }
+        },
+        "solution": {
+            "title": "Notre solution",
+            "text1": "Pourquoi la VR",
+            "text2": "La plateforme",
+            "text3": "Pour les deux"
+        },
+        "scientific": {
+            "title": "Preuves scientifiques",
+            "subtitle": "Basée sur les nombreuses études cliniques faites sur la réalité virtuelle immersive et la rééducation",
+            "article1": {
+                "text": "« La réadaptation en VR est un <strong>outil prometteur</strong> pour <strong>engager activement</strong> les patients dans le programme de réadaptation et peut conduire à une <strong>meilleure récupération motrice</strong>. »",
+                "source": "<em>Traduit de l'article « Clinical Application of VR for Upper Limb Moteur Rehabibilitation in Stroke » of J. Clin Me, publié le 21 octobre 2020, de Won-Seok Kim (North Korea)</em>"
+            },
+            "article2": {
+                "text": "« L'exercice unilatéral et bilatéral en thérapie miroir des membres dans un environnement virtuel immersif peut <strong>renforcer la réorganisation corticale</strong> et <strong>conduire à une mélioration de la fonction motrice</strong>. »",
+                "source": "<em>Traduit de l'article « Proactive Motor Functional Recovery Following Immersive Virtual Reality-Based Limb Mirroring Therapy in Patients with Subacute Stroke », publié le 15 juillet 2020, de Destaw B Mekkib</em>"
+            }
+        },
+        "benefits": {
+            "title": "Les avantages",
+            "subtitle": "Bénéficiez des bienfaits de la réalité virtuelle",
+            "article1": {
+                "title": "Pour les professionels de santé",
+                "text1": "Outil innovant et compact",
+                "text2": "Diversification des séances de rééducation",
+                "text3": "Personnalisation des soins",
+                "text4": "Suivi médical à distance",
+                "text5": "Démultiplication de la prise en charge"
+            },
+            "article2": {
+                "title": "Pour les patients",
+                "text1": "Outil accessible et portable",
+                "text2": "Continuité des soins à domicile",
+                "text3": "Gain & maintien de la motivation",
+                "text4": "Suivi de sa progression",
+                "text5": "Partage des données avec son thérapeute"
+            }
+        },
+        "testimonials": {
+            "title": "Témoignages",
+            "article1": {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
+                "name": "Marine RIDI",
+                "job": "Medecin MPR"
+            },
+            "article2": {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
+                "name": "Marine RIDI",
+                "job": "Medecin MPR"
+            },
+            "article3": {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
+                "name": "Marine RIDI",
+                "job": "Medecin MPR"
+            },
+            "article4": {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu est, ultrices sit amet luctus vitae, varius sed elit.",
+                "name": "Marine RIDI",
+                "job": "Medecin MPR"
+            }
+        },
+        "partners": {
+            "title": "Nos partenaires scientifiques",
+            "subtitle": "Développé avec des professionels de santé, pour des professionels de santé"
+        }
+    },
+    "about": {
+        "history": {
+            "title": "Notre histoire",
+            "text1": "Le projet est né en juin 2018, à la suite du challenge 24h Innov’Handicap organisé par l’EPF Troyes où nous avons rencontré Anne-Catherine GUENIER, présidente de l’Association Hémiparésie, et son fils Léandre, 15 ans, passionné de jeux vidéo et atteint d’hémiparésie depuis la naissance.",
+            "text2": "C’est durant cet évènement que nous avons été sensibilisées à l’AVC infantile et à l’hémiparésie et que nous avons créé le projet H’ability."
+        },
+        "ambition": {
+            "title": "Notre ambition"
+        },
+        "team": {
+            "title": "Notre équipe",
+            "text1": "De nature curieuse et enthousiaste, je me donne à 100% tant dans mes projets professionnels que personnels. L’idée de développer un produit qui permettra d’améliorer le quotidien de nombreux enfants me motive davantage !",
+            "text2": "Passionnée par les technologies de demain et leur impact potentiel sur la vie des utilisateurs. Pouvoir permettre à Léandre et aux enfants atteints d'hémiparésie d'effectuer leur rééducation et de retrouver de la mobilité tout en s'amusant me motive beaucoup !"
+        },
+        "values": {
+            "title": "Nos valeurs",
+            "article1": {
+                "title": "Équité",
+                "text": "Parce que nous souhaitons que chacun ait les mêmes chances face aux situations du quotidien."
+            },
+            "article2": {
+                "title": "Humilité",
+                "text": "Parce que nous pensons que c’est ensemble, surtout en apprenant des autres, que nous pourrons progresser."
+            },
+            "article3": {
+                "title": "Dépassement de soi",
+                "text": "Parce que nous croyons que repousser ses limites permet de booster son quotidien et sa confiance en soi."
+            },
+            "article4": {
+                "title": "Fiabilité",
+                "text": "Parce que nous croyons qu’une solution et une équipe fiables sont essentielles pour nouer et pérenniser une relation de confiance."
+            }
+        },
+        "awards": {
+            "title": "Nos prix et distinctions"
+        }
+    },
+    "footer": {
+        "button": "Nous contacter"
+    }
+}

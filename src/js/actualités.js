@@ -23,11 +23,4 @@ for (let i = 0; i < tabActualites.length; i++) {
     `
 }
 
-
-
-
-
-
-
-
-
+ 

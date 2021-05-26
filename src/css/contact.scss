@@ -14,31 +14,26 @@
 body {
     background-color: #fff;
     color: #2D375C;
-    font-family: Lato, Helvetica, sans-serif;
+    font-size: 20px;
+    font-family: 'Lato', Helvetica, sans-serif;
 }
 
-.title {
-    font-family: Quicksand;
-    font-size: 2rem;
-    padding: 0rem 1rem;
+select {
+    cursor: pointer;
+    border: 0.1em solid rgb(77, 77, 77);
+    border-radius: 0.2em;
 }
 
-.title::after {
-    position: relative;
-    content: '';
-    display: block;
-    width: 6.25rem;
-    height: 0.313rem;
-    background: #92CFD0;
-    top: 0.125rem;
-    left: 0;
+h3 {
+    font-weight: unset;
 }
 
-.subtitle {
-    font-size: 1.125rem;
-    padding: 0rem 1rem;
-    line-height: 1.5rem;
+textarea:focus,
+input:focus,
+select:focus {
+    outline: none;
 }
+
 
 /* Mobile first
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -47,11 +42,25 @@ body {
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+#nav_mobile {
+    background-color: #E6E6E6;
+    padding: 3rem 0rem 1rem 0rem;
+}
+
 .header_mobile {
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #E6E6E6;
+    z-index: 100;
+    position: fixed;
+    padding: 0.5rem 0rem;
     .header_mobile-logo {
         width: 100%;
         margin: auto;
@@ -72,18 +81,18 @@ body {
     }
 }
 
-.header_desktop {
+.appear {
     display: none;
 }
 
-.appear {
+.header_desktop {
     display: none;
 }
 
 .nav_mobile-list {
     &-element {
         list-style: none;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 }
 
@@ -95,84 +104,115 @@ body {
 }
 
 
-/* Section Actualites
+/* Formulaire
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container_actualites{
-    .cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .actualites_txt{
-        text-align: center;
-        font-family: Quicksand;
-        font-size:1.875rem;
-        padding: 0rem 1rem;
-    }
-    .actualites{
 
-        &_cards{
-             height: 32.563rem;
-             border-radius: 0.5rem;
-             background-color:rgb(238 238 238);
-             display: flex;
-             flex-direction: column;
-             margin: 1em;
-             box-shadow: rgba(0,0,0,0.5);
-
-             &-title{
-                font-size: 1.875rem;
-                font-family: 'Lato';
-                text-align: center;
-            }
-            &-img{
-                height: 10.125rem;
-                background:rgb(200 200 200);
-            }
-            &-texte{
-                padding: 1em;
-                font-size: 1.25rem;
-                font-family: 'Lato';
-            }
-            &-btn{
-                height: 3.188rem;
-                width: 14.875rem;
-                justify-content: center;
-                display: flex;
-                flex-wrap: nowrap;
-                align-items: center;
-                margin: auto;
-                margin-bottom: 1em;
-                background: rgb(238 238 238);
-                border:rgb(96 193 223) solid 2px;
-                border-radius: 0.938rem;
-                    .actualites_lien{
-                    text-decoration: none;
-                    font-family:Quicksand;
-                    font-size: 1.563rem;
-                    color: rgb(96 193 223) ;
-                }
-            }
-        }
-
-    }
+.main_bg {
+    background-image: url(../img/hab/Banieres/Contact2.PNG);
+    background-size: cover;
+    background-position: bottom right;
+    height: auto;
+    padding-bottom: 8rem;
 }
 
-
-/* Section Twitter
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.twitter_cards{
+.formulaire {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 3rem 0;
-    align-items: flex-start;
-
-    &-api{
-        width: 19rem; 
+    justify-content: space-evenly;
+    padding-top: 6rem;
+    &_text {
+        display: none;
+    }
+    &_container {
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0 auto;
+        width: 43.375rem;
+        max-width: 90%;
+        height: 38rem;
+        border-radius: 15px;
+        background-color: #EEE;
+        &--job {
+            display: block;
+            width: 100%;
+            float: right;
+            height: 30px;
+            border: none;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            margin-left: 46px;
+            resize: vertical;
+            border-radius: 15px;
+            background-color: #F4F4F4;
+            box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url(../img/hab/arrow.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            -ms-word-break: normal;
+            word-break: normal;
+        }
     }
 }
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    height: 12.745rem;
+}
+
+input[type=text],
+textarea,
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 15px;
+    background-color: #F4F4F4;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+label {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: #EEE;
+    color: #4AC0E0;
+    padding: 11.25px 43.75px;
+    border: 2px solid #4AC0E0;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=reset] {
+    display: none;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #4AC0E0;
+    color: #fff;
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .footer {
     position: absolute;
@@ -203,12 +243,15 @@ body {
             margin-top: 2rem;
             margin: 1rem;
             filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(237deg) brightness(109%) contrast(100%);
-            &--sqr {
+            &--twitter {
                 height: 3.5rem;
                 width: 3.5rem;
-                padding: 0;
-                margin-top: 0;
-                margin: 0;
+                margin-right: 0;
+            }
+            &--linkedin {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: 0;
             }
         }
         &--btn {
@@ -256,8 +299,11 @@ body {
     }
 }
 
-@media screen and (min-width: 1024px) {
 
+/* Desktop
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (min-width: 1024px) {
     /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .header_mobile {
@@ -268,7 +314,6 @@ body {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        box-shadow: 0px 10% solid #000;
         padding-top: 1.3em;
         background-color: #e6e6e6;
         &-logo {
@@ -295,67 +340,84 @@ body {
             }
         }
     }
-    /* Section Actualités
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container_actualites{
-    
-    .actualites_txt{
-        margin-bottom: 6.813rem;
-        margin-top: 4.313rem;
+    .nav_mobile-list,
+    .appear {
+        display: none;
     }
-    .actualites_cards{
-        width: 29.188rem; 
-        height: 32.563rem;
-        display: inline-flex;
-        box-shadow: 0 0.3em 4px 0 rgb(0,0,0,0.5);
-        margin-bottom: 5.938rem; 
-        margin-left: 5.375rem;
-        margin-right: 5.375rem;
-
-            
-            &-btn{
-                .actualites_lien{
-                    text-decoration: none;
-                    font-family:Quicksand;
-                    font-size: 1.563rem;
-                    color: rgb(96 193 223) ;
-                }
-            }
-            &-btn:hover{
-                background: url(/src/img/hab/Degrades/BLEU.png);
-                background-size: 100% 100%;
+    /* Formulaire
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .main_bg {
+        background-image: url(../img/hab/Banieres/Contact2.PNG);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom right;
+        height: auto;
+    }
+    .formulaire {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 12rem;
+        &_text {
+            display: block;
+            width: 30%;
+            color: #242C53;
+            font-family: Quicksand;
+            font-size: 25px;
+            line-height: 31px;
+        }
+        &_container {
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 0;
+            width: 43.375rem;
+            max-width: 90%;
+            height: 36rem;
+            border-radius: 15px;
+            background-color: #EEE;
+            &--job {
+                display: block;
+                width: 70%;
+                float: right;
+                height: 30px;
                 border: none;
-                .actualites_lien{
-                     color: white;
-                }
+                box-sizing: border-box;
+                margin-top: 0px;
+                margin-bottom: 16px;
+                margin-left: 46px;
+                resize: vertical;
+                border-radius: 15px;
+                background-color: #F4F4F4;
+                box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background-image: url(../img/hab/arrow.png);
+                background-repeat: no-repeat;
+                background-position: right;
+                -ms-word-break: normal;
+                word-break: normal;
             }
-    }
-
-}
-
-    /* Section Twitter
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.container_twitter{
-    .twitter_cards{
-
-        &-api{
-            border-radius: 0.938rem;
-            margin-left: 4.875rem;
-            margin-right: 4.875rem;
+            &--btn {
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
-}
+    input[type=submit],
+    input[type=reset] {
+        background-color: #EEE;
+        color: #4AC0E0;
+        padding: 11.25px 43.75px;
+        border: 2px solid #4AC0E0;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    input[type=reset] {
+        display: block;
+    }
     /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .title {
-        padding: 0 7.5rem;
-        font-size: 1.875rem;
-    }
-    .subtitle {
-        padding: 0 3.75rem;
-        font-size: 1.25rem;
-    }
     .footer {
         height: 18.75rem;
         width: 100%;
@@ -375,8 +437,15 @@ body {
                 margin: 0;
                 padding: 0;
                 margin: 0;
-                &--sqr {
-                    padding: 0 3.5rem 0 2rem;
+                &--twitter {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 2rem;
+                }
+                &--linkedin {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin-right: 5rem;
                 }
             }
             &--btn {
