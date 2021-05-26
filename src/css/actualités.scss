@@ -120,6 +120,14 @@ select {
     text-transform: uppercase;
 }
 
+.desktopLangFr {
+    display: none;
+}
+
+.mobileLangFr {
+    display: none;
+}
+
 
 /* Section Actualites
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -131,10 +139,28 @@ select {
         justify-content: center;
     }
     .actualites_txt {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4.25rem;
         text-align: center;
         font-family: Quicksand;
         font-size: 1.875rem;
-        padding: 0rem 1rem;
+    }
+    .imgs_actu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 7.313rem;
+        .maddyness,
+        .canal32,
+        .le_monde,
+        .net01 {
+            padding: 1rem;
+        }
+    }
+    .cards {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .actualites {
         &_cards {
@@ -316,8 +342,7 @@ select {
                 flex-direction: row;
                 box-sizing: border-box;
                 padding: 0 30px 0 0px;
-                font-family: 'Lato';
-                font-size: 25px;
+                font-size: 1.563rem;
             }
         }
     }
@@ -329,14 +354,20 @@ select {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .container_actualites {
         .actualites_txt {
-            margin-bottom: 6.813rem;
-            margin-top: 0;
+            padding-bottom: 3.25rem;
+            padding-top: 10.125rem;
+        }
+        .imgs_actu {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
         }
         .actualites_cards {
             width: 29.188rem;
             height: 32.563rem;
             display: inline-flex;
             box-shadow: 0 0.3em 4px 0 rgb(0, 0, 0, 0.5);
+            margin-top: 3.438rem;
             margin-bottom: 5.938rem;
             margin-left: 5.375rem;
             margin-right: 5.375rem;

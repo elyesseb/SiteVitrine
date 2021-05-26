@@ -120,6 +120,14 @@ select {
     text-transform: uppercase;
 }
 
+.desktopLangFr {
+    display: none;
+}
+
+.mobileLangFr {
+    display: none;
+}
+
 
 /* Section principale
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -587,6 +595,12 @@ select {
     }
     .nav_mobile-list,
     .appear {
+        display: none;
+    }
+    .desktopLangFr {
+        display: none;
+    }
+    .mobileLangFr {
         display: none;
     }
     /* Section principale

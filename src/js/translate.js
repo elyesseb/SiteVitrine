@@ -20,18 +20,28 @@ translator.translatePageTo();
 desktopLanguageToggle();
 mobileLanguageToggle();
 
+let desktopLangFr = document.querySelector('.desktopLangFr');
+let desktopLangEn = document.querySelector('.desktopLangEn');
+
 function desktopLanguageToggle() {
     var selectDesktop = document.querySelector(".desktop_lang");
-    selectDesktop.addEventListener("change", evt => {
+    selectDesktop.addEventListener("click", evt => {
         var language = evt.target.value;
         translator.translatePageTo(language);
+        desktopLangFr.classList.toggle("desktopLangFr");
+        desktopLangEn.classList.toggle("desktopLangFr");
     });
 }
 
+let mobileLangFr = document.querySelector('.mobileLangFr');
+let mobileLangEn = document.querySelector('.mobileLangEn');
+
 function mobileLanguageToggle() {
     var selectMobile = document.querySelector(".mobile_lang");
-    selectMobile.addEventListener("change", evt => {
+    selectMobile.addEventListener("click", evt => {
         var language = evt.target.value;
         translator.translatePageTo(language);
+        mobileLangFr.classList.toggle("mobileLangFr");
+        mobileLangEn.classList.toggle("mobileLangFr");
     });
 }
