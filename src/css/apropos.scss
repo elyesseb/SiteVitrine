@@ -19,6 +19,10 @@ body {
     line-height: 1.5rem;
 }
 
+* {
+    font-weight: unset;
+}
+
 .title {
     font-family: Quicksand;
     font-size: 2rem;
@@ -95,6 +99,7 @@ select {
     position: fixed;
     z-index: 999;
     width: 100%;
+    top: 0;
 }
 
 #nav_mobile {
@@ -157,7 +162,7 @@ select {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .history {
-    padding-top: 5rem;
+    padding-top: 8rem;
     margin-bottom: 5rem;
     &_container {
         display: flex;
