@@ -1,0 +1,32 @@
+{
+    "actualités":[ 
+        {
+            "titre":"Titre",
+            "image":"url de l'image",
+            "texte":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "lien":"url du lien"
+        },
+
+        {
+            "titre":"Titre",
+            "image":"url de l'image",
+            "texte":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "lien":"url du lien"
+        },
+
+        {
+            "titre":"Titre",
+            "image":"url de l'image",
+            "texte":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "lien":"url du lien"
+        },
+
+        {
+            "titre":"Titre",
+            "image":"url de l'image",
+            "texte":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "lien":"url du lien"
+        }
+
+    ]
+}
