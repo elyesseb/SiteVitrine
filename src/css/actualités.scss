@@ -83,8 +83,8 @@ select {
         margin: auto;
         padding-left: 15px;
         img {
-            width: 120px;
-            height: 35px;
+            width: 8rem;
+            height: auto;
             padding-top: 5px;
         }
     }
@@ -120,6 +120,22 @@ select {
     text-transform: uppercase;
 }
 
+.desktopLangFr {
+    display: none;
+}
+
+.mobileLangFr {
+    display: none;
+}
+
+.btn_lang {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: #2D375C;
+    cursor: pointer;
+}
+
 
 /* Section Actualites
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -131,10 +147,28 @@ select {
         justify-content: center;
     }
     .actualites_txt {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4.25rem;
         text-align: center;
         font-family: Quicksand;
         font-size: 1.875rem;
-        padding: 0rem 1rem;
+    }
+    .imgs_actu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 7.313rem;
+        .maddyness,
+        .canal32,
+        .le_monde,
+        .net01 {
+            padding: 1rem;
+        }
+    }
+    .cards {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .actualites {
         &_cards {
@@ -294,14 +328,15 @@ select {
         display: flex;
         justify-content: space-between;
         box-shadow: 0px 10% solid #000;
-        padding-top: 1.3em;
+        padding: 2rem 0 0.5rem 0;
         background-color: #e6e6e6;
         &-logo {
-            margin: 0 2em;
+            margin: -15px 15px;
+            padding-bottom: 2rem;
             vertical-align: middle;
             img {
-                width: 11.688rem;
-                height: 3.438rem;
+                width: 11.625rem;
+                height: auto;
                 margin-left: 0.8em;
             }
         }
@@ -315,7 +350,7 @@ select {
                 display: flex;
                 flex-direction: row;
                 box-sizing: border-box;
-                padding: 0 30px 0 0px;
+                margin: 0 30px 0 0px;
                 font-size: 1.563rem;
             }
         }
@@ -328,14 +363,20 @@ select {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .container_actualites {
         .actualites_txt {
-            margin-bottom: 6.813rem;
-            margin-top: 0;
+            padding-bottom: 3.25rem;
+            padding-top: 10.125rem;
+        }
+        .imgs_actu {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
         }
         .actualites_cards {
             width: 29.188rem;
             height: 32.563rem;
             display: inline-flex;
             box-shadow: 0 0.3em 4px 0 rgb(0, 0, 0, 0.5);
+            margin-top: 3.438rem;
             margin-bottom: 5.938rem;
             margin-left: 5.375rem;
             margin-right: 5.375rem;

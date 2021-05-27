@@ -83,8 +83,8 @@ select {
         margin: auto;
         padding-left: 15px;
         img {
-            width: 120px;
-            height: 35px;
+            width: 8rem;
+            height: auto;
             padding-top: 5px;
         }
     }
@@ -118,6 +118,22 @@ select {
     position: relative;
     color: #2D375C;
     text-transform: uppercase;
+}
+
+.desktopLangFr {
+    display: none;
+}
+
+.mobileLangFr {
+    display: none;
+}
+
+.btn_lang {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: #2D375C;
+    cursor: pointer;
 }
 
 
@@ -558,14 +574,16 @@ select {
         display: flex;
         justify-content: space-between;
         box-shadow: 0px 10% solid #000;
-        padding-top: 1.3em;
+        padding: 2rem 0 0.5rem 0;
         background-color: #e6e6e6;
+        // background-color: rgba(230, 230, 230, 0.8);
         &-logo {
-            margin: 0 2em;
+            margin: -15px 15px;
+            padding-bottom: 2rem;
             vertical-align: middle;
             img {
-                width: 11.688rem;
-                height: 3.438rem;
+                width: 11.625rem;
+                height: auto;
                 margin-left: 0.8em;
             }
         }
@@ -579,13 +597,20 @@ select {
                 display: flex;
                 flex-direction: row;
                 box-sizing: border-box;
-                padding: 0 30px 0 0px;
-                font-size: 1.563rem;
+                margin: 0 30px 0 0px;
+                font-family: 'Lato';
+                font-size: 25px;
             }
         }
     }
     .nav_mobile-list,
     .appear {
+        display: none;
+    }
+    .desktopLangFr {
+        display: none;
+    }
+    .mobileLangFr {
         display: none;
     }
     /* Section principale
@@ -810,6 +835,7 @@ select {
                 border-radius: 1.875rem;
                 background-image: url("../img/hab/Presentation/AvantagesPro2.jpg");
                 background-size: cover;
+                background-position: bottom;
             }
             &--patient {
                 display: block;
@@ -818,6 +844,7 @@ select {
                 border-radius: 1.875rem;
                 background-image: url("../img/hab/Presentation/AvantagesPatient2.jpg");
                 background-size: cover;
+                background-position: bottom;
             }
             &--content {
                 display: flex;

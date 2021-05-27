@@ -1,32 +1,29 @@
 {
-    "actualités":[ 
-        {
-            "titre":"Titre",
-            "image":"url de l'image",
-            "texte":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-            "lien":"url du lien"
+    "news": {
+        "article1": {
+            "title": "Titre",
+            "img": "",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "Voir plus"
+        },
+        "article2": {
+            "title": "Titre",
+            "img": "",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "Voir plus"
         },
 
-        {
-            "titre":"Titre",
-            "image":"url de l'image",
-            "texte":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-            "lien":"url du lien"
+        "article3": {
+            "title": "Titre",
+            "img": "",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "Voir plus"
         },
-
-        {
-            "titre":"Titre",
-            "image":"url de l'image",
-            "texte":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-            "lien":"url du lien"
-        },
-
-        {
-            "titre":"Titre",
-            "image":"url de l'image",
-            "texte":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-            "lien":"url du lien"
+        "article4": {
+            "title": "Titre",
+            "img": "",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "button": "Voir plus"
         }
-
-    ]
+    }
 }

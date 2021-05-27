@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/actualités.scss">
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/hab/Logo/Picto_H.png">
-    <script src="src/js/main.js" defer></script>
+    <script src="src/js/translate.js" defer></script>
     <script src="src/js/actualités.js" defer></script>
     <script src="./src/js/animation.js" defer></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" defer></script>
+    <script src="src/js/navigation.js" defer></script>
+    <script async src="https://platform.twitter.com/widgets.js" defer></script>
+    <script src="//www.termsfeed.com/public/cookie-consent/3.1.0/cookie-consent.js" defer></script>
     <title>H'ability</title>
 </head>
 
@@ -44,11 +46,9 @@
                 <li class="nav_mobile-list-element">
                     <a class="a" href="contact.html" data-i18n="header.contact">Nous contacter</a>
                 </li>
-                <li class="nav_mobile-list-element">
-                    <select class="mobile_lang">
-                    <option value="fr">FR</option>
-                    <option value="en">EN</option>
-                </select>
+                <li class="nav_mobile-list-element mobile_lang">
+                    <button class="mobileLangFr btn_lang" value="fr">FR</button>
+                    <button class="mobileLangEn btn_lang" value="en">EN</button>
                 </li>
             </ul>
         </div>
@@ -72,11 +72,9 @@
                     <li class="nav_desktop-list-element">
                         <a class="pages" href="contact.html" data-i18n="header.contact">Nous contacter</a>
                     </li>
-                    <li class="nav_desktop-list-element">
-                        <select class="desktop_lang">
-                        <option value="fr">FR</option>
-                        <option value="en">EN</option>
-                    </select>
+                    <li class="nav_desktop-list-element desktop_lang">
+                        <button class="desktopLangFr btn_lang" value="fr">FR</button>
+                        <button class="desktopLangEn btn_lang" value="en">EN</button>
                     </li>
                 </ul>
             </nav>
@@ -87,23 +85,26 @@
     <main>
         <!-- Section Actualités
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <section class="container_actualites">
+        <div class="container_actualites">
             <div class="actualites_txt">
-                <p> ils en parlent mieux que nous!</p>
+                <p data-i18n="news.text"> ils parlent de nous!</p>
             </div>
+            <div class="imgs_actu">
+                <img class="maddyness" src="/src/img/hab/maddyness.png" alt="maddyness">
+                <img class="canal32" src="/src/img/hab/canal32.png" alt="canal32">
+                <img class="le_monde" src="/src/img/hab/leMonde.png" alt="LeMonde">
+                <img class="net01" src="/src/img/hab/01net.png" alt="01net">
+            </div>
+            <div class="title" data-i18n="news.title">Nos dernières actualités</div>
             <div class="cards"></div>
-        </section>
+        </div>
         <!-- Section twitter
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <section class="container_twitter">
-            <div class="title">Derniers tweets</div>
-
-            <!-- Lien pour telecharger les codes des Tweets " https://publish.twitter.com/# "
-––––––––––––––––––––––––––––––––––––––––––––––––––----------------------------------------- -->
+        <div class="container_twitter">
+            <div class="title" data-i18n="news.title2">Suivez-nous pour ne rien manquer</div>
+            <!-- Lien pour telecharger les codes des Tweets " https://publish.twitter.com/# " -->
             <div class="twitter_cards">
-
                 <div class="twitter_cards-api" id="tweet_1">
-
                     <blockquote class="twitter-tweet">
                         <p lang="fr" dir="ltr">Bravo <a href="https://twitter.com/_hability?ref_src=twsrc%5Etfw">@_hability</a> 👍 heureux de vous retrouver avec Orange à <a href="https://twitter.com/ChangeNOW_world?ref_src=twsrc%5Etfw">@ChangeNOW_world</a> 👏
                             <a href="https://twitter.com/hashtag/techforgood?src=hash&amp;ref_src=twsrc%5Etfw">#techforgood</a>
@@ -112,9 +113,7 @@
                         </p>&mdash; Christian Landomiel (@CLandomiel) <a href="https://twitter.com/CLandomiel/status/1394548471554846722?ref_src=twsrc%5Etfw">May 18,
                             2021</a>
                     </blockquote>
-
                 </div>
-
                 <div class="twitter_cards-api" id="tweet_2">
 
                     <blockquote class="twitter-tweet">
@@ -126,11 +125,8 @@
                         </p>&mdash; CélinePuffArdichvili (@CelinePuffArdi) <a href="https://twitter.com/CelinePuffArdi/status/1394243944377196544?ref_src=twsrc%5Etfw">May
                             17, 2021</a>
                     </blockquote>
-
                 </div>
-
                 <div class="twitter_cards-api" id="tweet_3">
-
                     <blockquote class="twitter-tweet">
                         <p lang="fr" dir="ltr">[🔥<a href="https://twitter.com/hashtag/Evenement?src=hash&amp;ref_src=twsrc%5Etfw">#Evenement</a>]<br><br>Rendez-vous lundi 31 mai en direct sur <a href="https://twitter.com/hashtag/YouTube?src=hash&amp;ref_src=twsrc%5Etfw">#YouTube</a>                            pour le <a href="https://twitter.com/hashtag/RDVU6?src=hash&amp;ref_src=twsrc%5Etfw">#RDVU6</a> en compagnie de <a href="https://twitter.com/HUA_ParisandCo?ref_src=twsrc%5Etfw">@HUA_ParisandCo</a> !
                             <br>Venez découvrir des solutions <a href="https://twitter.com/hashtag/innovantes?src=hash&amp;ref_src=twsrc%5Etfw">#innovantes</a> dédiées aux <a href="https://twitter.com/hashtag/troublesmoteurs?src=hash&amp;ref_src=twsrc%5Etfw">#troublesmoteurs</a>                            ✨
@@ -138,13 +134,9 @@
                         (@Handicap_Inno) <a href="https://twitter.com/Handicap_Inno/status/1392751467493085186?ref_src=twsrc%5Etfw">May
                             13, 2021</a>
                     </blockquote>
-
-
                 </div>
-
             </div>
-        </section>
-
+        </div>
     </main>
     <!-- Pied de page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -175,8 +167,7 @@
         </div>
     </footer>
     <!-- Cookie Consent by https://www.TermsFeed.com -->
-    <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
-    <script type="text/javascript">
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             cookieconsent.run({
                 "notice_banner_type": "headline",
