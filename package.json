@@ -16,5 +16,9 @@
         "sass": "^1.32.12",
         "scrollreveal": "^4.0.9",
         "swiper": "^6.5.9"
+    },
+    "devDependencies": {
+        "cssnano": "^5.0.4",
+        "postcss": "^8.3.0"
     }
 }
