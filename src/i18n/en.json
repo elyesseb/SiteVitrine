@@ -145,6 +145,7 @@
         "text": "They talk about us!",
         "title": "Our latest news",
         "article1": {
+            "title": "Title",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
             "button": "See more"
         },
