@@ -1,3 +1,14 @@
+### Contents
+
+- [Getting Started](#Getting Started)
+- [Structure of the website](#Structure of the website)
+- [HTML](#The HTML files are located at the root of the folder)
+- [SCSS](#The SCSS files are located in the `./src/css` directory)
+- [Assets and typographies](#The Assets and typographies)
+- [JavaScript](#The JavaScript files are located in the `./src/js` directory)
+- [PHP](#We used PHP for the form functionality of the site, all files are located in the root of the folder)
+
+
 Parcel is a web application bundler, differentiated by its developer experience.<br />
 It offers blazing fast performance utilizing multicore processing, and requires zero configuration.
 
