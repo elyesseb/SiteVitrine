@@ -21,18 +21,18 @@ Now you can just run it with:
 parcel index.html
 ```
 
-You should get a URL that looks something like: `http://localhost:1234/`.
+You should get a URL that looks something like: `http://localhost:1234/`.</br>
 
-## Structure of the website
+## Structure of the website</br>
 
-<h2>The HTML files are located at the root of the folder.</h2></br>
+## The HTML files are located at the root of the folder</br>
 
 `HTML` : index.html ➥ Home-page</br>
 `HTML` : apropos.html ➥ About-us-page</br>
 `HTML` : actualités.html ➥ News-page</br>
 `HTML` : contact.html ➥ contact-page</br>
 
-<h2>The `SCSS` files are located in the `./src/css` directory.</h2></br>
+## The `SCSS` files are located in the `./src/css` directory</br>
 
 `SCSS` : normalize.css => A CSS file used to standardize differences in interpretation of cascading style sheets.</br>
 CSS ensures cross-browser consistency in the default style of HTML elements.</br>
@@ -44,7 +44,7 @@ CSS ensures cross-browser consistency in the default style of HTML elements.</br
 
 Note : These files have been designed in mobile first and media queries based on the 1024px screen resolution for laptop screens.</br>
 
-<h2>The Assets and typographies</h2><br>
+## The Assets and typographies<br>
 
 The Assets (all materials, visuals and documents) files are located in the `./src/img` directory.</br>
 
@@ -52,7 +52,7 @@ This site uses two typographies which are `Lato-Regular.ttf` and `Quicksand-Bold
 
 Note : These fonts have been imported into each SCSS file.</br>
 
-<h2>The `JavaScript` files are located in the <pre>./src/js</pre> directory.</h2></br>
+## The `JavaScript` files are located in the `./src/js` directory</br>
 
 `JS` : main.js ➥ It currently contains two functions :</br>
 
