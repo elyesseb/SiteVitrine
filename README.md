@@ -25,7 +25,7 @@ You should get a URL that looks something like: `http://localhost:1234/`.
 
 ## Structure of the website
 
-The `HTML` files are located at the root of the folder.</br>
+<h1>The `HTML` files are located at the root of the folder.</h1></br>
 
 `HTML` : index.html ➥ Home-page</br>
 `HTML` : apropos.html ➥ About-us-page</br>
