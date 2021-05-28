@@ -102,7 +102,7 @@ Note : You must create the following two files in the root folder :</br>
 ```sh
 AuthName "Zone Securisee"
 AuthType Basic
-AuthUserFile "/path/to/file/.htpasswd
+AuthUserFile "/path/to/file/.htpasswd"
 Require valid-user
 
 Options +FollowSymlinks
