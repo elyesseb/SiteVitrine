@@ -52,7 +52,7 @@ This site uses two typographies which are `Lato-Regular.ttf` and `Quicksand-Bold
 
 Note : These fonts have been imported into each SCSS file.</br>
 
-## The `JavaScript` files are located in the `./src/js` directory</br>
+## The <strong>JavaScript</strong> files are located in the `./src/js` directory</br>
 
 `JS` : main.js ➥ It currently contains two functions :</br>
 
@@ -65,17 +65,11 @@ Note : To modify article data use the `JSON` file.</br>
 
 `JS` : animation.js ➥ This is the script that animates the website.</br>
 
-Note : This script uses a library that you normally installed with the command : `npm install`.</br>
-
 `JS` : carousel.js ➥ This is the script used to make the slider for the `testimonials section` on the home page of the site.</br>
-
-Note : This script uses a library that you normally installed with the command : `npm install`.</br>
 
 `JS` : navigation.js ➥ This script makes the site menu appear when it is in mobile format.</br>
 
 `JS` : translate.js ➥ This script allows to change the content of the language of the site and to manage the event when clicking on the language button.</br>
-
-Note : This script uses a library that you normally installed with the command : `npm install`.</br>
 
 The files to manage the data of this function are located in the `./src/i18n` directory and you can find two files there :</br>
 
