@@ -8,25 +8,318 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.scss">
-    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/hab/Logo/Picto_H.png">
+    <script src="src/js/main.js" defer></script>
+    <script src="src/js/navigation.js" defer></script>
+    <script src="src/js/translate.js" defer></script>
+    <script src="/src/js/animation.js" defer></script>
+    <script src="src/js/carousel.js" defer></script>
+    <script src="//www.termsfeed.com/public/cookie-consent/3.1.0/cookie-consent.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121970413-2" defer></script>
+    <script type="text/plain" cookie-consent="tracking" defer></script>
     <title>H'ability</title>
 </head>
 
 <body>
     <!-- Menu de navigation 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <header>
+    <header class="header">
+        <div class="header_mobile">
+            <div class="header_mobile-logo">
+                <a href="index.html"><img id="#" src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability"></a>
+            </div>
+            <div id="header_menu-burger">
+                <a>
+                    <img id="##" src="./src/img/hab/bars-solid.svg" alt="Menu navigation">
+                </a>
+            </div>
+        </div>
+        <div id="nav_mobile" class="appear">
+            <ul class="nav_mobile-list">
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="index.html" data-i18n="header.home">Accueil</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="apropos.html" data-i18n="header.about">A propos de nous</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="actualités.html" data-i18n="header.news">Actualités</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="contact.html" data-i18n="header.contact">Nous contacter</a>
+                </li>
+                <li class="nav_mobile-list-element mobile_lang">
+                    <button class="mobileLangFr btn_lang" value="fr">FR</button>
+                    <button class="mobileLangEn btn_lang" value="en">EN</button>
+                </li>
+            </ul>
+        </div>
+        <div class="header_desktop">
+            <div class="header_desktop-logo">
+                <a href="index.html">
+                    <img src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability">
+                </a>
+            </div>
+            <nav class="nav_desktop">
+                <ul class="nav_desktop-list">
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="index.html" data-i18n="header.home">Accueil</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="apropos.html" data-i18n="header.about">A propos de nous</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="actualités.html" data-i18n="header.news">Actualités</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="contact.html" data-i18n="header.contact">Nous contacter</a>
+                    </li>
+                    <li class="nav_desktop-list-element desktop_lang">
+                        <button class="desktopLangFr btn_lang" value="fr">FR</button>
+                        <button class="desktopLangEn btn_lang" value="en">EN</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- Contenu principal de la page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <main>
+        <div class="main_bg">
+            <!-- Ajouter l'image principale de la page -->
+        </div>
+        <section class="container_principal">
+            <div class="container_principal-element">
+                <h1 class="container_principal-element-title">H'ability</h1>
+            </div>
+            <div class="container_principal-element">
+                <p class="container_principal-element-txt" data-i18n="index.home.text">La solution ludique de réalité virtuelle immersive spécialement conçue pour la rééducation fonctionnelle du membre supérieur.</p>
+            </div>
+            <div class="container_principal-element">
+                <a href="contact.html"><button class="container_principal-element-btn" data-i18n="index.home.button">Nous contacter</button></a>
+            </div>
+        </section>
+        <!-- Section le constat
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="finding">
+            <h2 class="title" data-i18n="index.finding.title">Le constat</h2>
+            <div class="finding_desktop">
+                <div class="finding_container">
+                    <div class="finding_container--img">
+                        <!-- Ajouter image constat -->
+                    </div>
+                    <p class="finding_container--txt" data-i18n="index.finding.text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                </div>
+                <div class="finding_container">
+                    <div class="finding_container--img">
+                        <!-- Ajouter image constat -->
+                    </div>
+                    <p class="finding_container--txt" data-i18n="index.finding.text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                </div>
+                <div class="finding_container">
+                    <div class="finding_container--img">
+                        <!-- Ajouter image constat -->
+                    </div>
+                    <p class="finding_container--txt" data-i18n="index.finding.text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis sit amet metus egestas pulvinar sit amet sed velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section les pathologies traitées
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="pathologies">
+            <div class="pathologies_container">
+                <h2 class="title" data-i18n="index.pathologies.title">Les pathologies traitées</h2>
+                <p class="subtitle" data-i18n="index.pathologies.subtitle">Entrainant des troubles moteur du membre supérieur et troubles cognitifs</p>
+                <ul>
+                    <li class="pathologies_container--list" data-i18n="index.pathologies.list.text1">AVC</li>
+                    <li class="pathologies_container--list" data-i18n="index.pathologies.list.text2">Traumatisme cranien</li>
+                    <li class="pathologies_container--list" data-i18n="index.pathologies.list.text3">Paralysie cérébrale</li>
+                    <li class="pathologies_container--list" data-i18n="index.pathologies.list.text4">Amputation</li>
+                </ul>
+            </div>
+            <div class="pathologies_container--img">
+                <!-- Ajouter image section pathologies traitées -->
+            </div>
+        </section>
+        <!-- Section les exercices du quotidien 'eq'
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="container_eq">
+            <h2 class="title" data-i18n="index.exercises.title">Les exercices du quotidien</h2>
+            <div class="container_eq-element">
+                <p class="subtitle" data-i18n="index.exercises.subtitle1"> Choisissez dans notre bibliotheque de jeux les exercices souhaités en fonction des capacités et objectifs de rééducation...</p>
+                <p class="subtitle" data-i18n="index.exercises.subtitle2"> La réalité virtuelle propose un large panel de jeux possible en 3D!</p>
+                <ul class="list_eq">
+                    <li class="container_eq-element-etiquette" id="etiquette_desktop" data-i18n="index.exercises.list.text1">EXPLORATION VISUELLE</li>
+                    <li class="container_eq-element-etiquette" data-i18n="index.exercises.list.text2">PREHENSION FINE</li>
+                    <li class="container_eq-element-etiquette" data-i18n="index.exercises.list.text3">AMPLITUDE</li>
+                    <li class="container_eq-element-etiquette" data-i18n="index.exercises.list.text4">MEMORISATION</li>
+                    <li class="container_eq-element-etiquette" data-i18n="index.exercises.list.text5">EQUILIBRE</li>
+                    <li class="container_eq-element-etiquette" id="etiquette_mobile" data-i18n="index.exercises.list.text1">EXPLORATION VISUELLE</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Section notre solution
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="solution">
+            <h2 class="title" data-i18n="index.solution.title">Notre solution</h2>
+            <article class="solution_container">
+                <h3 class="solution_container--title animation_right" data-i18n="index.solution.text1">Pourquoi la VR</h3>
+                <div class="solution_container--img animation_left"></div>
+            </article>
+            <article class="solution_container">
+                <h3 class="solution_container--title animation_left" data-i18n="index.solution.text2">La plateforme</h3>
+                <div class="solution_container--img animation_right"></div>
+            </article>
+            <article class="solution_container animation_middle">
+                <h3 class="solution_container--title" data-i18n="index.solution.text3">Les deux</h3>
+                <div class="solution_container--img"></div>
+            </article>
+        </section>
+        <!-- Section preuves scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="scientific">
+            <h2 class="title" data-i18n="index.scientific.title">Preuves scientifiques</h2>
+            <p class="subtitle" data-i18n="index.scientific.subtitle">Basée sur les nombreuses études cliniques faites sur la réalité virtuelle immersive et la rééducation</p>
+            <section class="scientific_container">
+                <article class="scientific_container--text">
+                    <h3 class="scientific_container--text--article" data-i18n="index.scientific.article1.text"></h3>
+                    <p class="scientific_container--text--source" data-i18n="index.scientific.article1.source"></p>
+                </article>
+                <div class="scientific_container--img">
+                    <img src="src/img/hab/icon_scientifique.png" alt="Icon preuves scientifiques">
+                </div>
+                <article class="scientific_container--text">
+                    <h3 class="scientific_container--text--article" data-i18n="index.scientific.article2.text"></h3>
+                    <p class="scientific_container--text--source" data-i18n="index.scientific.article2.source"></p>
+                </article>
+            </section>
+        </section>
+        <!-- Section les avantages
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="benefits">
+            <h2 class="title" data-i18n="index.benefits.title">Les avantages</h2>
+            <p class="subtitle" data-i18n="index.benefits.subtitle">Bénéficiez des bienfaits de la réalité virtuelle</p>
+            <div class="benefits_desktop">
+                <div class="benefits_container">
+                    <div class="benefits_container--pro"></div>
+                    <ul class="benefits_container--content">
+                        <li class="benefits_container--content--title" data-i18n="index.benefits.article1.title">Pour les professionels de santé</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text1">Outil innovant et compact</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text2">Diversification des séances de rééducation</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text3">Personnalisation des soins</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text4">Suivi médical à distance</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article1.text5">Démultiplication de la prise en charge</li>
+                    </ul>
+                </div>
+                <div class="benefits_container">
+                    <div class="benefits_container--patient"></div>
+                    <ul class="benefits_container--content">
+                        <li class="benefits_container--content--title" data-i18n="index.benefits.article2.title">Pour les patients</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text1">Outil accessible et portable</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text2">Continuité des soins à domicile</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text3">Gain & maintien de la motivation</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text4">Suivi de sa progression</li>
+                        <li class="benefits_container--content--text" data-i18n="index.benefits.article2.text5">Partage des données avec son thérapeute</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Section témoignages
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="testimonials">
+            <h2 class="title" data-i18n="index.testimonials.title">Témoignages</h2>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonials_container">
+                            <div class="testimonials_container--img"></div>
+                            <article class="testimonials_container--content">
+                                <h3 class="testimonials_container--text" data-i18n="index.testimonials.article1.text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
+                                    perferendis odit porro id beatae ducimus consequatur. Ab nam maiores ullam dignissimos!</h3>
+                                <h4 class="testimonials_container--name" data-i18n="index.testimonials.article1.name"><strong>Marine RIDI</strong></h4>
+                                <h4 class="testimonials_container--job" data-i18n="index.testimonials.article1.job"><strong>Medecin MPR</strong></h4>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials_container">
+                            <div class="testimonials_container--img"></div>
+                            <article class="testimonials_container--content">
+                                <h3 class="testimonials_container--text" data-i18n="index.testimonials.article2.text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
+                                    perferendis odit porro id beatae ducimus consequatur. Ab nam maiores ullam dignissimos!</h3>
+                                <h4 class="testimonials_container--name" data-i18n="index.testimonials.article2.name"><strong>Marine RIDI</strong></h4>
+                                <h4 class="testimonials_container--job" data-i18n="index.testimonials.article2.job"><strong>Medecin MPR</strong></h4>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials_container">
+                            <div class="testimonials_container--img"></div>
+                            <article class="testimonials_container--content">
+                                <h3 class="testimonials_container--text" data-i18n="index.testimonials.article3.text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
+                                    perferendis odit porro id beatae ducimus consequatur. Ab nam maiores ullam dignissimos!</h3>
+                                <h4 class="testimonials_container--name" data-i18n="index.testimonials.article3.name"><strong>Marine RIDI</strong></h4>
+                                <h4 class="testimonials_container--job" data-i18n="index.testimonials.article3.job"><strong>Medecin MPR</strong></h4>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials_container">
+                            <div class="testimonials_container--img"></div>
+                            <article class="testimonials_container--content">
+                                <h3 class="testimonials_container--text" data-i18n="index.testimonials.article4.text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quia non labore recusandae perferendis odit consequuntur unde accusantium sunt commodi qui pariatur, aliquam repellendus. Exercitationem aperiam laborum
+                                    perferendis odit porro id beatae ducimus consequatur. Ab nam maiores ullam dignissimos!</h3>
+                                <h4 class="testimonials_container--name" data-i18n="index.testimonials.article4.name"><strong>Marine RIDI</strong></h4>
+                                <h4 class="testimonials_container--job" data-i18n="index.testimonials.article4.job"><strong>Medecin MPR</strong></h4>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- Section nos partenaires scientifiques
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section class="partners">
+            <h2 class="title" data-i18n="index.partners.title">Nos partenaires scientifiques</h2>
+            <p class="subtitle" data-i18n="index.partners.subtitle">Développé avec des professionels de santé, pour des professionels de santé</p>
+            <div class="partners_container">
+                <div class="partners_container--form"></div>
+                <div class="partners_container--form"></div>
+                <div class="partners_container--form"></div>
+            </div>
+        </section>
     </main>
     <!-- Pied de page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <footer>
-
+        <div class="footer">
+            <div class="footer_social">
+                <div class="footer_social--links">
+                    <a class="footer_social--links--twitter" href="https://twitter.com/_hability" target="_blank"><img src="src/img/hab/twitter-square-brands.svg" alt="twitter_link"></a>
+                    <a class="footer_social--links--linkedin" href="https://www.linkedin.com/company/28884580/" target="_blank"><img src="src/img/hab/linkedin-brands.svg" alt="linkedin_link"></a>
+                </div>
+                <div class="footer_social--btn">
+                    <a href="contact.html"><button class="footer_social--btn--contact" data-i18n="footer.button">Nous contacter</button></a>
+                </div>
+            </div>
+            <div class="footer_content">
+                <article class="footer_content--text">
+                    <h3 class="footer_content--title">Adresse</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </article>
+                <article class="footer_content--text">
+                    <h3 class="footer_content--title">Contact</h3>
+                    <p>contact@hability.fr</p>
+                </article>
+            </div>
+            <div class="footer_copyright">
+                <p class="footer_copyright--fine">© Copyright <a href="http://www.marie-odile-mckeeney.com/" target="_blank">Marie-Odile McKeeney</a> - 2021</p>
+            </div>
+        </div>
     </footer>
-    <script src="src/js/main.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,24 @@
 {
-  "name": "SiteHability",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "sass": "^1.32.12"
-  }
+    "name": "SiteHability",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "start": "parcel index.html --open",
+        "build": "parcel build index.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@andreasremdt/simple-translator": "^2.0.3",
+        "@babel/core": "^7.14.3",
+        "sass": "^1.32.12",
+        "scrollreveal": "^4.0.9",
+        "swiper": "^6.5.9"
+    },
+    "devDependencies": {
+        "cssnano": "^5.0.4",
+        "postcss": "^8.3.0"
+    }
 }

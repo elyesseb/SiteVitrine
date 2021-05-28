@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/contact.scss">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/hab/Logo/Picto_H.png">
+    <script src="src/js/main.js" defer></script>
+    <script src="src/js/navigation.js" defer></script>
+    <script src="src/js/translate.js" defer></script>
+    <script src="/src/js/animation.js" defer></script>
+    <script src="//www.termsfeed.com/public/cookie-consent/3.1.0/cookie-consent.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121970413-2" defer></script>
+    <script type="text/plain" cookie-consent="tracking" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfWlvUaAAAAAKOfCvfZejtxZbLPd9EGSC0yJGiH"></script>
+    <title>H'ability</title>
+</head>
+
+<body>
+    <!-- Menu de navigation 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <header class="header">
+        <div class="header_mobile">
+            <div class="header_mobile-logo">
+                <a href="index.html"><img id="#" src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability"></a>
+            </div>
+            <div id="header_menu-burger">
+                <a>
+                    <img id="##" src="./src/img/hab/bars-solid.svg" alt="Menu navigation">
+                </a>
+            </div>
+        </div>
+        <div id="nav_mobile" class="appear">
+            <ul class="nav_mobile-list">
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="index.html" data-i18n="header.home">Accueil</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="apropos.html" data-i18n="header.about">A propos de nous</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="actualités.html" data-i18n="header.news">Actualités</a>
+                </li>
+                <li class="nav_mobile-list-element">
+                    <a class="a" href="contact.html" data-i18n="header.contact">Nous contacter</a>
+                </li>
+                <li class="nav_mobile-list-element mobile_lang">
+                    <button class="mobileLangFr btn_lang" value="fr">FR</button>
+                    <button class="mobileLangEn btn_lang" value="en">EN</button>
+                </li>
+            </ul>
+        </div>
+        <div class="header_desktop">
+            <div class="header_desktop-logo">
+                <a href="index.html">
+                    <img src="./src/img/hab/Logo/Logo_horizontal.png" alt="Logo H'ability">
+                </a>
+            </div>
+            <nav class="nav_desktop">
+                <ul class="nav_desktop-list">
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="index.html" data-i18n="header.home">Accueil</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="apropos.html" data-i18n="header.about">A propos de nous</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="actualités.html" data-i18n="header.news">Actualités</a>
+                    </li>
+                    <li class="nav_desktop-list-element">
+                        <a class="pages" href="contact.html" data-i18n="header.contact">Nous contacter</a>
+                    </li>
+                    <li class="nav_desktop-list-element desktop_lang">
+                        <button class="desktopLangFr btn_lang" value="fr">FR</button>
+                        <button class="desktopLangEn btn_lang" value="en">EN</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenu principal de la page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <main>
+        <section class="main_bg">
+            <div class="formulaire">
+                <div class="formulaire_text">
+                    <h3 data-i18n="contact.text">Si vous êtes concernés ou sensibilisés à l'hémiplégie, que vous souhaitez une démonstration de notre solution ou simplement échanger, n'hésitez pas à nous envoyer un message !</h3>
+                </div>
+                <div class="formulaire_container">
+                    <form action="mail.php" method="post">
+                        <label for="name" data-i18n="contact.form.name">Votre nom</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email">
+                        <label for="job" data-i18n="contact.form.job">Votre profession</label>
+                        <select class="formulaire_container--job" name="job" id="job">
+                            <option selected disabled data-i18n="contact.form.select">Indiquer la profession</option>
+                            <option value="job1">Kinésithérapeute</option>
+                            <option value="job2">Médecin</option>
+                            <option value="job3">ORL</option>
+                            <option value="job4">Ergothérapeute</option>
+                            <option value="job5">Médecin MPR</option>
+                            <option value="job6">Cadre de Santé</option>
+                            <option value="job7">Ostéopathe</option>
+                            <option value="job8">Chiropracticien</option>
+                            <option value="job9">Orthoptiste</option>
+                            <option value="job10">Etudiant</option>
+                            <option value="job11" selected="selected">Autres</option>
+                        </select>
+                        <br><br>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <div class="formulaire_container--btn">
+                            <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
+                            <button class="btn_form" data-i18n="contact.form.button.send">Envoyer</button>
+                            <button class="btn_form delete" data-i18n="contact.form.button.clear">Effacer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfWlvUaAAAAAKOfCvfZejtxZbLPd9EGSC0yJGiH', {
+                action: 'homepage'
+            }).then(function(token) {
+                document.getElementById('recaptchaResponse').value = token
+            });
+        });
+    </script>
+    <!-- Pied de page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer>
+        <div class="footer">
+            <div class="footer_social">
+                <div class="footer_social--links">
+                    <a class="footer_social--links--twitter" href="https://twitter.com/_hability" target="_blank"><img src="src/img/hab/twitter-square-brands.svg" alt="twitter_link"></a>
+                    <a class="footer_social--links--linkedin" href="https://www.linkedin.com/company/28884580/" target="_blank"><img src="src/img/hab/linkedin-brands.svg" alt="linkedin_link"></a>
+                </div>
+                <div class="footer_social--btn">
+                    <a href="contact.html"><button class="footer_social--btn--contact" data-i18n="footer.button">Nous contacter</button></a>
+                </div>
+            </div>
+            <div class="footer_content">
+                <article class="footer_content--text">
+                    <h3 class="footer_content--title">Adresse</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </article>
+                <article class="footer_content--text">
+                    <h3 class="footer_content--title">Contact</h3>
+                    <p>contact@hability.fr</p>
+                </article>
+            </div>
+            <div class="footer_copyright">
+                <p class="footer_copyright--fine">© Copyright <a href="http://www.marie-odile-mckeeney.com/" target="_blank">Marie-Odile McKeeney</a> - 2021</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
