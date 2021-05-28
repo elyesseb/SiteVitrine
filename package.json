@@ -13,12 +13,11 @@
     "dependencies": {
         "@andreasremdt/simple-translator": "^2.0.3",
         "@babel/core": "^7.14.3",
+        "cssnano": "^5.0.4",
+        "parcel": "^2.0.0-beta.2",
+        "postcss": "^8.3.0",
         "sass": "^1.32.12",
         "scrollreveal": "^4.0.9",
         "swiper": "^6.5.9"
-    },
-    "devDependencies": {
-        "cssnano": "^5.0.4",
-        "postcss": "^8.3.0"
     }
 }
