@@ -32,7 +32,7 @@ You should get a URL that looks something like: `http://localhost:1234/`.</br>
 `HTML` : actualités.html ➥ News-page</br>
 `HTML` : contact.html ➥ contact-page</br>
 
-## The `SCSS` files are located in the `./src/css` directory</br>
+## The SCSS files are located in the `./src/css` directory</br>
 
 `SCSS` : normalize.css => A CSS file used to standardize differences in interpretation of cascading style sheets.</br>
 CSS ensures cross-browser consistency in the default style of HTML elements.</br>
@@ -52,7 +52,7 @@ This site uses two typographies which are `Lato-Regular.ttf` and `Quicksand-Bold
 
 Note : These fonts have been imported into each SCSS file.</br>
 
-## The <strong>JavaScript</strong> files are located in the `./src/js` directory</br>
+## The JavaScript files are located in the `./src/js` directory</br>
 
 `JS` : main.js ➥ It currently contains two functions :</br>
 
@@ -65,7 +65,7 @@ Note : To modify article data use the `JSON` file.</br>
 
 `JS` : animation.js ➥ This is the script that animates the website.</br>
 
-`JS` : carousel.js ➥ This is the script used to make the slider for the `testimonials section` on the home page of the site.</br>
+`JS` : carousel.js ➥ This is the script used to make the slider for the testimonials section on the home page of the site.</br>
 
 `JS` : navigation.js ➥ This script makes the site menu appear when it is in mobile format.</br>
 
