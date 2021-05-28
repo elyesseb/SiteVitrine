@@ -3,11 +3,11 @@ It offers blazing fast performance utilizing multicore processing, and requires 
 
 ## Getting Started
 
-Before we get started, you'll need to install Node for your project if you haven't already.
-
 ```sh
 git clone https://github.com/ufhopla/SiteVitrine.git
 ```
+
+Before we get started, you'll need to install Node for your project if you haven't already.
 
 ```sh
 npm install -g parcel-bundler
