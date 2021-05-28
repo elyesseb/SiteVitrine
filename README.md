@@ -32,6 +32,8 @@ You should get a URL that looks something like: `http://localhost:1234/`.</br>
 `HTML` : actualités.html ➥ News-page</br>
 `HTML` : contact.html ➥ contact-page</br>
 
+Note : contact.html contains the Google public key to use ReCAPTCHA, you must replace it with your own.</br>
+
 ## The SCSS files are located in the `./src/css` directory</br>
 
 `CSS` : normalize.css => A CSS file used to standardize differences in interpretation of cascading style sheets.</br>
@@ -75,3 +77,48 @@ The files to manage the data of this function are located in the `./src/i18n` di
 
 • en.json ➥ JSON file to manage data in english.</br>
 • fr.json ➥ JSON file to manage data in french.</br>
+
+## We used PHP for the form functionality of the site, all files are located in the root of the folder</br>
+
+`PHP` : mail.php ➥ This file contains several things :</br>
+
+• Processing of the form data</br>
+• Google ReCAPTCHA</br>
+• XSS security</br>
+
+Note : You must replace the string `YOUR_SECRET_KEY` by your secret key in the url of this file.</br>
+
+`PHP` : crypt.php ➥ Allows you to obtain a login and an encrypted password that will be used for the .htpasswd file.</br>
+
+Note : You must create the following two files in the root folder :</br>
+
+• .htaccess</br>
+• .htpasswd</br>
+
+`PHP` : chemin.php ➥ This file allows to have the exact path to configure it in the .htaccess file to put here : `AuthUserFile "/path/to/file/.htpasswd"`</br>
+
+`.htaccess` Configure to access your server, example :
+
+```sh
+AuthName "Zone Securisee"
+AuthType Basic
+AuthUserFile "/path/to/file/.htpasswd
+Require valid-user
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /hability/
+RewriteRule ^index.html$  index.html [L]
+RewriteRule ^apropos.html$  apropos.html [L]
+RewriteRule ^actualités.html$  actualités.html [L]
+RewriteRule ^contact.html$  contact.html [L]
+```
+`.htpasswd` Configure to access your server, example :<br>
+
+```sh
+admin:admin
+user1:user1
+user2:user2
+```
+
+Note : For more security please use the file `crypt.php` to encrypt the password.
