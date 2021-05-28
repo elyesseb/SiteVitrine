@@ -27,10 +27,10 @@ You should get a URL that looks something like: `http://localhost:1234/`.
 
 The `HTML` files are located at the root of the folder.
 
-`HTML` : index.html ➥ Home-page
-`HTML` : apropos.html ➥ About-us-page
-`HTML` : actualités.html ➥ News-page
-`HTML` : contact.html ➥ contact-page
+`HTML` : index.html ➥ Home-page</br>
+`HTML` : apropos.html ➥ About-us-page</br>
+`HTML` : actualités.html ➥ News-page</br>
+`HTML` : contact.html ➥ contact-page</br>
 
 The `SCSS` files are located in the `./src/css` directory.
 
