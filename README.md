@@ -38,9 +38,9 @@ You should get a URL that looks something like: `http://localhost:1234/`.</br>
 CSS ensures cross-browser consistency in the default style of HTML elements.</br>
 
 `SCSS` : style.scss ➥ CSS of index.html</br>
-`SCSS` : apropos.html ➥ CSS of apropos.html</br>
+`SCSS` : apropos.scss ➥ CSS of apropos.html</br>
 `SCSS` : actualités.scss ➥ CSS of actualités.html</br>
-`SCSS` : contact.html ➥ CSS of contact.html</br>
+`SCSS` : contact.scss ➥ CSS of contact.html</br>
 
 Note : These files have been designed in mobile first and media queries based on the 1024px screen resolution for laptop screens.</br>
 
