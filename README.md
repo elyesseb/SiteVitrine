@@ -94,7 +94,7 @@ Note : You must replace the string `YOUR_SECRET_KEY` by your secret key in the u
 
 `PHP` : crypt.php ➥ Allows you to obtain a login and an encrypted password that will be used for the .htpasswd file.</br>
 
-Note : You must create the following two files in the root folder :</br>
+Note : You must edit the following two files in the root folder :</br>
 
 • .htaccess</br>
 • .htpasswd</br>
