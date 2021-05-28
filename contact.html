@@ -16,7 +16,7 @@
     <script src="//www.termsfeed.com/public/cookie-consent/3.1.0/cookie-consent.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121970413-2" defer></script>
     <script type="text/plain" cookie-consent="tracking" defer></script>
-    <script src="./src/js/cookie.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfWlvUaAAAAAKOfCvfZejtxZbLPd9EGSC0yJGiH"></script>
     <title>H'ability</title>
 </head>
 
@@ -99,22 +99,23 @@
                         <label for="job" data-i18n="contact.form.job">Votre profession</label>
                         <select class="formulaire_container--job" name="job" id="job">
                             <option selected disabled data-i18n="contact.form.select">Indiquer la profession</option>
-                            <option value="Kinésithérapeute">Kinésithérapeute</option>
-                            <option value="Médecin">Médecin</option>
-                            <option value="ORL">ORL</option>
-                            <option value="Ergothérapeute">Ergothérapeute</option>
-                            <option value="Médecin MPR">Médecin MPR</option>
-                            <option value="Cadre de Santé">Cadre de Santé</option>
-                            <option value="Ostéopathe">Ostéopathe</option>
-                            <option value="Chiropracticien">Chiropracticien</option>
-                            <option value="Orthoptiste">Orthoptiste</option>
-                            <option value="Etudiant">Etudiant</option>
-                            <option value="Autres">Autres</option>
+                            <option value="job1">Kinésithérapeute</option>
+                            <option value="job2">Médecin</option>
+                            <option value="job3">ORL</option>
+                            <option value="job4">Ergothérapeute</option>
+                            <option value="job5">Médecin MPR</option>
+                            <option value="job6">Cadre de Santé</option>
+                            <option value="job7">Ostéopathe</option>
+                            <option value="job8">Chiropracticien</option>
+                            <option value="job9">Orthoptiste</option>
+                            <option value="job10">Etudiant</option>
+                            <option value="job11" selected="selected">Autres</option>
                         </select>
                         <br><br>
                         <label for="message">Message</label>
                         <textarea name="message" id="message"></textarea>
                         <div class="formulaire_container--btn">
+                            <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
                             <button class="btn_form" data-i18n="contact.form.button.send">Envoyer</button>
                             <button class="btn_form delete" data-i18n="contact.form.button.clear">Effacer</button>
                         </div>
@@ -123,6 +124,15 @@
             </div>
         </section>
     </main>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfWlvUaAAAAAKOfCvfZejtxZbLPd9EGSC0yJGiH', {
+                action: 'homepage'
+            }).then(function(token) {
+                document.getElementById('recaptchaResponse').value = token
+            });
+        });
+    </script>
     <!-- Pied de page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <footer>
@@ -133,7 +143,7 @@
                     <a class="footer_social--links--linkedin" href="https://www.linkedin.com/company/28884580/" target="_blank"><img src="src/img/hab/linkedin-brands.svg" alt="linkedin_link"></a>
                 </div>
                 <div class="footer_social--btn">
-                    <button class="footer_social--btn--contact" data-i18n="footer.button">Nous contacter</button>
+                    <a href="contact.html"><button class="footer_social--btn--contact" data-i18n="footer.button">Nous contacter</button></a>
                 </div>
             </div>
             <div class="footer_content">
