@@ -1,0 +1,12 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "C:/wamp64/www/hability/.htpasswd"
+Require valid-user
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /hability/
+RewriteRule ^index.html$  index.html [L]
+RewriteRule ^apropos.html$  apropos.html [L]
+RewriteRule ^actualités.html$  actualités.html [L]
+RewriteRule ^contact.html$  contact.html [L]
