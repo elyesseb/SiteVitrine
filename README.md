@@ -6,7 +6,7 @@ It offers blazing fast performance utilizing multicore processing, and requires 
 Before we get started, you'll need to install Node for your project if you haven't already.
 
 ```sh
-git clone "https://github.com/ufhopla/SiteVitrine.git"
+git clone https://github.com/ufhopla/SiteVitrine.git
 ```
 
 ```sh
