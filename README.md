@@ -35,7 +35,7 @@ You should get a URL that looks something like: `http://localhost:1234/`.</br>
 ## The SCSS files are located in the `./src/css` directory</br>
 
 `CSS` : normalize.css => A CSS file used to standardize differences in interpretation of cascading style sheets.</br>
-CSS ensures cross-browser consistency in the default style of HTML elements.</br>
+        CSS ensures cross-browser consistency in the default style of HTML elements.</br>
 
 `SCSS` : style.scss ➥ CSS of index.html</br>
 `SCSS` : apropos.scss ➥ CSS of apropos.html</br>
