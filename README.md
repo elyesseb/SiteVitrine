@@ -40,7 +40,7 @@ Note : contact.html contains the Google public key to use ReCAPTCHA, you must re
 
 ## The SCSS files are located in the `./src/css` directory</br>
 
-`CSS` : normalize.css => A CSS file used to standardize differences in interpretation of cascading style sheets.</br>
+`CSS` : normalize.css ➥ A CSS file used to standardize differences in interpretation of cascading style sheets.</br>
         CSS ensures cross-browser consistency in the default style of HTML elements.</br>
 
 `SCSS` : style.scss ➥ CSS of index.html</br>
