@@ -1,6 +1,6 @@
 {
     "header": {
-        "home": "Acceuil",
+        "home": "Accueil",
         "about": "A propos de nous",
         "news": "Actualités",
         "contact": "Nous contacter"
@@ -28,7 +28,7 @@
         },
         "exercises": {
             "title": "Les exercices du quotidien",
-            "subtitle1": "Choisissez dans notre bibliotheque de jeux les exercices souhaités en fonctions des cpapacités et objetcifs de rééducation...",
+            "subtitle1": "Choisissez dans notre bibliothéque de jeux les exercices souhaités en fonctions des capacités et objectifs de rééducation...",
             "subtitle2": "La réalité virtuelle propose un large panel de jeux possibles en 3D !",
             "list": {
                 "text1": "EXPLORATION VISUELLE",
